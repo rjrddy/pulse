@@ -1,0 +1,40 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: {go-version-file: go.mod}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Install test dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install fastapi numpy pytest ruff==0.17.1 httpx websockets
+          npm --prefix apps/web ci
+          go mod download
+      - run: make build lint test
+      - run: make scan
+      - name: Fresh clone real-model Compose smoke
+        run: |
+          git clone --no-local . /tmp/pulse-clean
+          cd /tmp/pulse-clean
+          cp .env.example .env
+          mkdir -p docs/results
+          trap 'docker compose logs --no-color > docs/results/compose.log; cp -r docs/results "$GITHUB_WORKSPACE/docs/results/container-ci"; docker compose down' EXIT
+          docker compose up --build -d
+          for i in $(seq 1 180); do curl -fsS http://localhost:8081/health && break; sleep 2; done
+          curl --fail http://localhost:8081/health
+          export PULSE_TOKEN=synthetic-local-token-change-me-at-least-24
+          "$GITHUB_WORKSPACE/.venv/bin/python" scripts/smoke.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pulse-ci-evidence
+          path: docs/results/container-ci/

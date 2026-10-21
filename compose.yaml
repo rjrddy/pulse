@@ -30,7 +30,7 @@ services:
       worker-b: {condition: service_healthy}
   prometheus:
     image: prom/prometheus:v3.10.0
-    volumes: ["./deploy/prometheus.yml:/etc/prometheus/prometheus.yml:ro"]
+    volumes: ["./deploy/prometheus.yml:/etc/prometheus/prometheus.yml:ro", "./deploy/.pulse-token:/etc/prometheus/pulse-token:ro"]
     profiles: [observability]
   grafana:
     image: grafana/grafana:12.4.2
