@@ -215,7 +215,7 @@ async def stream(
     if data.mode not in ("", "text") or (data.mode == "text" and not data.text.strip()):
         raise HTTPException(422, "invalid mode or empty text")
     if not slots.acquire(blocking=False):
-        raise HTTPException(503, "worker capacity reached")
+        raise HTTPException(429, "worker capacity reached")
     loop = asyncio.get_running_loop()
     queue: asyncio.Queue[dict[str, Any] | None] = asyncio.Queue(maxsize=8)
     stop = threading.Event()

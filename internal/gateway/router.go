@@ -133,10 +133,12 @@ func (r *Router) Route(ctx context.Context, input Input, send func(Event) error)
 		req.Header.Set("Content-Type", "application/json")
 		req.Header.Set("Authorization", "Bearer "+r.WorkerToken)
 		response, err := r.Client.Do(req)
+		capacity := false
 		visible := false
 		done := false
 		sendFailed := false
 		if err == nil {
+			capacity = response.StatusCode == http.StatusTooManyRequests
 			if response.StatusCode != http.StatusOK {
 				err = errors.New("worker unavailable")
 			} else {
@@ -174,7 +176,7 @@ func (r *Router) Route(ctx context.Context, input Input, send func(Event) error)
 			response.Body.Close()
 		}
 		cancelled := ctx.Err() != nil || sendFailed
-		b.Breaker.Finish(ticket, time.Now(), !done, cancelled)
+		b.Breaker.Finish(ticket, time.Now(), !done && !capacity, cancelled)
 		stop()
 		if done {
 			return nil

@@ -17,6 +17,7 @@ jobs:
         run: |
           python -m venv .venv
           .venv/bin/pip install fastapi numpy pytest ruff==0.17.1 httpx websockets
+          .venv/bin/pip install -e . --no-deps
           npm --prefix apps/web ci
           go mod download
       - run: make build lint test

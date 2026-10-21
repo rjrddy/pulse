@@ -19,7 +19,7 @@ lint:
 	cd apps/web && npm run lint
 test:
 	$(GO) test -race -timeout 60s -count=1 -v ./...
-	.venv/bin/pytest -q
+	.venv/bin/python -m pytest -q
 bench:
 	.venv/bin/python scripts/bench.py
 models:

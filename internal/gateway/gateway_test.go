@@ -251,3 +251,20 @@ func TestStaleBreakerCompletionCannotReleaseProbe(t *testing.T) {
 		t.Fatal("probe did not close")
 	}
 }
+
+func TestCapacityResponseDoesNotOpenCircuit(t *testing.T) {
+	a := fixture(func(w http.ResponseWriter, r *http.Request) { w.WriteHeader(http.StatusTooManyRequests) })
+	defer a.Close()
+	b := fixture(func(w http.ResponseWriter, r *http.Request) {
+		emit(w, Event{Type: "audio", Audio: "AA=="})
+		emit(w, Event{Type: "done"})
+	})
+	defer b.Close()
+	primary := backend("a", a.URL)
+	if e := router(primary, backend("b", b.URL)).Route(context.Background(), Input{}, func(Event) error { return nil }); e != nil {
+		t.Fatal(e)
+	}
+	if primary.Breaker.State() != "closed" {
+		t.Fatal("capacity pressure was incorrectly marked unhealthy")
+	}
+}
