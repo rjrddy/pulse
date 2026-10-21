@@ -4,6 +4,7 @@ export GOCACHE := $(CURDIR)/.cache/gobuild
 .PHONY: setup build lint test bench demo models scan
 setup:
 	python3 -m venv .venv
+	.venv/bin/pip install --upgrade pip==26.2.2
 	.venv/bin/pip install -e '.[dev]'
 	npm --prefix apps/web ci
 	$(GO) mod download

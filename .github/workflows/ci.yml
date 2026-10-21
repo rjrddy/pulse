@@ -27,7 +27,7 @@ jobs:
           git clone --no-local . /tmp/pulse-clean
           cd /tmp/pulse-clean
           cp .env.example .env
-          mkdir -p docs/results
+          mkdir -p docs/results "$GITHUB_WORKSPACE/docs/results"
           trap 'docker compose logs --no-color > docs/results/compose.log; cp -r docs/results "$GITHUB_WORKSPACE/docs/results/container-ci"; docker compose down' EXIT
           docker compose up --build -d
           for i in $(seq 1 180); do curl -fsS http://localhost:8081/health && break; sleep 2; done

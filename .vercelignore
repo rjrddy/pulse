@@ -1,0 +1,10 @@
+.git
+.cache
+.venv
+bin
+data
+apps/web/node_modules
+apps/web/dist
+docs/results/recordings
+docs/results/*worker*.log
+docs/results/initial-ci-failure.log
