@@ -1,0 +1,14 @@
+.cache/
+.venv/
+.env
+.env.*
+!.env.example
+.vercel/
+bin/
+data/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+apps/web/node_modules/
+apps/web/dist/

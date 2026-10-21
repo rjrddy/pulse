@@ -1,0 +1,3 @@
+# Provenance
+
+The old repositories remain unchanged. Pulse adapts the cancellation-generation idea from V2 (`src/main.py`), public Whisper sample/model acquisition from V1 (`scripts/fetch_asr.py`), normalization/edit-distance domain evaluation from V3, and timeout/fallback/circuit-breaker experiments from M2. The Go gateway, admission limits, journal, browser protocol, and worker HTTP streaming are new implementations. M1's former synthetic timing cannot stand in for model measurements; M4's process startup cannot stand in for container restore. Both measurement gaps remain explicit until actually measured here.
