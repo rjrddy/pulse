@@ -1,0 +1,409 @@
+{
+  "page_errors": [],
+  "public_speech_processed": true,
+  "text_pipeline_processed": true,
+  "interruption_acknowledged": true,
+  "old_generation_after_cancel_ack": false,
+  "replacement_completed": true,
+  "mobile_no_overflow": true,
+  "events": [
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "transcript",
+      "text": "What makes a system reliable?",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 4605.095
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5477.833
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "A ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5490.38
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "reliable ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5509.327
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "system ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5520.709
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "is ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5533.551
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "one ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5548.705
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "that ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5563.797
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "can ",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5581.441
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "token",
+      "text": "withstand",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5581.731
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "stage",
+      "stage": "llm",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5646.665,
+      "duration_ms": 976.8606660654768
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "audio",
+      "sample_rate": 16000,
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5787.95,
+      "audio_base64_length": 112640
+    },
+    {
+      "trace_id": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "type": "stage",
+      "stage": "tts",
+      "generation": 1,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 5788.317,
+      "duration_ms": 205.00666601583362
+    },
+    {
+      "type": "done",
+      "text": "7262d4ec7ea69f88419c8ef89b6d3005",
+      "generation": 1,
+      "elapsed_ms": 5788.376
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "stage",
+      "stage": "vad",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 24.904,
+      "duration_ms": 7.336042006500065
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "stage",
+      "stage": "asr",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 457.009,
+      "duration_ms": 432.5536669930443
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "transcript",
+      "text": "I'll show you the fact that I'm there. Let's do the fact that I'm there. I'll show you the fact that I'm there.",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 459.344
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 762.965
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 777.24
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "I'll ",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 790.895
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "show ",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 805.775
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "you ",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 820.092
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "the ",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 834.27
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "fact ",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 848.522
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "that ",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 862.525
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "token",
+      "text": "I",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 862.672
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "stage",
+      "stage": "llm",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 864.77,
+      "duration_ms": 405.6160830659792
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "audio",
+      "sample_rate": 16000,
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 930.859,
+      "audio_base64_length": 77144
+    },
+    {
+      "trace_id": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "type": "stage",
+      "stage": "tts",
+      "generation": 2,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 931.179,
+      "duration_ms": 66.31833396386355
+    },
+    {
+      "type": "done",
+      "text": "79bf4cb6cf3c73737e5f06378c5664a8",
+      "generation": 2,
+      "elapsed_ms": 933.167
+    },
+    {
+      "type": "cancelled",
+      "generation": 3,
+      "elapsed_ms": 0
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "transcript",
+      "text": "How do retries work?",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 1.828
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 183.864
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 198.014
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "Retries ",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 211.736
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "allow ",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 225.851
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "users ",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 239.626
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "to ",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 253.018
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "retry ",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 267.169
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "their ",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 281.079
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "token",
+      "text": "online",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 281.246
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "stage",
+      "stage": "llm",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 281.972,
+      "duration_ms": 279.63195904158056
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "audio",
+      "sample_rate": 16000,
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 354.953,
+      "audio_base64_length": 126296
+    },
+    {
+      "trace_id": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "type": "stage",
+      "stage": "tts",
+      "generation": 4,
+      "attempt": 1,
+      "backend": "worker-1",
+      "elapsed_ms": 355.085,
+      "duration_ms": 72.6605000672862
+    },
+    {
+      "type": "done",
+      "text": "daf1c4fd39b60b9948c5f16b48c9cff5",
+      "generation": 4,
+      "elapsed_ms": 355.596
+    }
+  ]
+}

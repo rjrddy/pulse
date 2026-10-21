@@ -1,0 +1,56 @@
+test -z "$(/tmp/relay-toolchain/go/bin/go fmt ./...)"
+/tmp/relay-toolchain/go/bin/go vet ./...
+.venv/bin/ruff check worker scripts tests
+All checks passed!
+.venv/bin/ruff format --check worker scripts tests
+11 files already formatted
+cd apps/web && npm run lint
+
+> pulse-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+/tmp/relay-toolchain/go/bin/go test -race -timeout 60s -count=1 -v ./...
+?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+=== RUN   TestBreakerSingleHalfOpenProbe
+--- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+=== RUN   TestCancelledAttemptDoesNotTripBreaker
+--- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+=== RUN   TestFallbackResetsBeforeAudio
+--- PASS: TestFallbackResetsBeforeAudio (0.01s)
+=== RUN   TestNoReplayAfterVisibleAudio
+--- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+=== RUN   TestDeadlineCancelsBackend
+--- PASS: TestDeadlineCancelsBackend (0.04s)
+=== RUN   TestAdmissionBounded
+--- PASS: TestAdmissionBounded (0.00s)
+=== RUN   TestJournalReopenAndCorruption
+--- PASS: TestJournalReopenAndCorruption (0.02s)
+=== RUN   TestConcurrentJournalWrites
+--- PASS: TestConcurrentJournalWrites (0.11s)
+=== RUN   TestClientSendFailureIsNotSuccess
+--- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+=== RUN   TestWebsocketGenerationFencesInterruptedTurn
+2026/10/21 00:49:29 INFO turn_finished turn=cf35587786101ba19b68acef51f9d6d1 trace_id=cf35587786101ba19b68acef51f9d6d1 outcome=cancelled backend=a first_audio_ms=0 total_ms=0.773
+2026/10/21 00:49:29 INFO turn_finished turn=57712b23e2532f2305ad019b2fd8fb43 trace_id=57712b23e2532f2305ad019b2fd8fb43 outcome=done backend=a first_audio_ms=22.811 total_ms=22.943
+--- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.03s)
+=== RUN   TestAuthAndOriginRejected
+--- PASS: TestAuthAndOriginRejected (0.00s)
+=== RUN   TestStaleBreakerCompletionCannotReleaseProbe
+--- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+=== RUN   TestCapacityResponseDoesNotOpenCircuit
+--- PASS: TestCapacityResponseDoesNotOpenCircuit (0.00s)
+PASS
+ok  	github.com/rjrddy/pulse/internal/gateway	1.445s
+.venv/bin/python -m pytest -q
+....                                                                     [100%]
+4 passed in 0.22s
+.venv/bin/python scripts/bench.py
+{"concurrency": 1, "samples": 2, "first_audio_p50_ms": 563.591728976462, "first_audio_p99_ms": 563.9474895398598, "ttft_p50_ms": 170.51062447717413, "ttft_p99_ms": 170.97228631260805}
+{"concurrency": 2, "samples": 4, "first_audio_p50_ms": 845.1098954537883, "first_audio_p99_ms": 1123.354715553578, "ttft_p50_ms": 452.90747901890427, "ttft_p99_ms": 737.5798945582937}
+{"concurrency": 4, "samples": 8, "first_audio_p50_ms": 1071.5063749812543, "first_audio_p99_ms": 1464.3516731867567, "ttft_p50_ms": 550.9708539466374, "ttft_p99_ms": 924.1424115141854}
+{"concurrency": 1, "samples": 2, "first_audio_p50_ms": 295.7397709833458, "first_audio_p99_ms": 298.55218772776425, "ttft_p50_ms": 171.3067500386387, "ttft_p99_ms": 171.86922982800752}
+{"concurrency": 2, "samples": 4, "first_audio_p50_ms": 445.87564549874514, "first_audio_p99_ms": 596.969803776592, "ttft_p50_ms": 318.4093124582432, "ttft_p99_ms": 476.02610457339324}
+{"concurrency": 4, "samples": 8, "first_audio_p50_ms": 533.1577920005657, "first_audio_p99_ms": 734.1356271516997, "ttft_p50_ms": 367.42524994770065, "ttft_p99_ms": 575.2433058456518}
+Saved actual CPU load, public-speech, interruption and backend-kill evidence.

@@ -1,0 +1,73 @@
+{
+  "scope": "Piper-generated synthetic speech, fixed glossary; tiny development sample, not held out",
+  "rows": [
+    {
+      "reference": "Postgres stores our workflow history.",
+      "term": "postgres",
+      "glossary_hints": false,
+      "transcript": "Postures stores our workflow history.",
+      "word_errors": 1,
+      "reference_words": 5,
+      "term_correct": false
+    },
+    {
+      "reference": "Postgres stores our workflow history.",
+      "term": "postgres",
+      "glossary_hints": true,
+      "transcript": "Postgres stores our workflow history.",
+      "word_errors": 0,
+      "reference_words": 5,
+      "term_correct": true
+    },
+    {
+      "reference": "Kubernetes restarts the failed worker.",
+      "term": "kubernetes",
+      "glossary_hints": false,
+      "transcript": "Kubernetes restarts the failed worker.",
+      "word_errors": 0,
+      "reference_words": 5,
+      "term_correct": true
+    },
+    {
+      "reference": "Kubernetes restarts the failed worker.",
+      "term": "kubernetes",
+      "glossary_hints": true,
+      "transcript": "Kubernetes restarts the failed worker.",
+      "word_errors": 0,
+      "reference_words": 5,
+      "term_correct": true
+    },
+    {
+      "reference": "OpenTelemetry connects the service traces.",
+      "term": "opentelemetry",
+      "glossary_hints": false,
+      "transcript": "Open telemetry, connect the service traces.",
+      "word_errors": 3,
+      "reference_words": 5,
+      "term_correct": true
+    },
+    {
+      "reference": "OpenTelemetry connects the service traces.",
+      "term": "opentelemetry",
+      "glossary_hints": true,
+      "transcript": "OpenTelemetry connects the service traces.",
+      "word_errors": 0,
+      "reference_words": 5,
+      "term_correct": true
+    }
+  ],
+  "aggregates": [
+    {
+      "glossary_hints": false,
+      "samples": 3,
+      "term_accuracy": 0.6666666666666666,
+      "word_error_rate": 0.26666666666666666
+    },
+    {
+      "glossary_hints": true,
+      "samples": 3,
+      "term_accuracy": 1.0,
+      "word_error_rate": 0.0
+    }
+  ]
+}

@@ -1,0 +1,1396 @@
+gates	UNKNOWN STEP	﻿2026-10-21T13:23:55.1340849Z Current runner version: '2.338.0'
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1363963Z ##[group]Runner Image Provisioner
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1364781Z Hosted Compute Agent
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1365365Z Version: 20261015.610
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1365952Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1366821Z Build Date: 2026-10-14T17:06:54Z
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1367513Z Worker ID: {28fffa71-6943-4ed6-a8ff-8fff849c23ad}
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1368151Z Region: centralus
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1368679Z Cloud: Azure
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1369226Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1370708Z ##[group]Operating System
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1371363Z Ubuntu
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1371845Z 26.04.1
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1372301Z LTS
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1372803Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1373303Z ##[group]Runner Image
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1373880Z Image: ubuntu-26.04
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1374398Z Version: 20261018.168.1
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1375677Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261018.168/images/ubuntu/Ubuntu2604-Readme.md
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1377386Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261018.168
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1378325Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1379351Z ##[group]GITHUB_TOKEN Permissions
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1381915Z Contents: read
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1382502Z Metadata: read
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1383109Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1385161Z Secret source: Actions
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1386001Z Cache mode: write
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1387047Z Prepare workflow directory
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1674902Z Prepare all required actions
+gates	UNKNOWN STEP	2026-10-21T13:23:55.1710006Z Getting action download info
+gates	UNKNOWN STEP	2026-10-21T13:23:55.4011330Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+gates	UNKNOWN STEP	2026-10-21T13:23:55.4634468Z Download action repository 'actions/setup-go@v5' (SHA:40f1582b2485089dde7abd97c1529aa768e1baff)
+gates	UNKNOWN STEP	2026-10-21T13:23:55.8780397Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+gates	UNKNOWN STEP	2026-10-21T13:23:55.9487051Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+gates	UNKNOWN STEP	2026-10-21T13:23:56.0305181Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+gates	UNKNOWN STEP	2026-10-21T13:23:56.2610514Z Complete job name: gates
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3211364Z ##[group]Run actions/checkout@v4
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3212044Z with:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3212458Z   repository: rjrddy/pulse
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3215784Z   token: ***
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3216211Z   ssh-strict: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3216866Z   ssh-user: git
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3217336Z   persist-credentials: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3217785Z   clean: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3218211Z   sparse-checkout-cone-mode: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3218692Z   fetch-depth: 1
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3219084Z   fetch-tags: false
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3219474Z   show-progress: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3219940Z   lfs: false
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3220344Z   submodules: false
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3220796Z   set-safe-directory: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3221251Z   allow-unsafe-pr-checkout: false
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3221855Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3972629Z Syncing repository: rjrddy/pulse
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3974504Z ##[group]Getting Git version info
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3975346Z Working directory is '/home/runner/work/pulse/pulse'
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3976473Z [command]/usr/bin/git version
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3977007Z git version 2.55.0
+gates	UNKNOWN STEP	2026-10-21T13:23:56.3998744Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4011473Z Temporarily overriding HOME='/home/runner/work/_temp/e9c3112c-fa41-47a1-872a-7c9a7f9d2881' before making global git config changes
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4013348Z Adding repository directory to the temporary git global config as a safe directory
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4014812Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse/pulse
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4059399Z Deleting the contents of '/home/runner/work/pulse/pulse'
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4062811Z ##[group]Initializing the repository
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4066567Z [command]/usr/bin/git init /home/runner/work/pulse/pulse
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4167493Z hint: Using 'master' as the name for the initial branch. This default branch name
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4169042Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4170622Z hint: to use in all of your new repositories, which will suppress this warning,
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4171920Z hint: call:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4172601Z hint:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4173272Z hint: 	git config --global init.defaultBranch <name>
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4174130Z hint:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4174832Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4176072Z hint: 'development'. The just-created branch can be renamed via this command:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4177103Z hint:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4177749Z hint: 	git branch -m <name>
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4178373Z hint:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4179237Z hint: Disable this message with "git config set advice.defaultBranchName false"
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4180373Z Initialized empty Git repository in /home/runner/work/pulse/pulse/.git/
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4182968Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/pulse
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4223414Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4224386Z ##[group]Disabling automatic garbage collection
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4226602Z [command]/usr/bin/git config --local gc.auto 0
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4256440Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4257426Z ##[group]Setting up auth
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4262524Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4285302Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4613223Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4633292Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4807761Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4830072Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+gates	UNKNOWN STEP	2026-10-21T13:23:56.4992506Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+gates	UNKNOWN STEP	2026-10-21T13:23:56.5023538Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.5024355Z ##[group]Fetching the repository
+gates	UNKNOWN STEP	2026-10-21T13:23:56.5029767Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d797ce9caee8fa4e2b3eb53160245cf299611d66:refs/remotes/origin/main
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8479317Z From https://github.com/rjrddy/pulse
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8480593Z  * [new ref]         d797ce9caee8fa4e2b3eb53160245cf299611d66 -> origin/main
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8483367Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8488312Z ##[group]Determining the checkout info
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8490067Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8490802Z [command]/usr/bin/git sparse-checkout disable
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8533594Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8560620Z ##[group]Checking out the ref
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8563857Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8621310Z Switched to a new branch 'main'
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8622810Z branch 'main' set up to track 'origin/main'.
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8627632Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8668004Z [command]/usr/bin/git log -1 --format=%H
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8683709Z d797ce9caee8fa4e2b3eb53160245cf299611d66
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8939909Z ##[group]Run actions/setup-go@v5
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8940800Z with:
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8941550Z   go-version-file: go.mod
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8942267Z   check-latest: false
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8949411Z   token: ***
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8950046Z   cache: true
+gates	UNKNOWN STEP	2026-10-21T13:23:56.8950662Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:23:56.9844585Z Setup go version spec 1.27.3
+gates	UNKNOWN STEP	2026-10-21T13:23:56.9851170Z Attempting to download 1.27.3...
+gates	UNKNOWN STEP	2026-10-21T13:23:56.9927048Z (node:2172) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:23:56.9929251Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:23:57.6061120Z matching 1.27.3...
+gates	UNKNOWN STEP	2026-10-21T13:23:57.6082985Z Acquiring 1.27.3 from https://github.com/actions/go-versions/releases/download/1.27.3-39437817176/go-1.27.3-linux-x64.tar.gz
+gates	UNKNOWN STEP	2026-10-21T13:23:58.1429325Z Extracting Go...
+gates	UNKNOWN STEP	2026-10-21T13:23:58.1510553Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/45affa5e-0dab-4d4c-b874-6d418537c575 -f /home/runner/work/_temp/de0707ec-35ca-4a09-9dc7-28942f0cced5
+gates	UNKNOWN STEP	2026-10-21T13:23:58.9637596Z Successfully extracted go to /home/runner/work/_temp/45affa5e-0dab-4d4c-b874-6d418537c575
+gates	UNKNOWN STEP	2026-10-21T13:23:58.9638066Z Adding to the cache ...
+gates	UNKNOWN STEP	2026-10-21T13:24:04.0824705Z Successfully cached go to /opt/hostedtoolcache/go/1.27.3/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.0825666Z Added go to the path
+gates	UNKNOWN STEP	2026-10-21T13:24:04.0827719Z Successfully set up Go version 1.27.3
+gates	UNKNOWN STEP	2026-10-21T13:24:04.0999138Z [command]/opt/hostedtoolcache/go/1.27.3/x64/bin/go env GOMODCACHE
+gates	UNKNOWN STEP	2026-10-21T13:24:04.1023484Z [command]/opt/hostedtoolcache/go/1.27.3/x64/bin/go env GOCACHE
+gates	UNKNOWN STEP	2026-10-21T13:24:04.1049767Z /home/runner/go/pkg/mod
+gates	UNKNOWN STEP	2026-10-21T13:24:04.1064077Z /home/runner/.cache/go-build
+gates	UNKNOWN STEP	2026-10-21T13:24:04.2335709Z Cache is not found
+gates	UNKNOWN STEP	2026-10-21T13:24:04.2359070Z go version go1.27.3 linux/amd64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.2359412Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:04.2359777Z ##[group]go env
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3397602Z AR='ar'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3398013Z CC='gcc'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3398346Z CGO_CFLAGS='-O2 -g'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3398745Z CGO_CPPFLAGS=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3399041Z CGO_CXXFLAGS='-O2 -g'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3399332Z CGO_ENABLED='1'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3399598Z CGO_FFLAGS='-O2 -g'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3399811Z CGO_LDFLAGS='-O2 -g'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3400046Z CXX='g++'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3400258Z GCCGO='gccgo'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3400457Z GO111MODULE=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3400659Z GOAMD64='v1'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3400866Z GOARCH='amd64'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3401108Z GOAUTH='netrc'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3401348Z GOBIN='/home/runner/go/bin'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3401614Z GOCACHE='/home/runner/.cache/go-build'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3401904Z GOCACHEPROG=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3402107Z GODEBUG=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3402368Z GOENV='/home/runner/.config/go/env'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3402620Z GOEXE=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3402817Z GOEXPERIMENT=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3403024Z GOFIPS140='off'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3403239Z GOFLAGS=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3403848Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build1549316162=/tmp/go-build -gno-record-gcc-switches'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3404462Z GOHOSTARCH='amd64'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3404685Z GOHOSTOS='linux'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3404895Z GOINSECURE=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3405138Z GOMOD='/home/runner/work/pulse/pulse/go.mod'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3405439Z GOMODCACHE='/home/runner/go/pkg/mod'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3405696Z GONOPROXY=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3405900Z GONOSUMDB=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3406085Z GOOS='linux'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3406587Z GOPACKAGESDRIVER=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3406852Z GOPATH='/home/runner/go'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3407088Z GOPRIVATE=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3407529Z GOPROXY='https://proxy.golang.org,direct'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3407802Z GOROOT='/opt/hostedtoolcache/go/1.27.3/x64'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3408094Z GOSUMDB='sum.golang.org'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3408338Z GOTELEMETRY='local'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3408879Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3409161Z GOTMPDIR=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3409526Z GOTOOLCHAIN='auto'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3409852Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.3/x64/pkg/tool/linux_amd64'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3410157Z GOVCS=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3410360Z GOVERSION='go1.27.3'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3410578Z GOWORK=''
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3410788Z PKG_CONFIG='pkg-config'
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3410938Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3411387Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3576687Z ##[group]Run actions/setup-python@v5
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3577008Z with:
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3577261Z   python-version: 3.13
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3577536Z   check-latest: false
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3579433Z   token: ***
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3579656Z   update-environment: true
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3579961Z   allow-prereleases: false
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3580216Z   freethreaded: false
+gates	UNKNOWN STEP	2026-10-21T13:24:04.3580446Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4475959Z ##[group]Installed versions
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4550494Z (node:2241) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4551253Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4551787Z Successfully set up CPython (3.13.16)
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4552313Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4739864Z ##[group]Run actions/setup-node@v4
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4740181Z with:
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4740417Z   node-version: 22
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4740652Z   always-auth: false
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4740901Z   check-latest: false
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4742975Z   token: ***
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4743221Z env:
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4743504Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4743943Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4744355Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4744735Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4745089Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4745432Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	UNKNOWN STEP	2026-10-21T13:24:04.4745721Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:04.5714106Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.5716127Z (node:2249) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:24:04.5716810Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:24:04.5718545Z ##[group]Environment details
+gates	UNKNOWN STEP	2026-10-21T13:24:04.8987432Z node: v22.23.3
+gates	UNKNOWN STEP	2026-10-21T13:24:04.8987809Z npm: 10.9.9
+gates	UNKNOWN STEP	2026-10-21T13:24:04.8988194Z yarn: 1.22.22
+gates	UNKNOWN STEP	2026-10-21T13:24:04.8989104Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9086497Z ##[group]Run python -m venv .venv
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9086967Z ^[[36;1mpython -m venv .venv^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9087406Z ^[[36;1m.venv/bin/pip install fastapi numpy pytest ruff==0.17.1 httpx websockets^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9087752Z ^[[36;1m.venv/bin/pip install -e . --no-deps^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9088062Z ^[[36;1mnpm --prefix apps/web ci^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9088340Z ^[[36;1mgo mod download^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9218494Z shell: /usr/bin/bash -e {0}
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9218762Z env:
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9219010Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9219405Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9219807Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9220146Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9220459Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9220864Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	UNKNOWN STEP	2026-10-21T13:24:04.9221165Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:10.3254024Z Collecting fastapi
+gates	UNKNOWN STEP	2026-10-21T13:24:10.4049057Z   Downloading fastapi-0.156.8-py3-none-any.whl.metadata (26 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.5484265Z Collecting numpy
+gates	UNKNOWN STEP	2026-10-21T13:24:10.5632585Z   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.5923735Z Collecting pytest
+gates	UNKNOWN STEP	2026-10-21T13:24:10.6074076Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.7848630Z Collecting ruff==0.17.1
+gates	UNKNOWN STEP	2026-10-21T13:24:10.7999552Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.8246689Z Collecting httpx
+gates	UNKNOWN STEP	2026-10-21T13:24:10.8395820Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.9128203Z Collecting websockets
+gates	UNKNOWN STEP	2026-10-21T13:24:10.9277483Z   Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.9537123Z Collecting starlette>=0.46.0 (from fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:10.9687056Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.0320666Z Collecting pydantic>=2.9.0 (from fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.0470806Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.0917192Z Collecting typing-extensions>=4.8.0 (from fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.1065969Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.1261986Z Collecting typing-inspection>=0.4.2 (from fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.1411982Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.1602311Z Collecting annotated-doc>=0.0.2 (from fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.1752942Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.2106958Z Collecting opentelemetry-api>=1.44.0 (from fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.2256043Z   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.2458875Z Collecting iniconfig>=1.0.1 (from pytest)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.2607919Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.2828596Z Collecting packaging>=22 (from pytest)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.2979041Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.3183179Z Collecting pluggy<2,>=1.5 (from pytest)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.3332586Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.3563003Z Collecting pygments>=2.7.2 (from pytest)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.3713360Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.3951179Z Collecting anyio (from httpx)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.4102654Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.4340368Z Collecting certifi (from httpx)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.4490724Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.5630949Z Collecting httpcore==1.* (from httpx)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.5782048Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.6002033Z Collecting idna (from httpx)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.6151235Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.6354799Z Collecting h11>=0.16 (from httpcore==1.*->httpx)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.6504858Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.6724355Z Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:11.6873623Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.0643503Z Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.0794630Z   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.1017658Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.2548484Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 74.0 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:24:12.2699823Z Downloading fastapi-0.156.8-py3-none-any.whl (147 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.2870590Z Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.7214994Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 38.0 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:24:12.7365744Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:12.9639868Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.2855590Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.5645426Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.6759261Z Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.6929280Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.7097047Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.7262922Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.7428309Z Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.7596628Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.7765746Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.7945798Z Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8099494Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 137.2 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8248379Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8413913Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8469902Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 240.5 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8619701Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8788432Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.8954734Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.9119672Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.9285025Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:13.9448374Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+gates	UNKNOWN STEP	2026-10-21T13:24:14.0400023Z Installing collected packages: websockets, typing-extensions, ruff, pygments, pluggy, packaging, numpy, iniconfig, idna, h11, certifi, annotated-types, annotated-doc, typing-inspection, pytest, pydantic-core, opentelemetry-api, httpcore, anyio, starlette, pydantic, httpx, fastapi
+gates	UNKNOWN STEP	2026-10-21T13:24:16.6579597Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:16.6597862Z Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.19 fastapi-0.156.8 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 numpy-2.5.4 opentelemetry-api-1.45.1 packaging-26.3 pluggy-1.7.0 pydantic-2.14.1 pydantic-core-2.50.1 pygments-2.21.0 pytest-9.1.1 ruff-0.17.1 starlette-1.9.0 typing-extensions-4.16.0 typing-inspection-0.4.4 websockets-17.3
+gates	UNKNOWN STEP	2026-10-21T13:24:16.6603610Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:16.6603997Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+gates	UNKNOWN STEP	2026-10-21T13:24:16.6604820Z [notice] To update, run: /home/runner/work/pulse/pulse/.venv/bin/python -m pip install --upgrade pip
+gates	UNKNOWN STEP	2026-10-21T13:24:17.4395862Z Obtaining file:///home/runner/work/pulse/pulse
+gates	UNKNOWN STEP	2026-10-21T13:24:17.4406113Z   Installing build dependencies: started
+gates	UNKNOWN STEP	2026-10-21T13:24:18.4817698Z   Installing build dependencies: finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:24:18.4820995Z   Checking if build backend supports build_editable: started
+gates	UNKNOWN STEP	2026-10-21T13:24:18.7661533Z   Checking if build backend supports build_editable: finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:24:18.7666240Z   Getting requirements to build editable: started
+gates	UNKNOWN STEP	2026-10-21T13:24:19.0025847Z   Getting requirements to build editable: finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:24:19.0030672Z   Preparing editable metadata (pyproject.toml): started
+gates	UNKNOWN STEP	2026-10-21T13:24:19.1315626Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:24:19.1354128Z Building wheels for collected packages: pulse-workers
+gates	UNKNOWN STEP	2026-10-21T13:24:19.1358743Z   Building editable for pulse-workers (pyproject.toml): started
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2745310Z   Building editable for pulse-workers (pyproject.toml): finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2748697Z   Created wheel for pulse-workers: filename=pulse_workers-0.1.0-0.editable-py3-none-any.whl size=2920 sha256=79a05966d07541e7f51ebb7ee83cbce1087942892e0dd5e280f4054a0423e935
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2749686Z   Stored in directory: /tmp/pip-ephem-wheel-cache-_83kud51/wheels/db/46/58/9e94e8fd70e69fb0f67a3a748c45920f813861a4e60358c1f5
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2763567Z Successfully built pulse-workers
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2840438Z Installing collected packages: pulse-workers
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2896661Z Successfully installed pulse-workers-0.1.0
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2903126Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2903565Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+gates	UNKNOWN STEP	2026-10-21T13:24:19.2904136Z [notice] To update, run: /home/runner/work/pulse/pulse/.venv/bin/python -m pip install --upgrade pip
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4493028Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4493839Z added 23 packages, and audited 24 packages in 1s
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4494222Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4494557Z 6 packages are looking for funding
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4494962Z   run `npm fund` for details
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4500197Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:20.4500808Z found 0 vulnerabilities
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6470112Z ##[group]Run make build lint test
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6470471Z ^[[36;1mmake build lint test^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6506156Z shell: /usr/bin/bash -e {0}
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6506647Z env:
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6506935Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6507324Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6507715Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6508065Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6508419Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6508738Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6509052Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6917035Z mkdir -p bin
+gates	UNKNOWN STEP	2026-10-21T13:24:20.6935464Z go build -o bin/pulse ./cmd/gateway
+gates	UNKNOWN STEP	2026-10-21T13:24:20.7084222Z go: downloading github.com/gorilla/websocket v1.5.3
+gates	UNKNOWN STEP	2026-10-21T13:24:29.5455327Z npm --prefix apps/web run build
+gates	UNKNOWN STEP	2026-10-21T13:24:29.6172235Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:29.6172752Z > pulse-console@0.1.0 build
+gates	UNKNOWN STEP	2026-10-21T13:24:29.6173181Z > tsc --noEmit && vite build
+gates	UNKNOWN STEP	2026-10-21T13:24:29.6173345Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:30.5204374Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+gates	UNKNOWN STEP	2026-10-21T13:24:30.5754764Z transforming...
+gates	UNKNOWN STEP	2026-10-21T13:24:31.0649688Z ^[[32m✓^[[39m 28 modules transformed.
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1514920Z rendering chunks...
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1560188Z computing gzip size...
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1632974Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.52 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.35 kB^[[22m
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1633806Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-zFlcuZ_H.css  ^[[39m^[[1m^[[2m  4.80 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  1.62 kB^[[22m
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1634709Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-BgQ53yFq.js   ^[[39m^[[1m^[[2m203.98 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 64.31 kB^[[22m
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1635322Z ^[[32m✓ built in 626ms^[[39m
+gates	UNKNOWN STEP	2026-10-21T13:24:31.1822381Z test -z "$(go fmt ./...)"
+gates	UNKNOWN STEP	2026-10-21T13:24:31.2101615Z go vet ./...
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0143429Z .venv/bin/ruff check worker scripts tests
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0208308Z All checks passed!
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0211697Z .venv/bin/ruff format --check worker scripts tests
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0269688Z 13 files already formatted
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0272572Z cd apps/web && npm run lint
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0901663Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0902384Z > pulse-console@0.1.0 lint
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0902762Z > prettier --check src
+gates	UNKNOWN STEP	2026-10-21T13:24:33.0902948Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:33.1476646Z Checking formatting...
+gates	UNKNOWN STEP	2026-10-21T13:24:33.3511855Z All matched files use Prettier code style!
+gates	UNKNOWN STEP	2026-10-21T13:24:33.3798190Z go test -race -timeout 60s -count=1 -v ./...
+gates	UNKNOWN STEP	2026-10-21T13:24:47.3739085Z ?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8185933Z === RUN   TestBreakerSingleHalfOpenProbe
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8186711Z --- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8187292Z === RUN   TestCancelledAttemptDoesNotTripBreaker
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8187819Z --- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8188372Z === RUN   TestFallbackResetsBeforeAudio
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8188783Z --- PASS: TestFallbackResetsBeforeAudio (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8189223Z === RUN   TestNoReplayAfterVisibleAudio
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8189596Z --- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8189914Z === RUN   TestDeadlineCancelsBackend
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8190292Z --- PASS: TestDeadlineCancelsBackend (0.04s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8190589Z === RUN   TestAdmissionBounded
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8190929Z --- PASS: TestAdmissionBounded (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8191237Z === RUN   TestJournalReopenAndCorruption
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8191572Z --- PASS: TestJournalReopenAndCorruption (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8191988Z === RUN   TestConcurrentJournalWrites
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8192300Z --- PASS: TestConcurrentJournalWrites (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8192991Z === RUN   TestClientSendFailureIsNotSuccess
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8193337Z --- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8193739Z === RUN   TestWebsocketGenerationFencesInterruptedTurn
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8194514Z 2026/10/21 13:24:47 INFO turn_finished turn=d04f41e106f77258fa778034687b754b trace_id=d04f41e106f77258fa778034687b754b outcome=cancelled backend=a first_audio_ms=0 total_ms=0.881
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8195443Z 2026/10/21 13:24:47 INFO turn_finished turn=4646b00d00d617381df7cc5dd23dd9a2 trace_id=4646b00d00d617381df7cc5dd23dd9a2 outcome=done backend=a first_audio_ms=20.937 total_ms=21.069
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8196161Z --- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.02s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8196677Z === RUN   TestAuthAndOriginRejected
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8197055Z --- PASS: TestAuthAndOriginRejected (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8197415Z === RUN   TestStaleBreakerCompletionCannotReleaseProbe
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8197805Z --- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8198212Z === RUN   TestCapacityResponseDoesNotOpenCircuit
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8198589Z --- PASS: TestCapacityResponseDoesNotOpenCircuit (0.00s)
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8198902Z PASS
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8199230Z ok  	github.com/rjrddy/pulse/internal/gateway	1.079s
+gates	UNKNOWN STEP	2026-10-21T13:24:48.8334051Z .venv/bin/python -m pytest -q
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3804295Z ....                                                                     [100%]
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3806630Z =============================== warnings summary ===============================
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3807647Z .venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3809972Z   /home/runner/work/pulse/pulse/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3812065Z     from starlette.testclient import TestClient as TestClient  # noqa
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3812631Z 
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3813197Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+gates	UNKNOWN STEP	2026-10-21T13:24:50.3814144Z 4 passed, 1 warning in 0.36s
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4843667Z ##[group]Run make scan
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4844037Z ^[[36;1mmake scan^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4879856Z shell: /usr/bin/bash -e {0}
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4880138Z env:
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4880448Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4880820Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4881200Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4881555Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4881909Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4882256Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4882699Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:50.4945600Z npm --prefix apps/web audit --audit-level=high
+gates	UNKNOWN STEP	2026-10-21T13:24:50.8043883Z found 0 vulnerabilities
+gates	UNKNOWN STEP	2026-10-21T13:24:50.8091244Z go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+gates	UNKNOWN STEP	2026-10-21T13:24:50.8890587Z go: downloading golang.org/x/vuln v1.9.0
+gates	UNKNOWN STEP	2026-10-21T13:24:51.3312551Z go: downloading golang.org/x/telemetry v0.0.0-20261010193011-f71dc92da45e
+gates	UNKNOWN STEP	2026-10-21T13:24:51.3351658Z go: downloading golang.org/x/mod v0.42.0
+gates	UNKNOWN STEP	2026-10-21T13:24:51.3352499Z go: downloading golang.org/x/tools v0.52.0
+gates	UNKNOWN STEP	2026-10-21T13:24:51.5326654Z go: downloading golang.org/x/sync v0.24.0
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4291120Z No vulnerabilities found.
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4658529Z ##[group]Run git clone --no-local . /tmp/pulse-clean
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4658981Z ^[[36;1mgit clone --no-local . /tmp/pulse-clean^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4659321Z ^[[36;1mcd /tmp/pulse-clean^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4659587Z ^[[36;1mcp .env.example .env^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4659973Z ^[[36;1mmkdir -p docs/results "$GITHUB_WORKSPACE/docs/results"^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4660614Z ^[[36;1mtrap 'docker compose logs --no-color > docs/results/compose.log; cp -r docs/results "$GITHUB_WORKSPACE/docs/results/container-ci"; docker compose down' EXIT^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4661262Z ^[[36;1mdocker compose up --build -d^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4661706Z ^[[36;1mfor i in $(seq 1 180); do curl -fsS http://localhost:8081/health && break; sleep 2; done^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4662135Z ^[[36;1mcurl --fail http://localhost:8081/health^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4662568Z ^[[36;1mexport PULSE_TOKEN=synthetic-local-token-change-me-at-least-24^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4663078Z ^[[36;1m"$GITHUB_WORKSPACE/.venv/bin/python" scripts/smoke.py^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4663506Z ^[[36;1mdocker compose exec -T worker-a pip install pip-audit^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4663988Z ^[[36;1mdocker compose exec -T worker-a pip-audit --format json > docs/results/python-audit.json^[[0m
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4703519Z shell: /usr/bin/bash -e {0}
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4703884Z env:
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4704229Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4704661Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4705087Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4705465Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4705826Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4706484Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4706832Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:24:57.4775714Z Cloning into '/tmp/pulse-clean'...
+gates	UNKNOWN STEP	2026-10-21T13:25:04.5869408Z  Image pulse-clean-worker-b Building 
+gates	UNKNOWN STEP	2026-10-21T13:25:04.5869940Z  Image pulse-clean-gateway Building 
+gates	UNKNOWN STEP	2026-10-21T13:25:04.5870382Z  Image pulse-clean-init Building 
+gates	UNKNOWN STEP	2026-10-21T13:25:04.5870668Z  Image pulse-clean-worker-a Building 
+gates	UNKNOWN STEP	2026-10-21T13:25:04.8455244Z #1 [internal] load local bake definitions
+gates	UNKNOWN STEP	2026-10-21T13:25:04.9960437Z #1 reading from stdin 1.74kB done
+gates	UNKNOWN STEP	2026-10-21T13:25:04.9960835Z #1 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3282619Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3283788Z #2 [gateway internal] load build definition from Dockerfile
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3284528Z #2 transferring dockerfile: 671B 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3285102Z #2 DONE 0.1s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3285494Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3286059Z #3 [init internal] load build definition from Dockerfile
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3286634Z #3 transferring dockerfile: 648B 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3287029Z #3 DONE 0.1s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3287173Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.3287407Z #4 [auth] library/node:pull token for registry-1.docker.io
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4787563Z #4 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4787756Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4787993Z #5 [auth] library/golang:pull token for registry-1.docker.io
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4788303Z #5 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4788471Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4788686Z #6 [auth] library/python:pull token for registry-1.docker.io
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4789187Z #6 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4789323Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.4789586Z #7 [init internal] load metadata for docker.io/library/python:3.13-slim-bookworm
+gates	UNKNOWN STEP	2026-10-21T13:25:05.5618913Z #7 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:05.5619114Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.5619544Z #8 [gateway internal] load metadata for gcr.io/distroless/static-debian12:nonroot
+gates	UNKNOWN STEP	2026-10-21T13:25:05.5619930Z #8 DONE 0.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:05.7122177Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:05.7122822Z #9 [gateway internal] load metadata for docker.io/library/golang:1.27.3-bookworm
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0539608Z #9 DONE 0.7s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0544774Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0545921Z #7 [worker-b internal] load metadata for docker.io/library/python:3.13-slim-bookworm
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0547491Z #7 DONE 0.7s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0547735Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0547962Z #10 [gateway internal] load .dockerignore
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0548433Z #10 transferring context: 116B done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0548730Z #10 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0548919Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0549402Z #11 [gateway internal] load metadata for docker.io/library/node:22-bookworm-slim
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0549752Z #11 DONE 0.7s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0549859Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0550020Z #12 [gateway internal] load build context
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0550346Z #12 transferring context: 87.86kB done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0550659Z #12 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0550824Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0551071Z #13 [worker-b internal] load build context
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0551379Z #13 transferring context: 37.17kB done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0551617Z #13 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0551776Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0552252Z #14 [worker-a  1/11] FROM docker.io/library/python:3.13-slim-bookworm@sha256:73aa5faee130c60da030e105ec971ccf57473fbd22ce73bd6fc9ba99a40b838d
+gates	UNKNOWN STEP	2026-10-21T13:25:06.0553066Z #14 resolve docker.io/library/python:3.13-slim-bookworm@sha256:73aa5faee130c60da030e105ec971ccf57473fbd22ce73bd6fc9ba99a40b838d 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1774157Z #14 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1774543Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1778015Z #15 [gateway stage-2 1/5] FROM gcr.io/distroless/static-debian12:nonroot@sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1780018Z #15 resolve gcr.io/distroless/static-debian12:nonroot@sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1780858Z #15 DONE 0.2s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1781449Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.1782965Z #14 [worker-a  1/11] FROM docker.io/library/python:3.13-slim-bookworm@sha256:73aa5faee130c60da030e105ec971ccf57473fbd22ce73bd6fc9ba99a40b838d
+gates	UNKNOWN STEP	2026-10-21T13:25:06.2963451Z #14 sha256:0dc8c4ec7f3c32564a7b3edfb1f41f985f0ff30de1290c4f5705ab0f9f12ed1b 249B / 249B 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.2965042Z #14 sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820 12.60MB / 12.60MB 0.2s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.2966781Z #14 sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 3.34MB / 3.34MB 0.2s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.2967769Z #14 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 0B / 28.25MB 0.2s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.4172299Z #14 sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 3.34MB / 3.34MB 0.2s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.4173025Z #14 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.5398114Z #14 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.4s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6599576Z #14 DONE 0.6s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6600109Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6600879Z #16 [gateway web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6602303Z #16 resolve docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6603148Z #16 sha256:6801706d64f22e698baf9e7efd382fb8ea2b159491f379ae571fbe6057790ce8 448B / 448B 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6603969Z #16 sha256:80c7eb17e88afae2c7051a64cb4f0b234b434d36195aba50b05e7455157ee736 1.71MB / 1.71MB 0.3s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6604867Z #16 sha256:576da2a04b86fc2f576457ce37a90d7a40f7445f94b016890d3ecb0f0d3371fb 32.51MB / 49.84MB 0.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:06.6605545Z #16 sha256:41e886dd412c5cd3726825fbb11adcc20c053addb3d0052230930e699929e1dc 3.31kB / 3.31kB 0.2s done
+gates	UNKNOWN STEP	2026-10-21T13:25:06.8111582Z #16 sha256:576da2a04b86fc2f576457ce37a90d7a40f7445f94b016890d3ecb0f0d3371fb 49.84MB / 49.84MB 0.5s
+gates	UNKNOWN STEP	2026-10-21T13:25:07.8528968Z #16 sha256:576da2a04b86fc2f576457ce37a90d7a40f7445f94b016890d3ecb0f0d3371fb 49.84MB / 49.84MB 1.3s done
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9596634Z #16 DONE 2.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9597175Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9599155Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9600323Z #17 resolve docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9601171Z #17 sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd 126B / 126B 0.6s done
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9601793Z #17 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 71.15MB / 71.15MB 1.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9602425Z #17 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 92.63MB / 92.63MB 1.2s
+gates	UNKNOWN STEP	2026-10-21T13:25:07.9603013Z #17 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 23.87MB / 23.87MB 0.6s
+gates	UNKNOWN STEP	2026-10-21T13:25:08.1415904Z #17 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 63.96MB / 64.43MB 0.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:08.5198969Z #17 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 71.15MB / 71.15MB 1.9s done
+gates	UNKNOWN STEP	2026-10-21T13:25:08.6616508Z #17 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 23.87MB / 23.87MB 1.4s done
+gates	UNKNOWN STEP	2026-10-21T13:25:08.8217975Z #17 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 92.63MB / 92.63MB 2.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:08.8218853Z #17 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 64.43MB / 64.43MB 0.9s done
+gates	UNKNOWN STEP	2026-10-21T13:25:08.8219876Z #17 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 48.52MB / 48.52MB 0.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:09.3732408Z #17 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 48.52MB / 48.52MB 0.8s done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.3732871Z #17 DONE 3.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:09.3733011Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:09.3733441Z #14 [worker-a  1/11] FROM docker.io/library/python:3.13-slim-bookworm@sha256:73aa5faee130c60da030e105ec971ccf57473fbd22ce73bd6fc9ba99a40b838d
+gates	UNKNOWN STEP	2026-10-21T13:25:09.3734212Z #14 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4754595Z #14 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4754802Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4755185Z #18 [gateway stage-2 2/5] WORKDIR /app
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4755638Z #18 DONE 3.2s
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4755819Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4756623Z #14 [init  1/11] FROM docker.io/library/python:3.13-slim-bookworm@sha256:73aa5faee130c60da030e105ec971ccf57473fbd22ce73bd6fc9ba99a40b838d
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4757724Z #14 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 1.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.4758510Z #14 extracting sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.6258956Z #14 extracting sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.6259663Z #14 extracting sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820
+gates	UNKNOWN STEP	2026-10-21T13:25:09.7385880Z #14 extracting sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820 0.3s done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.8981948Z #14 extracting sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820 0.3s done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.8984049Z #14 extracting sha256:0dc8c4ec7f3c32564a7b3edfb1f41f985f0ff30de1290c4f5705ab0f9f12ed1b done
+gates	UNKNOWN STEP	2026-10-21T13:25:09.8984667Z #14 DONE 1.9s
+gates	UNKNOWN STEP	2026-10-21T13:25:09.8985131Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:09.8985541Z #19 [worker-a  2/11] WORKDIR /app
+gates	UNKNOWN STEP	2026-10-21T13:25:10.3631474Z #19 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:10.3632034Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:10.3632877Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:10.3633971Z #17 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 1.0s done
+gates	UNKNOWN STEP	2026-10-21T13:25:10.3634663Z #17 DONE 4.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:10.5136045Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:10.5137331Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:10.5138260Z #17 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9903227Z #17 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9904000Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9904753Z #16 [gateway web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9905721Z #16 extracting sha256:41e886dd412c5cd3726825fbb11adcc20c053addb3d0052230930e699929e1dc done
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9906753Z #16 extracting sha256:576da2a04b86fc2f576457ce37a90d7a40f7445f94b016890d3ecb0f0d3371fb 1.3s done
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9907768Z #16 extracting sha256:80c7eb17e88afae2c7051a64cb4f0b234b434d36195aba50b05e7455157ee736 0.2s done
+gates	UNKNOWN STEP	2026-10-21T13:25:10.9908339Z #16 DONE 3.6s
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2091201Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2092471Z #16 [gateway web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2093399Z #16 extracting sha256:6801706d64f22e698baf9e7efd382fb8ea2b159491f379ae571fbe6057790ce8 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2094008Z #16 DONE 3.7s
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2094203Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2094807Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2095824Z #17 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 0.8s done
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2096248Z #17 DONE 5.2s
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2096573Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:11.2096721Z #20 [gateway web 2/6] WORKDIR /src/apps/web
+gates	UNKNOWN STEP	2026-10-21T13:25:12.0320992Z #20 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:12.0321228Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:12.0322207Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:12.0323246Z #17 extracting sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 0.8s done
+gates	UNKNOWN STEP	2026-10-21T13:25:12.0323800Z #17 DONE 6.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:12.1822050Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:12.1824413Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:12.1825777Z #17 extracting sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076
+gates	UNKNOWN STEP	2026-10-21T13:25:12.4505150Z #17 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:12.4505373Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:12.4505548Z #19 [worker-a  2/11] WORKDIR /app
+gates	UNKNOWN STEP	2026-10-21T13:25:12.4505943Z #19 DONE 2.5s
+gates	UNKNOWN STEP	2026-10-21T13:25:12.6006726Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:12.6008067Z #21 [worker-a  3/11] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	UNKNOWN STEP	2026-10-21T13:25:12.8821280Z #21 0.582 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:13.0861450Z #21 0.610 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:13.0862504Z #21 0.629 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:13.0863178Z #21 0.654 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2696426Z #21 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2696590Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2697109Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2698330Z #17 extracting sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 1.2s done
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2698834Z #17 DONE 7.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2698989Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2699512Z #21 [worker-a  3/11] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2700278Z #21 0.785 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+gates	UNKNOWN STEP	2026-10-21T13:25:13.2701763Z #21 0.842 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [355 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:13.9389894Z #21 1.488 Fetched 9394 kB in 1s (10.1 MB/s)
+gates	UNKNOWN STEP	2026-10-21T13:25:14.1688044Z #21 1.488 Reading package lists...
+gates	UNKNOWN STEP	2026-10-21T13:25:14.5457866Z #21 1.882 Reading package lists...
+gates	UNKNOWN STEP	2026-10-21T13:25:14.7203949Z #21 2.257 Building dependency tree...
+gates	UNKNOWN STEP	2026-10-21T13:25:14.7204821Z #21 2.327 Reading state information...
+gates	UNKNOWN STEP	2026-10-21T13:25:14.7205512Z #21 2.421 The following additional packages will be installed:
+gates	UNKNOWN STEP	2026-10-21T13:25:14.8529807Z #21 2.421   libflac12 libmp3lame0 libmpg123-0 libogg0 libopus0 libvorbis0a libvorbisenc2
+gates	UNKNOWN STEP	2026-10-21T13:25:14.8530265Z #21 2.422 Suggested packages:
+gates	UNKNOWN STEP	2026-10-21T13:25:14.8530602Z #21 2.422   opus-tools
+gates	UNKNOWN STEP	2026-10-21T13:25:14.8530973Z #21 2.472 The following NEW packages will be installed:
+gates	UNKNOWN STEP	2026-10-21T13:25:14.8531437Z #21 2.472   libflac12 libgomp1 libmp3lame0 libmpg123-0 libogg0 libopus0 libsndfile1
+gates	UNKNOWN STEP	2026-10-21T13:25:14.8531863Z #21 2.472   libvorbis0a libvorbisenc2
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9608455Z #21 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9608849Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9610098Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9611042Z #17 extracting sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 1.7s done
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9611492Z #17 DONE 9.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9611729Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9612211Z #21 [worker-a  3/11] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9612928Z #21 2.553 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9613373Z #21 2.553 Need to get 1415 kB of archives.
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9613912Z #21 2.553 After this operation, 3734 kB of additional disk space will be used.
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9614503Z #21 2.553 Get:1 http://deb.debian.org/debian bookworm/main amd64 libogg0 amd64 1.3.5-3 [23.4 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:14.9615199Z #21 2.590 Get:2 http://deb.debian.org/debian bookworm/main amd64 libflac12 amd64 1.4.2+ds-2 [198 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.1115684Z #21 2.660 Get:3 http://deb.debian.org/debian bookworm/main amd64 libgomp1 amd64 12.2.0-14+deb12u1 [116 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.1116681Z #21 2.661 Get:4 http://deb.debian.org/debian bookworm/main amd64 libmp3lame0 amd64 3.100-6 [365 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.3115584Z #21 2.891 Get:5 http://deb.debian.org/debian bookworm/main amd64 libmpg123-0 amd64 1.31.2-1+deb12u1 [147 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.3116468Z #21 2.891 Get:6 http://deb.debian.org/debian bookworm/main amd64 libopus0 amd64 1.3.1-3 [195 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.3117229Z #21 2.892 Get:7 http://deb.debian.org/debian bookworm/main amd64 libvorbis0a amd64 1.3.7-1 [93.0 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5112343Z #21 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5112585Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5112791Z #20 [gateway web 2/6] WORKDIR /src/apps/web
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5113239Z #20 DONE 4.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5113375Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5113875Z #17 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:21ade014faf952365b9ecbd8dbdb87176fbacb82fac9fb132d9f2a7b8cc3f132
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5114635Z #17 extracting sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd 0.4s done
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5115354Z #17 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5115804Z #17 DONE 9.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5115904Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5116513Z #21 [worker-a  3/11] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5117479Z #21 3.011 Get:8 http://deb.debian.org/debian bookworm/main amd64 libvorbisenc2 amd64 1.3.7-1 [80.6 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.5118200Z #21 3.012 Get:9 http://deb.debian.org/debian bookworm/main amd64 libsndfile1 amd64 1.2.0-1+deb12u1 [197 kB]
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6117875Z #21 3.212 debconf: delaying package configuration, since apt-utils is not installed
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6118639Z #21 3.256 Fetched 1415 kB in 1s (2641 kB/s)
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6119579Z #21 3.311 Selecting previously unselected package libogg0:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6120272Z #21 3.311 (Reading database ... 
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6121277Z (Reading database ... 5%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6121790Z (Reading database ... 10%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6122262Z (Reading database ... 15%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6122913Z (Reading database ... 20%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6123369Z (Reading database ... 25%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6123879Z (Reading database ... 30%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6124331Z (Reading database ... 35%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6124736Z (Reading database ... 40%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6125197Z (Reading database ... 45%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6125631Z (Reading database ... 50%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6126047Z (Reading database ... 55%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6126765Z (Reading database ... 60%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.6127182Z (Reading database ... 65%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7642083Z (Reading database ... 70%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7642473Z (Reading database ... 75%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7642850Z (Reading database ... 80%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7643162Z (Reading database ... 85%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7643416Z (Reading database ... 90%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7643762Z (Reading database ... 95%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7644044Z (Reading database ... 100%
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7644476Z (Reading database ... 6645 files and directories currently installed.)
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7645001Z #21 3.317 Preparing to unpack .../0-libogg0_1.3.5-3_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:15.7645493Z #21 3.330 Unpacking libogg0:amd64 (1.3.5-3) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:15.9399942Z #21 3.465 Selecting previously unselected package libflac12:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:15.9400687Z #21 3.465 Preparing to unpack .../1-libflac12_1.4.2+ds-2_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:15.9401175Z #21 3.482 Unpacking libflac12:amd64 (1.4.2+ds-2) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:15.9401696Z #21 3.530 Selecting previously unselected package libgomp1:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:15.9402237Z #21 3.531 Preparing to unpack .../2-libgomp1_12.2.0-14+deb12u1_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:15.9402785Z #21 3.540 Unpacking libgomp1:amd64 (12.2.0-14+deb12u1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.0598208Z #21 3.640 Selecting previously unselected package libmp3lame0:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:16.0598848Z #21 3.641 Preparing to unpack .../3-libmp3lame0_3.100-6_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.0599295Z #21 3.651 Unpacking libmp3lame0:amd64 (3.100-6) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.2012439Z #21 3.760 Selecting previously unselected package libmpg123-0:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:16.2013220Z #21 3.761 Preparing to unpack .../4-libmpg123-0_1.31.2-1+deb12u1_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.2014025Z #21 3.770 Unpacking libmpg123-0:amd64 (1.31.2-1+deb12u1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.2014631Z #21 3.850 Selecting previously unselected package libopus0:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:16.2015285Z #21 3.851 Preparing to unpack .../5-libopus0_1.3.1-3_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.2015865Z #21 3.860 Unpacking libopus0:amd64 (1.3.1-3) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.3012356Z #21 3.902 Selecting previously unselected package libvorbis0a:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:16.3013164Z #21 3.902 Preparing to unpack .../6-libvorbis0a_1.3.7-1_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.3013916Z #21 3.930 Unpacking libvorbis0a:amd64 (1.3.7-1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.3014602Z #21 3.992 Selecting previously unselected package libvorbisenc2:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:16.3015265Z #21 3.992 Preparing to unpack .../7-libvorbisenc2_1.3.7-1_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.4098467Z #21 4.002 Unpacking libvorbisenc2:amd64 (1.3.7-1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.4099435Z #21 4.101 Selecting previously unselected package libsndfile1:amd64.
+gates	UNKNOWN STEP	2026-10-21T13:25:16.4100474Z #21 4.101 Preparing to unpack .../8-libsndfile1_1.2.0-1+deb12u1_amd64.deb ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.5130581Z #21 4.110 Unpacking libsndfile1:amd64 (1.2.0-1+deb12u1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6501342Z #21 4.213 Setting up libmpg123-0:amd64 (1.31.2-1+deb12u1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6501953Z #21 4.250 Setting up libogg0:amd64 (1.3.5-3) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6502464Z #21 4.252 Setting up libgomp1:amd64 (12.2.0-14+deb12u1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6503110Z #21 4.262 Setting up libflac12:amd64 (1.4.2+ds-2) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6503586Z #21 4.271 Setting up libopus0:amd64 (1.3.1-3) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6504203Z #21 4.280 Setting up libvorbis0a:amd64 (1.3.7-1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6504787Z #21 4.291 Setting up libmp3lame0:amd64 (3.100-6) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6505345Z #21 4.300 Setting up libvorbisenc2:amd64 (1.3.7-1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.6505855Z #21 4.310 Setting up libsndfile1:amd64 (1.2.0-1+deb12u1) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7647529Z #21 4.351 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7648430Z #21 DONE 4.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7649103Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7649474Z #22 [gateway gateway 2/8] WORKDIR /src
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7649993Z #22 DONE 1.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7650203Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7650687Z #23 [gateway web 3/6] COPY apps/web/package*.json ./
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7651446Z #23 DONE 1.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7651845Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7652142Z #24 [gateway gateway 3/8] COPY go.mod go.sum ./
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7652632Z #24 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7652810Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7653085Z #25 [worker-b  4/11] COPY pyproject.toml ./
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7653533Z #25 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7653864Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:16.7654146Z #26 [init  5/11] COPY worker worker
+gates	UNKNOWN STEP	2026-10-21T13:25:16.9189389Z #26 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:16.9189734Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:16.9190218Z #27 [worker-a  6/11] RUN pip install --no-cache-dir --upgrade pip==26.2.2 setuptools==84.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:17.0487173Z #27 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:17.0487990Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:17.0488252Z #28 [gateway gateway 4/8] RUN go mod download
+gates	UNKNOWN STEP	2026-10-21T13:25:17.0489168Z #28 DONE 0.4s
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2165075Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2166968Z #29 [gateway gateway 5/8] COPY cmd cmd
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2170210Z #29 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2171395Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2171855Z #30 [gateway gateway 6/8] COPY internal internal
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2173287Z #30 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2174018Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2174655Z #31 [gateway gateway 7/8] RUN mkdir /data && chown 65532:65532 /data
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2177941Z #31 DONE 0.1s
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2180412Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:17.2186034Z #32 [gateway web 4/6] RUN npm ci
+gates	UNKNOWN STEP	2026-10-21T13:25:18.2733406Z #32 1.619 
+gates	UNKNOWN STEP	2026-10-21T13:25:18.2734994Z #32 1.619 added 23 packages, and audited 24 packages in 1s
+gates	UNKNOWN STEP	2026-10-21T13:25:18.2735686Z #32 1.619 
+gates	UNKNOWN STEP	2026-10-21T13:25:18.2736182Z #32 1.619 6 packages are looking for funding
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4510257Z #32 1.619   run `npm fund` for details
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4510625Z #32 1.620 
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4511007Z #32 1.620 found 0 vulnerabilities
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4511301Z #32 1.621 npm notice
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4511656Z #32 1.621 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4512115Z #32 1.621 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4512509Z #32 1.621 npm notice To update run: npm install -g npm@12.2.0
+gates	UNKNOWN STEP	2026-10-21T13:25:18.4512838Z #32 1.621 npm notice
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9057317Z #32 DONE 2.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9057649Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9058159Z #27 [worker-a  6/11] RUN pip install --no-cache-dir --upgrade pip==26.2.2 setuptools==84.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9058828Z #27 1.511 Collecting pip==26.2.2
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9059484Z #27 1.601   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9060061Z #27 1.683 Collecting setuptools==84.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9060674Z #27 1.693   Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9061713Z #27 1.709 Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9062726Z #27 1.868    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 13.2 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9063433Z #27 1.878 Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9064234Z #27 1.925    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 20.8 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:18.9064844Z #27 1.994 Installing collected packages: setuptools, pip
+gates	UNKNOWN STEP	2026-10-21T13:25:19.0879123Z #27 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:19.0879612Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:19.0880597Z #33 [gateway web 5/6] COPY apps/web ./
+gates	UNKNOWN STEP	2026-10-21T13:25:19.0881057Z #33 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:19.1557887Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:19.1558967Z #34 [gateway web 6/6] RUN npm run build
+gates	UNKNOWN STEP	2026-10-21T13:25:19.1559725Z #34 0.218 
+gates	UNKNOWN STEP	2026-10-21T13:25:19.1563338Z #34 0.218 > pulse-console@0.1.0 build
+gates	UNKNOWN STEP	2026-10-21T13:25:19.1564168Z #34 0.218 > tsc --noEmit && vite build
+gates	UNKNOWN STEP	2026-10-21T13:25:19.1564752Z #34 0.218 
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6550291Z #34 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6551340Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6552137Z #27 [init  6/11] RUN pip install --no-cache-dir --upgrade pip==26.2.2 setuptools==84.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6552951Z #27 2.416   Attempting uninstall: pip
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6553588Z #27 2.419     Found existing installation: pip 26.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6554309Z #27 2.456     Uninstalling pip-26.2.1:
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6554968Z #27 2.705       Successfully uninstalled pip-26.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6555482Z #27 3.510 
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6556031Z #27 3.512 Successfully installed pip-26.2.2 setuptools-84.2.1
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6558291Z #27 3.513 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+gates	UNKNOWN STEP	2026-10-21T13:25:20.6559903Z #27 DONE 3.7s
+gates	UNKNOWN STEP	2026-10-21T13:25:20.8051031Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:20.8052298Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:21.3760312Z #35 0.873 Looking in indexes: https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:21.8127916Z #35 1.307 Collecting torch
+gates	UNKNOWN STEP	2026-10-21T13:25:21.9453901Z #35 1.442   Downloading torch-2.14.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (37 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.1215035Z #35 1.486 Collecting filelock (from torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.2543560Z #35 1.618   Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.2567882Z #35 1.641 Collecting typing-extensions>=4.10.0 (from torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.2607876Z #35 1.660   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.2626172Z #35 1.660 Requirement already satisfied: setuptools>=77.0.3 in /usr/local/lib/python3.13/site-packages (from torch) (84.2.1)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.2638563Z #35 1.683 Collecting sympy>=1.13.3 (from torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.2664527Z #35 1.700   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.3579162Z #35 1.751 Collecting networkx>=2.5.1 (from torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.3579775Z #35 1.768   Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.3580302Z #35 1.789 Collecting jinja2 (from torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.3580874Z #35 1.802   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.3581386Z #35 1.839 Collecting fsspec>=0.8.5 (from torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.4648612Z #35 1.855   Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.4658034Z #35 1.903 Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.4666933Z #35 1.918   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.4667848Z #35 1.947 Collecting MarkupSafe>=2.0 (from jinja2->torch)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.6506078Z #35 1.962   Downloading markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:22.6507536Z #35 1.994 Downloading torch-2.14.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl (196.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3956692Z #35 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3957292Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3967372Z #34 [gateway web 6/6] RUN npm run build
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3968387Z #34 2.264 vite v6.4.4 building for production...
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3968975Z #34 2.360 transforming...
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3969788Z #34 3.750 ✓ 28 modules transformed.
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3970185Z #34 4.251 rendering chunks...
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3970653Z #34 4.264 computing gzip size...
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3971656Z #34 4.274 dist/index.html                   0.52 kB │ gzip:  0.35 kB
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3972365Z #34 4.274 dist/assets/index-zFlcuZ_H.css    4.80 kB │ gzip:  1.62 kB
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3973006Z #34 4.274 dist/assets/index-BgQ53yFq.js   203.98 kB │ gzip: 64.31 kB
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3973494Z #34 4.274 ✓ built in 1.97s
+gates	UNKNOWN STEP	2026-10-21T13:25:23.3974013Z #34 DONE 4.3s
+gates	UNKNOWN STEP	2026-10-21T13:25:23.5252691Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:23.5254147Z #36 [gateway gateway 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /pulse ./cmd/gateway
+gates	UNKNOWN STEP	2026-10-21T13:25:23.6602125Z #36 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:23.6602676Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:23.6603457Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:23.6604740Z #35 3.022    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.3/196.3 MB 197.9 MB/s  0:00:01
+gates	UNKNOWN STEP	2026-10-21T13:25:23.6605414Z #35 3.041 Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.6606074Z #35 3.090 Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.7791613Z #35 3.157    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 35.2 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:23.7792516Z #35 3.178 Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.7793505Z #35 3.220    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 1.1 GB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:23.8905442Z #35 3.276 Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.8907567Z #35 3.318    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 853.5 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:23.8908447Z #35 3.340 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.8909247Z #35 3.358 Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:23.8909939Z #35 3.374 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:24.0411305Z #35 3.388 Downloading markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:24.2697981Z #35 3.767 Installing collected packages: mpmath, typing-extensions, sympy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+gates	UNKNOWN STEP	2026-10-21T13:25:30.9437622Z #35 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:30.9437873Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:30.9438376Z #36 [gateway gateway 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /pulse ./cmd/gateway
+gates	UNKNOWN STEP	2026-10-21T13:25:30.9438978Z #36 DONE 13.7s
+gates	UNKNOWN STEP	2026-10-21T13:25:31.0939621Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:31.0941227Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:31.2523681Z #35 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:31.2524426Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:31.2525062Z #37 [gateway stage-2 3/5] COPY --from=gateway /pulse /pulse
+gates	UNKNOWN STEP	2026-10-21T13:25:32.0258257Z #37 DONE 0.8s
+gates	UNKNOWN STEP	2026-10-21T13:25:32.0258455Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:32.0259147Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:32.1769116Z #35 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:32.1769304Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:32.1769583Z #38 [gateway stage-2 4/5] COPY --from=gateway --chown=65532:65532 /data /data
+gates	UNKNOWN STEP	2026-10-21T13:25:32.8926072Z #38 DONE 0.9s
+gates	UNKNOWN STEP	2026-10-21T13:25:32.8926821Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:32.8927992Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:33.0437866Z #35 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:33.0438067Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:33.0438684Z #39 [gateway stage-2 5/5] COPY --from=web /src/apps/web/dist /app/apps/web/dist
+gates	UNKNOWN STEP	2026-10-21T13:25:34.7229889Z #39 DONE 1.8s
+gates	UNKNOWN STEP	2026-10-21T13:25:34.7230497Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:34.7231436Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:34.8758864Z #35 ...
+gates	UNKNOWN STEP	2026-10-21T13:25:34.8759241Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:34.8759893Z #40 [gateway] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:25:34.8760306Z #40 exporting layers
+gates	UNKNOWN STEP	2026-10-21T13:25:35.1391151Z #40 exporting layers 0.4s done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.2578110Z #40 exporting manifest sha256:5bf0fa2024a5b38b20522319ba185cea48ca060a2b6138b79906b5e4efa31928 done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.2580521Z #40 exporting config sha256:660a3f48c660f99111b50f24e3bdad450903a96a033162ab2ad65cf22570d0a3 done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.2581676Z #40 exporting attestation manifest sha256:4075048f269425b1a0870ea08b58075e67223fbd25ade328bd2be979b37b3db5 done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.2582608Z #40 exporting manifest list sha256:a403dfecb601d0d446b86dea524fb1231638149bdc5b3f9bdbac4029c42f7417 done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.2583368Z #40 naming to docker.io/library/pulse-clean-gateway:latest done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.2584050Z #40 unpacking to docker.io/library/pulse-clean-gateway:latest 0.1s done
+gates	UNKNOWN STEP	2026-10-21T13:25:35.4034260Z #40 DONE 0.6s
+gates	UNKNOWN STEP	2026-10-21T13:25:35.4035091Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:35.4041072Z #41 [gateway] resolving provenance for metadata file
+gates	UNKNOWN STEP	2026-10-21T13:25:35.5608053Z #41 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:25:35.5608295Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:35.5608934Z #35 [worker-a  7/11] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	UNKNOWN STEP	2026-10-21T13:25:38.9830332Z #35 18.33 
+gates	UNKNOWN STEP	2026-10-21T13:25:38.9831307Z #35 18.33 Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 sympy-1.14.0 torch-2.14.1+cpu typing-extensions-4.16.0
+gates	UNKNOWN STEP	2026-10-21T13:25:38.9832928Z #35 18.33 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+gates	UNKNOWN STEP	2026-10-21T13:25:39.8834335Z #35 DONE 19.2s
+gates	UNKNOWN STEP	2026-10-21T13:25:39.8834580Z 
+gates	UNKNOWN STEP	2026-10-21T13:25:39.8834827Z #42 [worker-a  8/11] RUN pip install --no-cache-dir .
+gates	UNKNOWN STEP	2026-10-21T13:25:40.2314375Z #42 0.498 Processing ./.
+gates	UNKNOWN STEP	2026-10-21T13:25:40.3829977Z #42 0.500   Installing build dependencies: started
+gates	UNKNOWN STEP	2026-10-21T13:25:40.8964842Z #42 1.163   Installing build dependencies: finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:25:41.0475021Z #42 1.164   Getting requirements to build wheel: started
+gates	UNKNOWN STEP	2026-10-21T13:25:41.3589874Z #42 1.490   Getting requirements to build wheel: finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:25:41.3590577Z #42 1.491   Preparing metadata (pyproject.toml): started
+gates	UNKNOWN STEP	2026-10-21T13:25:41.3591167Z #42 1.626   Preparing metadata (pyproject.toml): finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:25:41.6295804Z #42 1.765 Collecting fastapi<1,>=0.115 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.6296726Z #42 1.861   Downloading fastapi-0.156.8-py3-none-any.whl.metadata (26 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.7830267Z #42 1.897 Collecting uvicorn<1,>=0.34 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.7831215Z #42 1.911   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.8876944Z #42 2.050 Collecting numpy<3,>=2 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.8877835Z #42 2.065   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.8878370Z #42 2.084 Collecting faster-whisper==1.2.1 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.8878894Z #42 2.099   Downloading faster_whisper-1.2.1-py3-none-any.whl.metadata (16 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.8879357Z #42 2.139 Collecting piper-tts<2,>=1.3 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.9957879Z #42 2.155   Downloading piper_tts-1.8.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.9958765Z #42 2.183 Collecting transformers==5.20.2 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.9959310Z #42 2.201   Downloading transformers-5.20.2-py3-none-any.whl.metadata (31 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.9960228Z #42 2.230 Requirement already satisfied: torch<3,>=2.6 in /usr/local/lib/python3.13/site-packages (from pulse-workers==0.1.0) (2.14.1+cpu)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.9960856Z #42 2.248 Collecting soundfile<1,>=0.13 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:41.9961383Z #42 2.263   Downloading soundfile-0.14.0-py2.py3-none-manylinux_2_28_x86_64.whl.metadata (18 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.1188082Z #42 2.339 Collecting scipy<2,>=1.15 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.1189054Z #42 2.354   Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.2209770Z #42 2.386 Collecting httpx<1,>=0.28 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.2210486Z #42 2.402   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.2211273Z #42 2.473 Collecting websockets<17,>=15 (from pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.3226975Z #42 2.488   Downloading websockets-16.1.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.3228126Z #42 2.540 Collecting ctranslate2<5,>=4.0 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.3229002Z #42 2.556   Downloading ctranslate2-4.8.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.4236544Z #42 2.590 Collecting huggingface-hub>=0.21 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.4237481Z #42 2.605   Downloading huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.4238368Z #42 2.691 Collecting tokenizers<1,>=0.13 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.5325615Z #42 2.706   Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.5327213Z #42 2.749 Collecting onnxruntime<2,>=1.14 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.5328198Z #42 2.764   Downloading onnxruntime-1.31.0-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.5329003Z #42 2.800 Collecting av>=11 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.6656560Z #42 2.815   Downloading av-19.0.2-cp312-abi3-manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.6657336Z #42 2.841 Collecting tqdm (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.6658189Z #42 2.856   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.6659355Z #42 2.883 Collecting packaging>=20.0 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.8311893Z #42 2.898   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.8313293Z #42 2.933 Collecting pyyaml>=5.1 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:42.8314433Z #42 2.948   Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.0477762Z #42 3.190 Collecting regex>=2025.10.22 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.0478743Z #42 3.205   Downloading regex-2026.9.29-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.0479569Z #42 3.231 Collecting typer (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.0480093Z #42 3.246   Downloading typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.0480647Z #42 3.315 Collecting safetensors>=0.8.0 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.1678678Z #42 3.330   Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.1679472Z #42 3.358 Collecting starlette>=0.46.0 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.1680278Z #42 3.373   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.1680769Z #42 3.435 Collecting pydantic>=2.9.0 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.2824643Z #42 3.450   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.2826032Z #42 3.467 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.13/site-packages (from fastapi<1,>=0.115->pulse-workers==0.1.0) (4.16.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.2827339Z #42 3.483 Collecting typing-inspection>=0.4.2 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.2828513Z #42 3.498   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.2829056Z #42 3.514 Collecting annotated-doc>=0.0.2 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.2829576Z #42 3.529   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.3901433Z #42 3.550 Collecting opentelemetry-api>=1.44.0 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.3902605Z #42 3.565   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.3903733Z #42 3.586 Collecting anyio (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.3904492Z #42 3.601   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.3905139Z #42 3.622 Collecting certifi (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.3905783Z #42 3.638   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.4934484Z #42 3.657 Collecting httpcore==1.* (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.4935618Z #42 3.672   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.4936784Z #42 3.693 Collecting idna (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.4937519Z #42 3.708   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.4938233Z #42 3.726 Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.4938862Z #42 3.741   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6119991Z #42 3.761 Collecting click<9.0.0,>=8.4.2 (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6120934Z #42 3.775   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6121960Z #42 3.777 Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.13/site-packages (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0) (3.32.3)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6123025Z #42 3.777 Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/site-packages (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0) (2026.7.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6123887Z #42 3.809 Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6124621Z #42 3.824   Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6125229Z #42 3.842 Collecting httpx2<3,>=2.0.0 (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.6125718Z #42 3.856   Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7813928Z #42 3.879 Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7814944Z #42 3.894   Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7815898Z #42 3.913 Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7816671Z #42 3.928   Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7817230Z #42 3.947 Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7818134Z #42 3.962   Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.7818697Z #42 4.048 Collecting protobuf>=4.25.8 (from onnxruntime<2,>=1.14->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.8985511Z #42 4.063   Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.8986594Z #42 4.084 Collecting pathvalidate<4,>=3 (from piper-tts<2,>=1.3->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:43.8987361Z #42 4.100   Downloading pathvalidate-3.3.1-py3-none-any.whl.metadata (12 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1442217Z #42 4.166 Collecting cffi>=1.0 (from soundfile<1,>=0.13->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1442928Z #42 4.180   Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1443739Z #42 4.185 Requirement already satisfied: setuptools>=77.0.3 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (84.2.1)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1444587Z #42 4.186 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (1.14.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1445376Z #42 4.186 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (3.6.1)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1446188Z #42 4.186 Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (3.1.6)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1446948Z #42 4.206 Collecting pycparser (from cffi>=1.0->soundfile<1,>=0.13->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1447436Z #42 4.221   Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1448008Z #42 4.246 Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.1448586Z #42 4.261   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.3481078Z #42 4.615 Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4489465Z #42 4.630   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4491539Z #42 4.637 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/site-packages (from sympy>=1.13.3->torch<3,>=2.6->pulse-workers==0.1.0) (1.3.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4493247Z #42 4.642 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/site-packages (from jinja2->torch<3,>=2.6->pulse-workers==0.1.0) (3.0.3)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4494565Z #42 4.661 Collecting shellingham>=1.3.0 (from typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4495584Z #42 4.676   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4496829Z #42 4.701 Collecting rich>=13.8.0 (from typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.4497773Z #42 4.716   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.5538854Z #42 4.736 Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.5540275Z #42 4.751   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.5541408Z #42 4.774 Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.5542521Z #42 4.789   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.5543820Z #42 4.806 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.6628162Z #42 4.821   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.6629269Z #42 4.838 Downloading faster_whisper-1.2.1-py3-none-any.whl (1.1 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.6630740Z #42 4.869    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 50.4 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:44.6631664Z #42 4.884 Downloading transformers-5.20.2-py3-none-any.whl (12.8 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.7739777Z #42 4.930    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 286.2 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:44.7740848Z #42 4.946 Downloading ctranslate2-4.8.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (40.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.7741781Z #42 5.026    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.3/40.3 MB 507.8 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8886743Z #42 5.041 Downloading fastapi-0.156.8-py3-none-any.whl (147 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8887774Z #42 5.056 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8888481Z #42 5.071 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8889161Z #42 5.086 Downloading huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8889924Z #42 5.088    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 814.1 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8890405Z #42 5.103 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8890920Z #42 5.118 Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8891480Z #42 5.126    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 630.3 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:44.8891879Z #42 5.141 Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.9900650Z #42 5.156 Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.9901272Z #42 5.171 Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:44.9902051Z #42 5.200    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 592.4 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:44.9902567Z #42 5.215 Downloading onnxruntime-1.31.0-cp313-cp313-manylinux_2_28_x86_64.whl (23.8 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.1328326Z #42 5.257    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.8/23.8 MB 586.7 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.1329096Z #42 5.276 Downloading piper_tts-1.8.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (34.1 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.2422531Z #42 5.400    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.1/34.1 MB 275.4 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.2423013Z #42 5.415 Downloading pathvalidate-3.3.1-py3-none-any.whl (24 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.2423718Z #42 5.429 Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.2424420Z #42 5.432    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.6/801.6 kB 704.5 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.2424981Z #42 5.448 Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3560074Z #42 5.509    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 590.4 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3560920Z #42 5.524 Downloading soundfile-0.14.0-py2.py3-none-manylinux_2_28_x86_64.whl (1.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3561996Z #42 5.527    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 820.7 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3562804Z #42 5.541 Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3563636Z #42 5.548    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 622.2 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3564279Z #42 5.563 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3565125Z #42 5.578 Downloading websockets-16.1.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (187 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3565898Z #42 5.593 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.3567024Z #42 5.608 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.4620747Z #42 5.623 Downloading av-19.0.2-cp312-abi3-manylinux_2_28_x86_64.whl (35.0 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.4621962Z #42 5.699    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 465.4 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.4622545Z #42 5.714 Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5712160Z #42 5.729 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5712788Z #42 5.744 Downloading idna-3.20-py3-none-any.whl (69 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5713207Z #42 5.759 Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5713672Z #42 5.774 Downloading packaging-26.3-py3-none-any.whl (129 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5714150Z #42 5.788 Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5714612Z #42 5.804 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5715237Z #42 5.819 Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.5715945Z #42 5.824    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 607.0 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6774115Z #42 5.838 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6775017Z #42 5.853 Downloading regex-2026.9.29-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6775740Z #42 5.855    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 828.3 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6776554Z #42 5.870 Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6777154Z #42 5.896 Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6777555Z #42 5.914 Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.6777995Z #42 5.930 Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7844816Z #42 5.945 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7845471Z #42 5.960 Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7846095Z #42 5.975 Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7846864Z #42 5.989 Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7847366Z #42 6.004 Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7847874Z #42 6.019 Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7848350Z #42 6.034 Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.7848912Z #42 6.037    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 720.2 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:25:45.9644349Z #42 6.052 Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.9645098Z #42 6.066 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:45.9645542Z #42 6.081 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+gates	UNKNOWN STEP	2026-10-21T13:25:46.0538507Z #42 6.321 Building wheels for collected packages: pulse-workers
+gates	UNKNOWN STEP	2026-10-21T13:25:46.2002881Z #42 6.322   Building wheel for pulse-workers (pyproject.toml): started
+gates	UNKNOWN STEP	2026-10-21T13:25:46.2003704Z #42 6.467   Building wheel for pulse-workers (pyproject.toml): finished with status 'done'
+gates	UNKNOWN STEP	2026-10-21T13:25:46.4399633Z #42 6.468   Created wheel for pulse-workers: filename=pulse_workers-0.1.0-py3-none-any.whl size=4944 sha256=b4edd6bff6bb70193400864de7f77abb406d59cc65c7482b3db8f8ec99851e45
+gates	UNKNOWN STEP	2026-10-21T13:25:46.4400554Z #42 6.468   Stored in directory: /tmp/pip-ephem-wheel-cache-qp8yroy8/wheels/19/62/e5/caf0138816cbbc0c92b8fb19626cf9ac282f22194a65231821
+gates	UNKNOWN STEP	2026-10-21T13:25:46.4401220Z #42 6.469 Successfully built pulse-workers
+gates	UNKNOWN STEP	2026-10-21T13:25:46.4403207Z #42 6.557 Installing collected packages: flatbuffers, websockets, typing-inspection, truststore, tqdm, shellingham, safetensors, regex, pyyaml, pygments, pydantic-core, pycparser, protobuf, pathvalidate, packaging, opentelemetry-api, numpy, mdurl, idna, hf-xet, h11, click, certifi, av, annotated-types, annotated-doc, uvicorn, scipy, pydantic, onnxruntime, markdown-it-py, httpcore2, httpcore, ctranslate2, cffi, anyio, starlette, soundfile, rich, piper-tts, httpx2, httpx, typer, huggingface-hub, fastapi, tokenizers, transformers, faster-whisper, pulse-workers
+gates	UNKNOWN STEP	2026-10-21T13:25:59.4465044Z #42 19.56 
+gates	UNKNOWN STEP	2026-10-21T13:25:59.4468004Z #42 19.56 Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 av-19.0.2 certifi-2026.10.19 cffi-2.1.1 click-8.5.0 ctranslate2-4.8.3 fastapi-0.156.8 faster-whisper-1.2.1 flatbuffers-25.12.19 h11-0.16.0 hf-xet-1.7.0 httpcore-1.0.9 httpcore2-2.16.0 httpx-0.28.1 httpx2-2.16.0 huggingface-hub-2.2.0 idna-3.20 markdown-it-py-4.2.0 mdurl-0.1.2 numpy-2.5.4 onnxruntime-1.31.0 opentelemetry-api-1.45.1 packaging-26.3 pathvalidate-3.3.1 piper-tts-1.8.0 protobuf-7.36.2 pulse-workers-0.1.0 pycparser-3.11 pydantic-2.14.1 pydantic-core-2.50.1 pygments-2.21.0 pyyaml-6.0.3 regex-2026.9.29 rich-15.0.0 safetensors-0.8.0 scipy-1.18.1 shellingham-1.5.4 soundfile-0.14.0 starlette-1.9.0 tokenizers-0.23.3 tqdm-4.70.1 transformers-5.20.2 truststore-0.10.5 typer-0.27.3 typing-inspection-0.4.4 uvicorn-0.54.0 websockets-16.1.1
+gates	UNKNOWN STEP	2026-10-21T13:25:59.4471467Z #42 19.56 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+gates	UNKNOWN STEP	2026-10-21T13:26:01.9768437Z #42 DONE 22.1s
+gates	UNKNOWN STEP	2026-10-21T13:26:01.9769074Z 
+gates	UNKNOWN STEP	2026-10-21T13:26:01.9769448Z #43 [worker-b  9/11] COPY scripts scripts
+gates	UNKNOWN STEP	2026-10-21T13:26:01.9770040Z #43 DONE 0.1s
+gates	UNKNOWN STEP	2026-10-21T13:26:01.9770183Z 
+gates	UNKNOWN STEP	2026-10-21T13:26:01.9770417Z #44 [worker-a 10/11] RUN mkdir -p docs/results
+gates	UNKNOWN STEP	2026-10-21T13:26:02.1277634Z #44 DONE 0.1s
+gates	UNKNOWN STEP	2026-10-21T13:26:02.1278078Z 
+gates	UNKNOWN STEP	2026-10-21T13:26:02.1279205Z #45 [worker-b 11/11] RUN python scripts/fetch_models.py
+gates	UNKNOWN STEP	2026-10-21T13:26:03.9610504Z #45 1.983 
+gates	UNKNOWN STEP	2026-10-21T13:26:04.1008369Z Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+gates	UNKNOWN STEP	2026-10-21T13:26:04.2511740Z #45 2.123 
+gates	UNKNOWN STEP	2026-10-21T13:26:05.6526857Z Fetching 6 files:  33%|███▎      | 2/6 [00:00<00:00, 14.22it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:09.3015682Z Fetching 6 files:  67%|██████▋   | 4/6 [00:01<00:00,  2.27it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:09.3017070Z Fetching 6 files:  83%|████████▎ | 5/6 [00:05<00:01,  1.40s/it]
+gates	UNKNOWN STEP	2026-10-21T13:26:09.3017828Z Fetching 6 files: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:09.4408592Z #45 7.324 
+gates	UNKNOWN STEP	2026-10-21T13:26:09.5915110Z Fetching 25 files:   0%|          | 0/25 [00:00<?, ?it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:16.1610669Z Fetching 25 files:  12%|█▏        | 3/25 [00:00<00:01, 21.52it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:16.5907373Z Fetching 25 files:  32%|███▏      | 8/25 [00:06<00:15,  1.06it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:17.1881610Z Fetching 25 files:  36%|███▌      | 9/25 [00:07<00:14,  1.14it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:17.3130140Z Fetching 25 files:  40%|████      | 10/25 [00:07<00:12,  1.21it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:17.5888371Z Fetching 25 files:  48%|████▊     | 12/25 [00:08<00:07,  1.81it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:17.6043795Z Fetching 25 files:  52%|█████▏    | 13/25 [00:08<00:05,  2.14it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:17.9197605Z Fetching 25 files:  60%|██████    | 15/25 [00:08<00:03,  3.07it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:18.0066056Z Fetching 25 files:  72%|███████▏  | 18/25 [00:08<00:01,  4.83it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:18.7079189Z Fetching 25 files:  80%|████████  | 20/25 [00:08<00:00,  5.53it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:19.5826976Z Fetching 25 files:  88%|████████▊ | 22/25 [00:09<00:00,  4.33it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:20.2931449Z Fetching 25 files:  92%|█████████▏| 23/25 [00:10<00:00,  3.15it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:20.8588069Z Fetching 25 files:  96%|█████████▌| 24/25 [00:10<00:00,  2.53it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:20.9844974Z Fetching 25 files: 100%|██████████| 25/25 [00:11<00:00,  2.14it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:20.9854399Z Fetching 25 files: 100%|██████████| 25/25 [00:11<00:00,  2.16it/s]
+gates	UNKNOWN STEP	2026-10-21T13:26:21.1393933Z #45 DONE 19.0s
+gates	UNKNOWN STEP	2026-10-21T13:26:21.1394399Z 
+gates	UNKNOWN STEP	2026-10-21T13:26:21.1395053Z #46 [init] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:26:21.1395756Z #46 exporting layers
+gates	UNKNOWN STEP	2026-10-21T13:26:31.0407887Z #46 ...
+gates	UNKNOWN STEP	2026-10-21T13:26:31.0408396Z 
+gates	UNKNOWN STEP	2026-10-21T13:26:31.0408807Z #47 [worker-b] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:26:31.1894274Z #47 ...
+gates	UNKNOWN STEP	2026-10-21T13:26:31.1894859Z 
+gates	UNKNOWN STEP	2026-10-21T13:26:31.1895312Z #48 [worker-a] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:27:20.1693928Z #48 ...
+gates	UNKNOWN STEP	2026-10-21T13:27:20.1694412Z 
+gates	UNKNOWN STEP	2026-10-21T13:27:20.1694916Z #46 [init] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:27:20.1695656Z #46 exporting layers 59.2s done
+gates	UNKNOWN STEP	2026-10-21T13:27:20.3819956Z #46 exporting manifest sha256:262eb583a017e11799db097c5d86482019c2c7e5de3897c28df0cf2c6d18f038 done
+gates	UNKNOWN STEP	2026-10-21T13:27:20.3821132Z #46 exporting config sha256:8b29c0d07e20be4b44d04d76e2bb8e1f622ff939a4a425103f4649af352e7fae 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:20.3821984Z #46 exporting attestation manifest sha256:6d9c63b1b2a5517cc107bf502c74f189e440b7e2ac42a419c94d3e076ec9f25d 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:20.3822998Z #46 exporting manifest list sha256:ec378295f7153e079920a03ac2f19a1ba9836b50abf550b19376c88993baf76d done
+gates	UNKNOWN STEP	2026-10-21T13:27:20.3823775Z #46 naming to docker.io/library/pulse-clean-init:latest done
+gates	UNKNOWN STEP	2026-10-21T13:27:20.3824375Z #46 unpacking to docker.io/library/pulse-clean-init:latest
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7324782Z #46 ...
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7324982Z 
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7325501Z #47 [worker-b] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7325896Z #47 exporting layers 59.2s done
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7326683Z #47 exporting manifest sha256:9d8a69c3e4deef3c294e5a39ea7f7d4165c135f511e81f5a3726498319144e5e done
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7327529Z #47 exporting config sha256:b7a607f6508b400cce88d12baa6aa61fb9288f600bda1d95f984a56e5abe01a8 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7328208Z #47 exporting attestation manifest sha256:edf0f02d517a1dc6a89dad5c7088907c53d724783a4d75c540f406cbd378cba8 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7328883Z #47 exporting manifest list sha256:63c9c48c89f16358db1a3f1cc820321fc6a76b2d93832ee187de16b58c5f0bc9 done
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7329423Z #47 naming to docker.io/library/pulse-clean-worker-b:latest done
+gates	UNKNOWN STEP	2026-10-21T13:27:27.7330044Z #47 unpacking to docker.io/library/pulse-clean-worker-b:latest
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2816687Z #47 ...
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2817566Z 
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2818629Z #48 [worker-a] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2819178Z #48 exporting layers 59.2s done
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2820040Z #48 exporting manifest sha256:28658d6e7864ee964c3cc01e24b41c6707d72383626dbc57668c908fd66ab894 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2820886Z #48 exporting config sha256:6ac9f366545d216a508a401399a663c7f6270c4a3f0b60c558e74c08db90bcc0 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2821752Z #48 exporting attestation manifest sha256:aa034ac8b6929ddf055c317371ae6525a57cc243281c1f3c0e5e87fe71231929 0.0s done
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2822707Z #48 exporting manifest list sha256:2473972211a8b9fb75b1ec44db51dc2a3376e8a0ddc4c0da1c1457fb7f4b8e09 done
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2823488Z #48 naming to docker.io/library/pulse-clean-worker-a:latest done
+gates	UNKNOWN STEP	2026-10-21T13:27:30.2824034Z #48 unpacking to docker.io/library/pulse-clean-worker-a:latest
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8015428Z #48 ...
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8015955Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8016186Z #46 [init] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8017014Z #46 unpacking to docker.io/library/pulse-clean-init:latest 49.5s done
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8873072Z #46 DONE 108.9s
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8873483Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:09.8874447Z #48 [worker-a] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:28:10.1932768Z #48 ...
+gates	UNKNOWN STEP	2026-10-21T13:28:10.1932997Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:10.1933150Z #47 [worker-b] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:28:10.1933581Z #47 unpacking to docker.io/library/pulse-clean-worker-b:latest 50.0s done
+gates	UNKNOWN STEP	2026-10-21T13:28:11.0913396Z #47 DONE 110.1s
+gates	UNKNOWN STEP	2026-10-21T13:28:11.0913627Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:11.0913818Z #48 [worker-a] exporting to image
+gates	UNKNOWN STEP	2026-10-21T13:28:11.3347395Z #48 unpacking to docker.io/library/pulse-clean-worker-a:latest 51.0s done
+gates	UNKNOWN STEP	2026-10-21T13:28:11.6437979Z #48 DONE 110.7s
+gates	UNKNOWN STEP	2026-10-21T13:28:15.4502848Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:15.4503681Z #49 [init] resolving provenance for metadata file
+gates	UNKNOWN STEP	2026-10-21T13:28:17.3741477Z #49 ...
+gates	UNKNOWN STEP	2026-10-21T13:28:17.3741823Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.3742189Z #50 [worker-b] resolving provenance for metadata file
+gates	UNKNOWN STEP	2026-10-21T13:28:17.3742594Z #50 DONE 1.0s
+gates	UNKNOWN STEP	2026-10-21T13:28:17.5245100Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.5245532Z #49 [init] resolving provenance for metadata file
+gates	UNKNOWN STEP	2026-10-21T13:28:17.5245812Z #49 DONE 1.9s
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6887054Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6888794Z #51 [worker-a] resolving provenance for metadata file
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6984390Z #51 DONE 0.0s
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6985019Z  Image pulse-clean-init Built 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6985330Z  Image pulse-clean-worker-a Built 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6985590Z  Image pulse-clean-worker-b Built 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.6985880Z  Image pulse-clean-gateway Built 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.7614835Z  Network pulse-clean_default Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8151217Z  Network pulse-clean_default Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8165352Z  Volume pulse-clean_public-sample Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8352098Z  Volume pulse-clean_public-sample Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8355256Z  Volume pulse-clean_history Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8556468Z  Volume pulse-clean_history Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8565271Z  Container pulse-clean-worker-a-1 Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8565673Z  Container pulse-clean-worker-b-1 Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:17.8566450Z  Container pulse-clean-init-1 Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.0669255Z  Container pulse-clean-worker-b-1 Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.0670104Z  Container pulse-clean-worker-a-1 Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.0671006Z  Container pulse-clean-init-1 Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.0671453Z  Container pulse-clean-gateway-1 Creating 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.1016904Z  Container pulse-clean-gateway-1 Created 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.1178461Z  Container pulse-clean-init-1 Starting 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.1179129Z  Container pulse-clean-worker-b-1 Starting 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.1181630Z  Container pulse-clean-worker-a-1 Starting 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.2711976Z  Container pulse-clean-init-1 Started 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.2754884Z  Container pulse-clean-worker-b-1 Started 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.2844862Z  Container pulse-clean-worker-a-1 Started 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.2845526Z  Container pulse-clean-worker-b-1 Waiting 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.2846043Z  Container pulse-clean-init-1 Waiting 
+gates	UNKNOWN STEP	2026-10-21T13:28:23.2846538Z  Container pulse-clean-worker-a-1 Waiting 
+gates	UNKNOWN STEP	2026-10-21T13:28:24.2855795Z  Container pulse-clean-init-1 Exited 
+gates	UNKNOWN STEP	2026-10-21T13:28:28.7853863Z  Container pulse-clean-worker-a-1 Healthy 
+gates	UNKNOWN STEP	2026-10-21T13:28:28.7858256Z  Container pulse-clean-worker-b-1 Healthy 
+gates	UNKNOWN STEP	2026-10-21T13:28:28.7858933Z  Container pulse-clean-gateway-1 Starting 
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9611595Z  Container pulse-clean-gateway-1 Started 
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9833665Z {"status":"ok"}
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9886195Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9887257Z                                  Dload  Upload  Total   Spent   Left   Speed
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9887544Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9903669Z   0      0   0      0   0      0      0      0                              0
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9904111Z 100     16 100     16   0      0   8815      0                              0
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9904627Z 100     16 100     16   0      0   8662      0                              0
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9904968Z {"status":"ok"}
+gates	UNKNOWN STEP	2026-10-21T13:28:28.9905346Z 100     16 100     16   0      0   8579      0                              0
+gates	UNKNOWN STEP	2026-10-21T13:28:34.8175336Z Collecting pip-audit
+gates	UNKNOWN STEP	2026-10-21T13:28:34.9114529Z   Downloading pip_audit-2.10.1-py3-none-any.whl.metadata (28 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:34.9510518Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:34.9637488Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0083583Z Collecting cyclonedx-python-lib<12,>=5 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0210968Z   Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl.metadata (6.9 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0252952Z Requirement already satisfied: packaging>=23.0.0 in /usr/local/lib/python3.13/site-packages (from pip-audit) (26.3)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0448703Z Collecting pip-api>=0.0.28 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0573471Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0826032Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.0951714Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.1242274Z Collecting requests>=2.31.0 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.1367279Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.1403604Z Requirement already satisfied: rich>=12.4 in /usr/local/lib/python3.13/site-packages (from pip-audit) (15.0.0)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.1712805Z Collecting tomli>=2.2.1 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.1839971Z   Downloading tomli-2.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.2351549Z Collecting tomli-w>=1.2.0 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.2477435Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.2760211Z Collecting platformdirs>=4.2.0 (from pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.2886094Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.3133431Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<12,>=5->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.3259933Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.3516963Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<12,>=5->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.3642359Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.3894839Z Collecting py-serializable<3.0.0,>=2.1.0 (from cyclonedx-python-lib<12,>=5->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.4019746Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.4245637Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<12,>=5->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.4371325Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.4607296Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<12,>=5->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.4733171Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.4961331Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.1.0->cyclonedx-python-lib<12,>=5->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.5086773Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.5881738Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.6010060Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.6055481Z Requirement already satisfied: filelock>=3.8.0 in /usr/local/lib/python3.13/site-packages (from CacheControl[filecache]>=0.13.0->pip-audit) (3.32.3)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.6067293Z Requirement already satisfied: pip in /usr/local/lib/python3.13/site-packages (from pip-api>=0.0.28->pip-audit) (26.2.2)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.6326630Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.6453002Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.7362992Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.7487631Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.7570273Z Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit) (3.20)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.7913376Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8039617Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8079957Z Requirement already satisfied: certifi>=2023.5.7 in /usr/local/lib/python3.13/site-packages (from requests>=2.31.0->pip-audit) (2026.10.19)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8102917Z Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.13/site-packages (from rich>=12.4->pip-audit) (4.2.0)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8106493Z Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.13/site-packages (from rich>=12.4->pip-audit) (2.21.0)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8119225Z Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit) (0.1.2)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8272113Z Downloading pip_audit-2.10.1-py3-none-any.whl (62 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8445174Z Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl (529 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8734927Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.5/529.5 kB 20.8 MB/s  0:00:00
+gates	UNKNOWN STEP	2026-10-21T13:28:35.8855381Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9010668Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9160941Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9307399Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9451065Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9595071Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9745702Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:35.9895896Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0079635Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0226786Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0377193Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0526839Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0678435Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0841158Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.0990920Z Downloading tomli-2.5.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (283 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.1154377Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.1301163Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+gates	UNKNOWN STEP	2026-10-21T13:28:36.2404222Z Installing collected packages: sortedcontainers, boolean.py, urllib3, tomli-w, tomli, pyparsing, platformdirs, pip-api, packageurl-python, msgpack, license-expression, defusedxml, charset_normalizer, requests, py-serializable, pip-requirements-parser, cyclonedx-python-lib, CacheControl, pip-audit
+gates	UNKNOWN STEP	2026-10-21T13:28:36.7589180Z 
+gates	UNKNOWN STEP	2026-10-21T13:28:36.7633474Z Successfully installed CacheControl-0.14.4 boolean.py-5.0 charset_normalizer-3.5.2 cyclonedx-python-lib-11.12.0 defusedxml-0.7.1 license-expression-30.4.4 msgpack-1.2.3 packageurl-python-0.17.6 pip-api-0.0.35 pip-audit-2.10.1 pip-requirements-parser-32.0.1 platformdirs-4.13.5 py-serializable-2.1.0 pyparsing-3.3.3 requests-2.34.2 sortedcontainers-2.4.0 tomli-2.5.0 tomli-w-1.2.0 urllib3-2.8.0
+gates	UNKNOWN STEP	2026-10-21T13:28:36.7635805Z WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+gates	UNKNOWN STEP	2026-10-21T13:28:38.6433695Z No known vulnerabilities found
+gates	UNKNOWN STEP	2026-10-21T13:28:38.8243071Z  Container pulse-clean-gateway-1 Stopping 
+gates	UNKNOWN STEP	2026-10-21T13:28:39.0376576Z  Container pulse-clean-gateway-1 Stopped 
+gates	UNKNOWN STEP	2026-10-21T13:28:39.0377087Z  Container pulse-clean-gateway-1 Removing 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.7919769Z  Container pulse-clean-gateway-1 Removed 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.7920590Z  Container pulse-clean-worker-b-1 Stopping 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.7923225Z  Container pulse-clean-worker-a-1 Stopping 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.7923560Z  Container pulse-clean-init-1 Stopping 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.7931327Z  Container pulse-clean-init-1 Stopped 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.7933652Z  Container pulse-clean-init-1 Removing 
+gates	UNKNOWN STEP	2026-10-21T13:28:40.8199251Z  Container pulse-clean-init-1 Removed 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.1403316Z  Container pulse-clean-worker-b-1 Stopped 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.1404514Z  Container pulse-clean-worker-b-1 Removing 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.1562304Z  Container pulse-clean-worker-b-1 Removed 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.6890475Z  Container pulse-clean-worker-a-1 Stopped 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.6890908Z  Container pulse-clean-worker-a-1 Removing 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.9944140Z  Container pulse-clean-worker-a-1 Removed 
+gates	UNKNOWN STEP	2026-10-21T13:28:41.9951822Z  Network pulse-clean_default Removing 
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0351698Z  Network pulse-clean_default Removed 
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0477637Z ##[group]Run actions/upload-artifact@v4
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0477870Z with:
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0478030Z   name: pulse-ci-evidence
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0478226Z   path: docs/results/container-ci/
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0478421Z   if-no-files-found: warn
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0478595Z   compression-level: 6
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0478762Z   overwrite: false
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0478928Z   include-hidden-files: false
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0479103Z env:
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0479296Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0479605Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0479906Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0480182Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0480463Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0480739Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	UNKNOWN STEP	2026-10-21T13:28:42.0481013Z ##[endgroup]
+gates	UNKNOWN STEP	2026-10-21T13:28:42.3117344Z (node:12893) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:28:42.3118648Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:28:42.3183626Z With the provided path, there will be 3 files uploaded
+gates	UNKNOWN STEP	2026-10-21T13:28:42.3187163Z Artifact name is valid!
+gates	UNKNOWN STEP	2026-10-21T13:28:42.3187883Z Root directory input is valid!
+gates	UNKNOWN STEP	2026-10-21T13:28:42.6207616Z Beginning upload of artifact content to blob storage
+gates	UNKNOWN STEP	2026-10-21T13:28:42.6395343Z (node:12893) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+gates	UNKNOWN STEP	2026-10-21T13:28:42.8163326Z Uploaded bytes 2458
+gates	UNKNOWN STEP	2026-10-21T13:28:42.8596967Z Finished uploading artifact content to blob storage!
+gates	UNKNOWN STEP	2026-10-21T13:28:42.8597917Z SHA256 digest of uploaded artifact zip is ff985033748df0ffe2233042c2ac24684ff63556e35f63f94ef37d9b4986eeeb
+gates	UNKNOWN STEP	2026-10-21T13:28:42.8599117Z Finalizing artifact upload
+gates	UNKNOWN STEP	2026-10-21T13:28:43.1110745Z Artifact pulse-ci-evidence.zip successfully finalized. Artifact ID 12348931872
+gates	UNKNOWN STEP	2026-10-21T13:28:43.1111390Z Artifact pulse-ci-evidence has been successfully uploaded! Final size is 2458 bytes. Artifact ID is 12348931872
+gates	UNKNOWN STEP	2026-10-21T13:28:43.1116085Z Artifact download URL: https://github.com/rjrddy/pulse/actions/runs/39607629857/artifacts/12348931872
+gates	UNKNOWN STEP	2026-10-21T13:28:43.1286905Z Post job cleanup.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.2151833Z (node:12905) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.2152390Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:28:43.2244531Z Post job cleanup.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.3103795Z (node:12913) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.3104538Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:28:43.3215528Z Post job cleanup.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4164659Z (node:12921) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4165229Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4210364Z [command]/opt/hostedtoolcache/go/1.27.3/x64/bin/go env GOMODCACHE
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4245354Z [command]/opt/hostedtoolcache/go/1.27.3/x64/bin/go env GOCACHE
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4274754Z /home/runner/go/pkg/mod
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4290997Z /home/runner/.cache/go-build
+gates	UNKNOWN STEP	2026-10-21T13:28:43.4458905Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/pulse/pulse --files-from manifest.txt --use-compress-program zstdmt
+gates	UNKNOWN STEP	2026-10-21T13:28:43.6529162Z (node:12921) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+gates	UNKNOWN STEP	2026-10-21T13:28:43.8486912Z Sent 138567 of 138567 (100.0%), 0.7 MBs/sec
+gates	UNKNOWN STEP	2026-10-21T13:28:44.0901977Z Cache saved with the key: setup-go-Linux-x64-ubuntu26-go-1.27.3-091384bbf0f5fd17d6b15c0275dfc814cbb4617848fb11fbb83897e46cea4634
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1025495Z Post job cleanup.
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1662958Z [command]/usr/bin/git version
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1693683Z git version 2.55.0
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1719638Z Temporarily overriding HOME='/home/runner/work/_temp/78907056-6f74-4d29-b555-74adb25ec09d' before making global git config changes
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1725220Z Adding repository directory to the temporary git global config as a safe directory
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1726249Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse/pulse
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1752190Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1776548Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1972475Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1987746Z http.https://github.com/.extraheader
+gates	UNKNOWN STEP	2026-10-21T13:28:44.1995151Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+gates	UNKNOWN STEP	2026-10-21T13:28:44.2021100Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gates	UNKNOWN STEP	2026-10-21T13:28:44.2231660Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+gates	UNKNOWN STEP	2026-10-21T13:28:44.2256836Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+gates	UNKNOWN STEP	2026-10-21T13:28:44.2560658Z Cleaning up orphan processes
+gates	UNKNOWN STEP	2026-10-21T13:28:44.2891875Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-go@v5, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,1261 @@
+gates	Set up job	﻿2026-10-21T05:49:46.9244348Z Current runner version: '2.338.0'
+gates	Set up job	2026-10-21T05:49:46.9268880Z ##[group]Runner Image Provisioner
+gates	Set up job	2026-10-21T05:49:46.9269746Z Hosted Compute Agent
+gates	Set up job	2026-10-21T05:49:46.9270427Z Version: 20261012.601
+gates	Set up job	2026-10-21T05:49:46.9271130Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+gates	Set up job	2026-10-21T05:49:46.9271909Z Build Date: 2026-10-12T17:48:21Z
+gates	Set up job	2026-10-21T05:49:46.9272604Z Worker ID: {d0a01adb-5c81-4ea3-9a8f-e9b5d9e5715d}
+gates	Set up job	2026-10-21T05:49:46.9273300Z Region: westus2
+gates	Set up job	2026-10-21T05:49:46.9273905Z Cloud: Azure
+gates	Set up job	2026-10-21T05:49:46.9274506Z ##[endgroup]
+gates	Set up job	2026-10-21T05:49:46.9275992Z ##[group]Operating System
+gates	Set up job	2026-10-21T05:49:46.9277045Z Ubuntu
+gates	Set up job	2026-10-21T05:49:46.9277601Z 26.04.1
+gates	Set up job	2026-10-21T05:49:46.9278175Z LTS
+gates	Set up job	2026-10-21T05:49:46.9278726Z ##[endgroup]
+gates	Set up job	2026-10-21T05:49:46.9279355Z ##[group]Runner Image
+gates	Set up job	2026-10-21T05:49:46.9279974Z Image: ubuntu-26.04
+gates	Set up job	2026-10-21T05:49:46.9280539Z Version: 20261012.163.1
+gates	Set up job	2026-10-21T05:49:46.9281659Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261012.163/images/ubuntu/Ubuntu2604-Readme.md
+gates	Set up job	2026-10-21T05:49:46.9283459Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261012.163
+gates	Set up job	2026-10-21T05:49:46.9284523Z ##[endgroup]
+gates	Set up job	2026-10-21T05:49:46.9285898Z ##[group]GITHUB_TOKEN Permissions
+gates	Set up job	2026-10-21T05:49:46.9288489Z Contents: read
+gates	Set up job	2026-10-21T05:49:46.9289123Z Metadata: read
+gates	Set up job	2026-10-21T05:49:46.9289765Z ##[endgroup]
+gates	Set up job	2026-10-21T05:49:46.9292162Z Secret source: Actions
+gates	Set up job	2026-10-21T05:49:46.9293230Z Cache mode: write
+gates	Set up job	2026-10-21T05:49:46.9293943Z Prepare workflow directory
+gates	Set up job	2026-10-21T05:49:46.9629389Z Prepare all required actions
+gates	Set up job	2026-10-21T05:49:46.9680089Z Getting action download info
+gates	Set up job	2026-10-21T05:49:47.3345189Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+gates	Set up job	2026-10-21T05:49:47.4430394Z Download action repository 'actions/setup-go@v5' (SHA:40f1582b2485089dde7abd97c1529aa768e1baff)
+gates	Set up job	2026-10-21T05:49:47.6776998Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+gates	Set up job	2026-10-21T05:49:47.7368603Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+gates	Set up job	2026-10-21T05:49:47.8138630Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+gates	Set up job	2026-10-21T05:49:48.0020270Z Complete job name: gates
+gates	Run actions/checkout@v4	﻿2026-10-21T05:49:48.0824535Z ##[group]Run actions/checkout@v4
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0825438Z with:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0825888Z   repository: rjrddy/pulse
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0829901Z   token: ***
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0830339Z   ssh-strict: true
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0830770Z   ssh-user: git
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0831218Z   persist-credentials: true
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0831707Z   clean: true
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0832159Z   sparse-checkout-cone-mode: true
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0832690Z   fetch-depth: 1
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0833121Z   fetch-tags: false
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0833574Z   show-progress: true
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0834027Z   lfs: false
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0834435Z   submodules: false
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0834910Z   set-safe-directory: true
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0835416Z   allow-unsafe-pr-checkout: false
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.0836194Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1890715Z Syncing repository: rjrddy/pulse
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1893195Z ##[group]Getting Git version info
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1894281Z Working directory is '/home/runner/work/pulse/pulse'
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1895989Z [command]/usr/bin/git version
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1906415Z git version 2.55.0
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1962410Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1978964Z Temporarily overriding HOME='/home/runner/work/_temp/97197eda-fbfc-4bf1-9b8c-29c47a8f08d0' before making global git config changes
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1982122Z Adding repository directory to the temporary git global config as a safe directory
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.1985258Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse/pulse
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2052388Z Deleting the contents of '/home/runner/work/pulse/pulse'
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2056078Z ##[group]Initializing the repository
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2062573Z [command]/usr/bin/git init /home/runner/work/pulse/pulse
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2192973Z hint: Using 'master' as the name for the initial branch. This default branch name
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2195055Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2197265Z hint: to use in all of your new repositories, which will suppress this warning,
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2199067Z hint: call:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2199979Z hint:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2201077Z hint: 	git config --global init.defaultBranch <name>
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2202400Z hint:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2203542Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2205284Z hint: 'development'. The just-created branch can be renamed via this command:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2207047Z hint:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2209131Z hint: 	git branch -m <name>
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2210249Z hint:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2211612Z hint: Disable this message with "git config set advice.defaultBranchName false"
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2213144Z Initialized empty Git repository in /home/runner/work/pulse/pulse/.git/
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2216482Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/pulse
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2265187Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2267267Z ##[group]Disabling automatic garbage collection
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2271369Z [command]/usr/bin/git config --local gc.auto 0
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2310728Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2312432Z ##[group]Setting up auth
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2320546Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2362524Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2844582Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.2881257Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.3151321Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.3275373Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.3457301Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.3497092Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.3498189Z ##[group]Fetching the repository
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.3507360Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5f268fefa2ef95cf7a2fdd3019edd22311ea2db6:refs/remotes/origin/main
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6352826Z From https://github.com/rjrddy/pulse
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6355728Z  * [new ref]         5f268fefa2ef95cf7a2fdd3019edd22311ea2db6 -> origin/main
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6361772Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6364389Z ##[group]Determining the checkout info
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6367392Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6370129Z [command]/usr/bin/git sparse-checkout disable
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6427102Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6459088Z ##[group]Checking out the ref
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6463863Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6550387Z Switched to a new branch 'main'
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6552866Z branch 'main' set up to track 'origin/main'.
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6561196Z ##[endgroup]
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6616088Z [command]/usr/bin/git log -1 --format=%H
+gates	Run actions/checkout@v4	2026-10-21T05:49:48.6642000Z 5f268fefa2ef95cf7a2fdd3019edd22311ea2db6
+gates	Run actions/setup-go@v5	﻿2026-10-21T05:49:48.7009539Z ##[group]Run actions/setup-go@v5
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.7010802Z with:
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.7011967Z   go-version-file: go.mod
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.7013057Z   check-latest: false
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.7023540Z   token: ***
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.7024455Z   cache: true
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.7025413Z ##[endgroup]
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.8332501Z Setup go version spec 1.27.3
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.8345294Z Attempting to download 1.27.3...
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.8454476Z (node:2659) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	Run actions/setup-go@v5	2026-10-21T05:49:48.8458514Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	Run actions/setup-go@v5	2026-10-21T05:49:49.3325887Z matching 1.27.3...
+gates	Run actions/setup-go@v5	2026-10-21T05:49:49.3356264Z Acquiring 1.27.3 from https://github.com/actions/go-versions/releases/download/1.27.3-39437817176/go-1.27.3-linux-x64.tar.gz
+gates	Run actions/setup-go@v5	2026-10-21T05:49:50.0272177Z Extracting Go...
+gates	Run actions/setup-go@v5	2026-10-21T05:49:50.0448822Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/afa8c48b-77a5-4e36-83b0-cf89cec3b1f2 -f /home/runner/work/_temp/185b2d2b-3f06-49d1-bd16-0652497124a6
+gates	Run actions/setup-go@v5	2026-10-21T05:49:51.3575258Z Successfully extracted go to /home/runner/work/_temp/afa8c48b-77a5-4e36-83b0-cf89cec3b1f2
+gates	Run actions/setup-go@v5	2026-10-21T05:49:51.3576403Z Adding to the cache ...
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.0645384Z Successfully cached go to /opt/hostedtoolcache/go/1.27.3/x64
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.0648601Z Added go to the path
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.0651249Z Successfully set up Go version 1.27.3
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.0911208Z [command]/opt/hostedtoolcache/go/1.27.3/x64/bin/go env GOMODCACHE
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.0958773Z [command]/opt/hostedtoolcache/go/1.27.3/x64/bin/go env GOCACHE
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.1008564Z /home/runner/go/pkg/mod
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.1031779Z /home/runner/.cache/go-build
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.3371559Z Cache is not found
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.3396986Z go version go1.27.3 linux/amd64
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.3397378Z 
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.3397872Z ##[group]go env
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4992534Z AR='ar'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4993049Z CC='gcc'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4993456Z CGO_CFLAGS='-O2 -g'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4993864Z CGO_CPPFLAGS=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4994255Z CGO_CXXFLAGS='-O2 -g'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4994661Z CGO_ENABLED='1'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4995088Z CGO_FFLAGS='-O2 -g'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4995454Z CGO_LDFLAGS='-O2 -g'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4995804Z CXX='g++'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4996151Z GCCGO='gccgo'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4996498Z GO111MODULE=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4997143Z GOAMD64='v1'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4997546Z GOARCH='amd64'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4997916Z GOAUTH='netrc'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4998305Z GOBIN='/home/runner/go/bin'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4998781Z GOCACHE='/home/runner/.cache/go-build'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4999274Z GOCACHEPROG=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.4999623Z GODEBUG=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5000034Z GOENV='/home/runner/.config/go/env'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5000466Z GOEXE=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5000795Z GOEXPERIMENT=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5001139Z GOFIPS140='off'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5001464Z GOFLAGS=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5002560Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build4069521276=/tmp/go-build -gno-record-gcc-switches'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5003695Z GOHOSTARCH='amd64'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5004058Z GOHOSTOS='linux'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5004404Z GOINSECURE=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5004884Z GOMOD='/home/runner/work/pulse/pulse/go.mod'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5005488Z GOMODCACHE='/home/runner/go/pkg/mod'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5005942Z GONOPROXY=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5006264Z GONOSUMDB=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5006834Z GOOS='linux'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5007185Z GOPACKAGESDRIVER=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5007565Z GOPATH='/home/runner/go'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5007959Z GOPRIVATE=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5008579Z GOPROXY='https://proxy.golang.org,direct'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5009106Z GOROOT='/opt/hostedtoolcache/go/1.27.3/x64'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5009583Z GOSUMDB='sum.golang.org'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5009957Z GOTELEMETRY='local'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5010389Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5011473Z GOTMPDIR=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5012088Z GOTOOLCHAIN='auto'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5012653Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.3/x64/pkg/tool/linux_amd64'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5013251Z GOVCS=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5013578Z GOVERSION='go1.27.3'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5013931Z GOWORK=''
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5014327Z PKG_CONFIG='pkg-config'
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5014581Z 
+gates	Run actions/setup-go@v5	2026-10-21T05:49:56.5015101Z ##[endgroup]
+gates	Run actions/setup-python@v5	﻿2026-10-21T05:49:56.5260237Z ##[group]Run actions/setup-python@v5
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5260564Z with:
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5260775Z   python-version: 3.13
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5261013Z   check-latest: false
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5263415Z   token: ***
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5263639Z   update-environment: true
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5263897Z   allow-prereleases: false
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5264135Z   freethreaded: false
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.5264358Z ##[endgroup]
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.6584833Z ##[group]Installed versions
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.6698006Z (node:2728) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.6699447Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.6700280Z Successfully set up CPython (3.13.16)
+gates	Run actions/setup-python@v5	2026-10-21T05:49:56.6717503Z ##[endgroup]
+gates	Run actions/setup-node@v4	﻿2026-10-21T05:49:56.6923310Z ##[group]Run actions/setup-node@v4
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6923610Z with:
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6923811Z   node-version: 22
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6924038Z   always-auth: false
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6924291Z   check-latest: false
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6927024Z   token: ***
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6927245Z env:
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6927526Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6927981Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6928428Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6928827Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6929221Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6929639Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.6929965Z ##[endgroup]
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.8387822Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.8390777Z (node:2737) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.8391595Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	Run actions/setup-node@v4	2026-10-21T05:49:56.8394136Z ##[group]Environment details
+gates	Run actions/setup-node@v4	2026-10-21T05:49:57.3057900Z node: v22.23.3
+gates	Run actions/setup-node@v4	2026-10-21T05:49:57.3058402Z npm: 10.9.9
+gates	Run actions/setup-node@v4	2026-10-21T05:49:57.3058796Z yarn: 1.22.22
+gates	Run actions/setup-node@v4	2026-10-21T05:49:57.3059450Z ##[endgroup]
+gates	Install test dependencies	﻿2026-10-21T05:49:57.3202378Z ##[group]Run python -m venv .venv
+gates	Install test dependencies	2026-10-21T05:49:57.3202759Z ^[[36;1mpython -m venv .venv^[[0m
+gates	Install test dependencies	2026-10-21T05:49:57.3203168Z ^[[36;1m.venv/bin/pip install fastapi numpy pytest ruff==0.17.1 httpx websockets^[[0m
+gates	Install test dependencies	2026-10-21T05:49:57.3203624Z ^[[36;1m.venv/bin/pip install -e . --no-deps^[[0m
+gates	Install test dependencies	2026-10-21T05:49:57.3203936Z ^[[36;1mnpm --prefix apps/web ci^[[0m
+gates	Install test dependencies	2026-10-21T05:49:57.3204215Z ^[[36;1mgo mod download^[[0m
+gates	Install test dependencies	2026-10-21T05:49:57.3405014Z shell: /usr/bin/bash -e {0}
+gates	Install test dependencies	2026-10-21T05:49:57.3405289Z env:
+gates	Install test dependencies	2026-10-21T05:49:57.3405569Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Install test dependencies	2026-10-21T05:49:57.3406041Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	Install test dependencies	2026-10-21T05:49:57.3406784Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Install test dependencies	2026-10-21T05:49:57.3407203Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Install test dependencies	2026-10-21T05:49:57.3407597Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Install test dependencies	2026-10-21T05:49:57.3407993Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	Install test dependencies	2026-10-21T05:49:57.3408359Z ##[endgroup]
+gates	Install test dependencies	2026-10-21T05:50:00.5036393Z Collecting fastapi
+gates	Install test dependencies	2026-10-21T05:50:00.5359862Z   Downloading fastapi-0.156.4-py3-none-any.whl.metadata (26 kB)
+gates	Install test dependencies	2026-10-21T05:50:00.7334153Z Collecting numpy
+gates	Install test dependencies	2026-10-21T05:50:00.7405994Z   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+gates	Install test dependencies	2026-10-21T05:50:00.7730642Z Collecting pytest
+gates	Install test dependencies	2026-10-21T05:50:00.7801446Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.0854556Z Collecting ruff==0.17.1
+gates	Install test dependencies	2026-10-21T05:50:01.0927823Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.1145362Z Collecting httpx
+gates	Install test dependencies	2026-10-21T05:50:01.1215064Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.2325055Z Collecting websockets
+gates	Install test dependencies	2026-10-21T05:50:01.2410397Z   Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.2672870Z Collecting starlette>=0.46.0 (from fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.2741730Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.3703560Z Collecting pydantic>=2.9.0 (from fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.3774978Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.4065071Z Collecting typing-extensions>=4.8.0 (from fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.4137431Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.4274071Z Collecting typing-inspection>=0.4.2 (from fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.4343756Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.4470331Z Collecting annotated-doc>=0.0.2 (from fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.4545291Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.4747551Z Collecting opentelemetry-api>=1.44.0 (from fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.4822117Z   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.4962423Z Collecting iniconfig>=1.0.1 (from pytest)
+gates	Install test dependencies	2026-10-21T05:50:01.5032478Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.5208069Z Collecting packaging>=22 (from pytest)
+gates	Install test dependencies	2026-10-21T05:50:01.5280653Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.5425693Z Collecting pluggy<2,>=1.5 (from pytest)
+gates	Install test dependencies	2026-10-21T05:50:01.5498060Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.5725403Z Collecting pygments>=2.7.2 (from pytest)
+gates	Install test dependencies	2026-10-21T05:50:01.5795492Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.6017326Z Collecting anyio (from httpx)
+gates	Install test dependencies	2026-10-21T05:50:01.6103090Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.6316264Z Collecting certifi (from httpx)
+gates	Install test dependencies	2026-10-21T05:50:01.6389174Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.6568267Z Collecting httpcore==1.* (from httpx)
+gates	Install test dependencies	2026-10-21T05:50:01.6639683Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.6825635Z Collecting idna (from httpx)
+gates	Install test dependencies	2026-10-21T05:50:01.6894630Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.7036474Z Collecting h11>=0.16 (from httpcore==1.*->httpx)
+gates	Install test dependencies	2026-10-21T05:50:01.7105962Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+gates	Install test dependencies	2026-10-21T05:50:01.7280266Z Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi)
+gates	Install test dependencies	2026-10-21T05:50:01.7349601Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.3902975Z Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi)
+gates	Install test dependencies	2026-10-21T05:50:02.3981542Z   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.4171120Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+gates	Install test dependencies	2026-10-21T05:50:02.4687222Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 224.4 MB/s  0:00:00
+gates	Install test dependencies	2026-10-21T05:50:02.4756883Z Downloading fastapi-0.156.4-py3-none-any.whl (147 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.4853164Z Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+gates	Install test dependencies	2026-10-21T05:50:02.5452509Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 286.1 MB/s  0:00:00
+gates	Install test dependencies	2026-10-21T05:50:02.5527171Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.5630183Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.5730015Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.5825845Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.5916799Z Downloading websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6006832Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6093877Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6180275Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6266915Z Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6357596Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6449497Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6552220Z Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+gates	Install test dependencies	2026-10-21T05:50:02.6647735Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 267.7 MB/s  0:00:00
+gates	Install test dependencies	2026-10-21T05:50:02.6717614Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.6805251Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+gates	Install test dependencies	2026-10-21T05:50:02.6871958Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 226.7 MB/s  0:00:00
+gates	Install test dependencies	2026-10-21T05:50:02.6944299Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.7039532Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.7134130Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.7224250Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.7314924Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.7400536Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+gates	Install test dependencies	2026-10-21T05:50:02.8854137Z Installing collected packages: websockets, typing-extensions, ruff, pygments, pluggy, packaging, numpy, iniconfig, idna, h11, certifi, annotated-types, annotated-doc, typing-inspection, pytest, pydantic-core, opentelemetry-api, httpcore, anyio, starlette, pydantic, httpx, fastapi
+gates	Install test dependencies	2026-10-21T05:50:07.0195142Z 
+gates	Install test dependencies	2026-10-21T05:50:07.0225605Z Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.19 fastapi-0.156.4 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 numpy-2.5.4 opentelemetry-api-1.45.1 packaging-26.3 pluggy-1.7.0 pydantic-2.14.1 pydantic-core-2.50.1 pygments-2.21.0 pytest-9.1.1 ruff-0.17.1 starlette-1.9.0 typing-extensions-4.16.0 typing-inspection-0.4.4 websockets-17.3
+gates	Install test dependencies	2026-10-21T05:50:07.0232917Z 
+gates	Install test dependencies	2026-10-21T05:50:07.0233438Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+gates	Install test dependencies	2026-10-21T05:50:07.0234423Z [notice] To update, run: /home/runner/work/pulse/pulse/.venv/bin/python -m pip install --upgrade pip
+gates	Install test dependencies	2026-10-21T05:50:07.4264037Z Obtaining file:///home/runner/work/pulse/pulse
+gates	Install test dependencies	2026-10-21T05:50:07.4278509Z   Installing build dependencies: started
+gates	Install test dependencies	2026-10-21T05:50:08.0587742Z   Installing build dependencies: finished with status 'done'
+gates	Install test dependencies	2026-10-21T05:50:08.0594262Z   Checking if build backend supports build_editable: started
+gates	Install test dependencies	2026-10-21T05:50:08.3816009Z   Checking if build backend supports build_editable: finished with status 'done'
+gates	Install test dependencies	2026-10-21T05:50:08.3822791Z   Getting requirements to build editable: started
+gates	Install test dependencies	2026-10-21T05:50:08.7155527Z   Getting requirements to build editable: finished with status 'done'
+gates	Install test dependencies	2026-10-21T05:50:08.7163070Z   Preparing editable metadata (pyproject.toml): started
+gates	Install test dependencies	2026-10-21T05:50:08.9058101Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+gates	Install test dependencies	2026-10-21T05:50:08.9117449Z Building wheels for collected packages: pulse-workers
+gates	Install test dependencies	2026-10-21T05:50:08.9123101Z   Building editable for pulse-workers (pyproject.toml): started
+gates	Install test dependencies	2026-10-21T05:50:09.1233716Z   Building editable for pulse-workers (pyproject.toml): finished with status 'done'
+gates	Install test dependencies	2026-10-21T05:50:09.1239621Z   Created wheel for pulse-workers: filename=pulse_workers-0.1.0-0.editable-py3-none-any.whl size=2920 sha256=dc565809786dc5a81860bef09523aa4729ec699a47fcc3b8fc08ebbc3d532815
+gates	Install test dependencies	2026-10-21T05:50:09.1241671Z   Stored in directory: /tmp/pip-ephem-wheel-cache-12wivxt5/wheels/db/46/58/9e94e8fd70e69fb0f67a3a748c45920f813861a4e60358c1f5
+gates	Install test dependencies	2026-10-21T05:50:09.1260366Z Successfully built pulse-workers
+gates	Install test dependencies	2026-10-21T05:50:09.1366481Z Installing collected packages: pulse-workers
+gates	Install test dependencies	2026-10-21T05:50:09.1448044Z Successfully installed pulse-workers-0.1.0
+gates	Install test dependencies	2026-10-21T05:50:09.1456971Z 
+gates	Install test dependencies	2026-10-21T05:50:09.1457758Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+gates	Install test dependencies	2026-10-21T05:50:09.1458532Z [notice] To update, run: /home/runner/work/pulse/pulse/.venv/bin/python -m pip install --upgrade pip
+gates	Install test dependencies	2026-10-21T05:50:10.7198022Z 
+gates	Install test dependencies	2026-10-21T05:50:10.7198869Z added 23 packages, and audited 24 packages in 1s
+gates	Install test dependencies	2026-10-21T05:50:10.7199226Z 
+gates	Install test dependencies	2026-10-21T05:50:10.7199418Z 6 packages are looking for funding
+gates	Install test dependencies	2026-10-21T05:50:10.7199751Z   run `npm fund` for details
+gates	Install test dependencies	2026-10-21T05:50:10.7208223Z 
+gates	Install test dependencies	2026-10-21T05:50:10.7208441Z found 0 vulnerabilities
+gates	Run make build lint test	﻿2026-10-21T05:50:10.8198126Z ##[group]Run make build lint test
+gates	Run make build lint test	2026-10-21T05:50:10.8198478Z ^[[36;1mmake build lint test^[[0m
+gates	Run make build lint test	2026-10-21T05:50:10.8261375Z shell: /usr/bin/bash -e {0}
+gates	Run make build lint test	2026-10-21T05:50:10.8261636Z env:
+gates	Run make build lint test	2026-10-21T05:50:10.8261911Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make build lint test	2026-10-21T05:50:10.8262354Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	Run make build lint test	2026-10-21T05:50:10.8262800Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make build lint test	2026-10-21T05:50:10.8263186Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make build lint test	2026-10-21T05:50:10.8263565Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make build lint test	2026-10-21T05:50:10.8263943Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	Run make build lint test	2026-10-21T05:50:10.8264267Z ##[endgroup]
+gates	Run make build lint test	2026-10-21T05:50:10.8378834Z mkdir -p bin
+gates	Run make build lint test	2026-10-21T05:50:10.8405836Z go build -o bin/pulse ./cmd/gateway
+gates	Run make build lint test	2026-10-21T05:50:10.8694349Z go: downloading github.com/gorilla/websocket v1.5.3
+gates	Run make build lint test	2026-10-21T05:50:24.9303707Z npm --prefix apps/web run build
+gates	Run make build lint test	2026-10-21T05:50:25.0210927Z 
+gates	Run make build lint test	2026-10-21T05:50:25.0211554Z > pulse-console@0.1.0 build
+gates	Run make build lint test	2026-10-21T05:50:25.0212047Z > tsc --noEmit && vite build
+gates	Run make build lint test	2026-10-21T05:50:25.0212221Z 
+gates	Run make build lint test	2026-10-21T05:50:26.4109263Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+gates	Run make build lint test	2026-10-21T05:50:26.4897159Z transforming...
+gates	Run make build lint test	2026-10-21T05:50:27.2585531Z ^[[32m✓^[[39m 28 modules transformed.
+gates	Run make build lint test	2026-10-21T05:50:27.3820331Z rendering chunks...
+gates	Run make build lint test	2026-10-21T05:50:27.3886261Z computing gzip size...
+gates	Run make build lint test	2026-10-21T05:50:27.3983031Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.52 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.35 kB^[[22m
+gates	Run make build lint test	2026-10-21T05:50:27.3984853Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-zFlcuZ_H.css  ^[[39m^[[1m^[[2m  4.80 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  1.62 kB^[[22m
+gates	Run make build lint test	2026-10-21T05:50:27.3986986Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-BgQ53yFq.js   ^[[39m^[[1m^[[2m203.98 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 64.31 kB^[[22m
+gates	Run make build lint test	2026-10-21T05:50:27.3988164Z ^[[32m✓ built in 962ms^[[39m
+gates	Run make build lint test	2026-10-21T05:50:27.4268220Z test -z "$(go fmt ./...)"
+gates	Run make build lint test	2026-10-21T05:50:27.4717268Z go vet ./...
+gates	Run make build lint test	2026-10-21T05:50:30.4222355Z .venv/bin/ruff check worker scripts tests
+gates	Run make build lint test	2026-10-21T05:50:30.4307245Z All checks passed!
+gates	Run make build lint test	2026-10-21T05:50:30.4312290Z .venv/bin/ruff format --check worker scripts tests
+gates	Run make build lint test	2026-10-21T05:50:30.4390063Z 11 files already formatted
+gates	Run make build lint test	2026-10-21T05:50:30.4395929Z cd apps/web && npm run lint
+gates	Run make build lint test	2026-10-21T05:50:30.5326046Z 
+gates	Run make build lint test	2026-10-21T05:50:30.5326902Z > pulse-console@0.1.0 lint
+gates	Run make build lint test	2026-10-21T05:50:30.5327356Z > prettier --check src
+gates	Run make build lint test	2026-10-21T05:50:30.5327551Z 
+gates	Run make build lint test	2026-10-21T05:50:30.6182961Z Checking formatting...
+gates	Run make build lint test	2026-10-21T05:50:30.9297877Z All matched files use Prettier code style!
+gates	Run make build lint test	2026-10-21T05:50:30.9664108Z go test -race -timeout 60s -count=1 -v ./...
+gates	Run make build lint test	2026-10-21T05:50:52.7272373Z ?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+gates	Run make build lint test	2026-10-21T05:50:54.3484071Z === RUN   TestBreakerSingleHalfOpenProbe
+gates	Run make build lint test	2026-10-21T05:50:54.3484887Z --- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3485698Z === RUN   TestCancelledAttemptDoesNotTripBreaker
+gates	Run make build lint test	2026-10-21T05:50:54.3486794Z --- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3487541Z === RUN   TestFallbackResetsBeforeAudio
+gates	Run make build lint test	2026-10-21T05:50:54.3488225Z --- PASS: TestFallbackResetsBeforeAudio (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3488879Z === RUN   TestNoReplayAfterVisibleAudio
+gates	Run make build lint test	2026-10-21T05:50:54.3489573Z --- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3490227Z === RUN   TestDeadlineCancelsBackend
+gates	Run make build lint test	2026-10-21T05:50:54.3490870Z --- PASS: TestDeadlineCancelsBackend (0.04s)
+gates	Run make build lint test	2026-10-21T05:50:54.3491482Z === RUN   TestAdmissionBounded
+gates	Run make build lint test	2026-10-21T05:50:54.3492023Z --- PASS: TestAdmissionBounded (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3492614Z === RUN   TestJournalReopenAndCorruption
+gates	Run make build lint test	2026-10-21T05:50:54.3493306Z --- PASS: TestJournalReopenAndCorruption (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3493992Z === RUN   TestConcurrentJournalWrites
+gates	Run make build lint test	2026-10-21T05:50:54.3494660Z --- PASS: TestConcurrentJournalWrites (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3495347Z === RUN   TestClientSendFailureIsNotSuccess
+gates	Run make build lint test	2026-10-21T05:50:54.3496744Z --- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3497605Z === RUN   TestWebsocketGenerationFencesInterruptedTurn
+gates	Run make build lint test	2026-10-21T05:50:54.3499386Z 2026/10/21 05:50:53 INFO turn_finished turn=545eaa1b63db3f6f02e87703de74715e trace_id=545eaa1b63db3f6f02e87703de74715e outcome=cancelled backend=a first_audio_ms=0 total_ms=1.202
+gates	Run make build lint test	2026-10-21T05:50:54.3501999Z 2026/10/21 05:50:53 INFO turn_finished turn=23cd24d878edc4d097081b0a0a971d44 trace_id=23cd24d878edc4d097081b0a0a971d44 outcome=done backend=a first_audio_ms=21.257 total_ms=21.461
+gates	Run make build lint test	2026-10-21T05:50:54.3503646Z --- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.02s)
+gates	Run make build lint test	2026-10-21T05:50:54.3504420Z === RUN   TestAuthAndOriginRejected
+gates	Run make build lint test	2026-10-21T05:50:54.3505051Z --- PASS: TestAuthAndOriginRejected (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3505847Z === RUN   TestStaleBreakerCompletionCannotReleaseProbe
+gates	Run make build lint test	2026-10-21T05:50:54.3506950Z --- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3507752Z === RUN   TestCapacityResponseDoesNotOpenCircuit
+gates	Run make build lint test	2026-10-21T05:50:54.3508519Z --- PASS: TestCapacityResponseDoesNotOpenCircuit (0.00s)
+gates	Run make build lint test	2026-10-21T05:50:54.3509051Z PASS
+gates	Run make build lint test	2026-10-21T05:50:54.3509555Z ok  	github.com/rjrddy/pulse/internal/gateway	1.090s
+gates	Run make build lint test	2026-10-21T05:50:54.3824534Z .venv/bin/python -m pytest -q
+gates	Run make build lint test	2026-10-21T05:50:55.4211187Z ....                                                                     [100%]
+gates	Run make build lint test	2026-10-21T05:50:55.4212112Z =============================== warnings summary ===============================
+gates	Run make build lint test	2026-10-21T05:50:55.4212997Z .venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+gates	Run make build lint test	2026-10-21T05:50:55.4214944Z   /home/runner/work/pulse/pulse/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+gates	Run make build lint test	2026-10-21T05:50:55.4216972Z     from starlette.testclient import TestClient as TestClient  # noqa
+gates	Run make build lint test	2026-10-21T05:50:55.4217451Z 
+gates	Run make build lint test	2026-10-21T05:50:55.4217951Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+gates	Run make build lint test	2026-10-21T05:50:55.4218658Z 4 passed, 1 warning in 0.46s
+gates	Run make scan	﻿2026-10-21T05:50:55.4859236Z ##[group]Run make scan
+gates	Run make scan	2026-10-21T05:50:55.4859533Z ^[[36;1mmake scan^[[0m
+gates	Run make scan	2026-10-21T05:50:55.4920163Z shell: /usr/bin/bash -e {0}
+gates	Run make scan	2026-10-21T05:50:55.4920420Z env:
+gates	Run make scan	2026-10-21T05:50:55.4920688Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make scan	2026-10-21T05:50:55.4921138Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	Run make scan	2026-10-21T05:50:55.4921577Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make scan	2026-10-21T05:50:55.4921971Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make scan	2026-10-21T05:50:55.4922360Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run make scan	2026-10-21T05:50:55.4922745Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	Run make scan	2026-10-21T05:50:55.4923258Z ##[endgroup]
+gates	Run make scan	2026-10-21T05:50:55.5017214Z npm --prefix apps/web audit --audit-level=high
+gates	Run make scan	2026-10-21T05:50:55.8373605Z found 0 vulnerabilities
+gates	Run make scan	2026-10-21T05:50:55.8452499Z go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+gates	Run make scan	2026-10-21T05:50:55.8905960Z go: downloading golang.org/x/vuln v1.9.0
+gates	Run make scan	2026-10-21T05:50:56.0603311Z go: downloading golang.org/x/telemetry v0.0.0-20261010193011-f71dc92da45e
+gates	Run make scan	2026-10-21T05:50:56.0688896Z go: downloading golang.org/x/mod v0.42.0
+gates	Run make scan	2026-10-21T05:50:56.0690020Z go: downloading golang.org/x/tools v0.52.0
+gates	Run make scan	2026-10-21T05:50:56.1880350Z go: downloading golang.org/x/sync v0.24.0
+gates	Run make scan	2026-10-21T05:51:04.1613432Z No vulnerabilities found.
+gates	Fresh clone real-model Compose smoke	﻿2026-10-21T05:51:04.2288304Z ##[group]Run git clone --no-local . /tmp/pulse-clean
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2288757Z ^[[36;1mgit clone --no-local . /tmp/pulse-clean^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2289070Z ^[[36;1mcd /tmp/pulse-clean^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2289316Z ^[[36;1mcp .env.example .env^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2289593Z ^[[36;1mmkdir -p docs/results^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2290256Z ^[[36;1mtrap 'docker compose logs --no-color > docs/results/compose.log; cp -r docs/results "$GITHUB_WORKSPACE/docs/results/container-ci"; docker compose down' EXIT^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2290942Z ^[[36;1mdocker compose up --build -d^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2291394Z ^[[36;1mfor i in $(seq 1 180); do curl -fsS http://localhost:8081/health && break; sleep 2; done^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2291890Z ^[[36;1mcurl --fail http://localhost:8081/health^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2292318Z ^[[36;1mexport PULSE_TOKEN=synthetic-local-token-change-me-at-least-24^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2292782Z ^[[36;1m"$GITHUB_WORKSPACE/.venv/bin/python" scripts/smoke.py^[[0m
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2353698Z shell: /usr/bin/bash -e {0}
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2353997Z env:
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2354269Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2354739Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2355196Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2355581Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2355974Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2356365Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2356934Z ##[endgroup]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.2456917Z Cloning into '/tmp/pulse-clean'...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.7506769Z  Image pulse-clean-gateway Building 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.7507477Z  Image pulse-clean-init Building 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.7508053Z  Image pulse-clean-worker-a Building 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.7508654Z  Image pulse-clean-worker-b Building 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.8218050Z #1 [internal] load local bake definitions
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.9227457Z #1 reading from stdin 1.74kB done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.9228067Z #1 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.9228322Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.9228780Z #2 [worker-a internal] load build definition from Dockerfile
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:04.9229491Z #2 transferring dockerfile:
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0923373Z #2 transferring dockerfile: 576B done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0923753Z #2 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0923880Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0924150Z #3 [gateway internal] load build definition from Dockerfile
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0924594Z #3 transferring dockerfile: 671B done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0924879Z #3 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0925005Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.0925396Z #4 [worker-a internal] load metadata for docker.io/library/python:3.13-slim-bookworm
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3089696Z #4 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3089944Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3090331Z #5 [auth] library/golang:pull token for registry-1.docker.io
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3091034Z #5 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3091201Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3091538Z #6 [auth] library/node:pull token for registry-1.docker.io
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3091883Z #6 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3092002Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3092244Z #7 [auth] library/python:pull token for registry-1.docker.io
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.3092836Z #7 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.4591485Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.4592074Z #8 [gateway internal] load metadata for docker.io/library/golang:1.27.3-bookworm
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.8520279Z #8 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.8520805Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.8521679Z #9 [gateway internal] load metadata for docker.io/library/node:22-bookworm-slim
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:05.8522733Z #9 DONE 0.9s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0050738Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0051752Z #8 [gateway internal] load metadata for docker.io/library/golang:1.27.3-bookworm
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0052285Z #8 DONE 0.9s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0052978Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0053673Z #4 [worker-a internal] load metadata for docker.io/library/python:3.13-slim-bookworm
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0054605Z #4 DONE 0.9s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0057956Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0058330Z #10 [worker-a internal] load .dockerignore
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0059126Z #10 transferring context: 116B done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0059429Z #10 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0059551Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0059955Z #11 [worker-b internal] load build context
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0060364Z #11 transferring context: 30.07kB done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0060631Z #11 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0060750Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0061389Z #12 [worker-b  1/10] FROM docker.io/library/python:3.13-slim-bookworm@sha256:b4409e44a3e971621ee4bc2f3dc7a53859980685d261ab7a3a7bd4f0b84445c7
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0063141Z #12 resolve docker.io/library/python:3.13-slim-bookworm@sha256:b4409e44a3e971621ee4bc2f3dc7a53859980685d261ab7a3a7bd4f0b84445c7 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.0064760Z #12 sha256:0dc8c4ec7f3c32564a7b3edfb1f41f985f0ff30de1290c4f5705ab0f9f12ed1b 249B / 249B 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1424931Z #12 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1425306Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1426724Z #10 [gateway internal] load .dockerignore
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1427456Z #10 transferring context: 116B done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1427750Z #10 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1427873Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1428998Z #13 [gateway internal] load metadata for gcr.io/distroless/static-debian12:nonroot
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1429524Z #13 DONE 1.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1429753Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1430023Z #14 [gateway internal] load build context
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1431314Z #14 transferring context: 87.86kB done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1431788Z #14 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1432810Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1434846Z #15 [gateway web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1439039Z #15 resolve docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1441201Z #15 DONE 0.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1441410Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1442053Z #12 [worker-b  1/10] FROM docker.io/library/python:3.13-slim-bookworm@sha256:b4409e44a3e971621ee4bc2f3dc7a53859980685d261ab7a3a7bd4f0b84445c7
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1445111Z #12 sha256:0dc8c4ec7f3c32564a7b3edfb1f41f985f0ff30de1290c4f5705ab0f9f12ed1b 249B / 249B 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1447903Z #12 sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820 0B / 12.60MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1450918Z #12 sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 0B / 3.34MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.1453200Z #12 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 0B / 28.25MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2640872Z #12 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2641174Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2642370Z #16 [gateway stage-2 1/5] FROM gcr.io/distroless/static-debian12:nonroot@sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2643797Z #16 resolve gcr.io/distroless/static-debian12:nonroot@sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2644515Z #16 DONE 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2644746Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2645531Z #12 [worker-b  1/10] FROM docker.io/library/python:3.13-slim-bookworm@sha256:b4409e44a3e971621ee4bc2f3dc7a53859980685d261ab7a3a7bd4f0b84445c7
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2647250Z #12 sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820 12.60MB / 12.60MB 0.3s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2648946Z #12 sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 3.34MB / 3.34MB 0.3s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.2649910Z #12 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 5.24MB / 28.25MB 0.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.3895872Z #12 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.4s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.3898056Z #12 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.6478074Z #12 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.6478735Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.6479367Z #17 [gateway stage-2 2/5] WORKDIR /app
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.6480150Z #17 DONE 0.4s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7528849Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7530808Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7535083Z #18 resolve docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7538071Z #18 sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd 126B / 126B 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7539831Z #18 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 32.51MB / 71.15MB 0.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7541631Z #18 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 0B / 92.63MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.7542989Z #18 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 0B / 64.43MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9015717Z #18 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9016326Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9018023Z #15 [gateway web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9020076Z #15 sha256:6801706d64f22e698baf9e7efd382fb8ea2b159491f379ae571fbe6057790ce8 448B / 448B 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9021633Z #15 sha256:80c7eb17e88afae2c7051a64cb4f0b234b434d36195aba50b05e7455157ee736 1.71MB / 1.71MB 0.3s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9023134Z #15 sha256:576da2a04b86fc2f576457ce37a90d7a40f7445f94b016890d3ecb0f0d3371fb 49.84MB / 49.84MB 0.6s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9025007Z #15 sha256:41e886dd412c5cd3726825fbb11adcc20c053addb3d0052230930e699929e1dc 3.31kB / 3.31kB 0.2s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9025965Z #15 DONE 0.7s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9026181Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9027581Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9029665Z #18 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 57.67MB / 71.15MB 0.5s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:06.9031201Z #18 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 17.83MB / 64.43MB 0.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.0141394Z #18 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 71.15MB / 71.15MB 0.6s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.0143979Z #18 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 26.21MB / 92.63MB 0.5s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.0145887Z #18 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 42.99MB / 64.43MB 0.5s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.0147966Z #18 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 1.05MB / 23.87MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.1668872Z #18 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 51.38MB / 92.63MB 0.6s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.1674918Z #18 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 64.43MB / 64.43MB 0.6s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.1677182Z #18 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 23.87MB / 23.87MB 0.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.1679096Z #18 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 8.39MB / 48.52MB 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.3175834Z #18 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 73.40MB / 92.63MB 0.8s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.3178637Z #18 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 64.43MB / 64.43MB 0.7s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.3180485Z #18 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 23.87MB / 23.87MB 0.4s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.3184207Z #18 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 45.09MB / 48.52MB 0.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.4674528Z #18 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 92.63MB / 92.63MB 0.9s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.4675788Z #18 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 48.52MB / 48.52MB 0.5s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.6799150Z #18 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 92.63MB / 92.63MB 1.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.6801722Z #18 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 48.52MB / 48.52MB 0.5s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:07.6803425Z #18 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5216151Z #18 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5217152Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5218674Z #12 [init  1/10] FROM docker.io/library/python:3.13-slim-bookworm@sha256:b4409e44a3e971621ee4bc2f3dc7a53859980685d261ab7a3a7bd4f0b84445c7
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5220484Z #12 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 1.4s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5223579Z #12 extracting sha256:4512b1e098dd48172dbbb82f43136e431e581c4e6f5a7898dde75dfc33654b7e 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5225330Z #12 extracting sha256:1980b8d09ed5c1f9b8a6c02c21fa5c87e6701966e53862bd083ad9cf9dec8820 0.5s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5227291Z #12 extracting sha256:0dc8c4ec7f3c32564a7b3edfb1f41f985f0ff30de1290c4f5705ab0f9f12ed1b 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.5228882Z #12 DONE 2.5s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.6708782Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:08.6709194Z #19 [worker-a  2/10] WORKDIR /app
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.2294589Z #19 DONE 0.7s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.2295256Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.2296824Z #20 [worker-a  3/10] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.2997497Z #20 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.2999547Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.3001752Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.3004412Z #18 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 1.8s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.3005856Z #18 DONE 3.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.4111972Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.4113849Z #20 [worker-a  3/10] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.4127306Z #20 0.243 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.4129076Z #20 0.261 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.4131228Z #20 0.265 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.5484846Z #20 0.333 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.5487790Z #20 0.404 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6494747Z #20 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6496780Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6499357Z #15 [gateway web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:3ed98443660ff48413b5af19ecefce3b9d50845a901a43420d47cc63a9fddbe9
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6501288Z #15 extracting sha256:41e886dd412c5cd3726825fbb11adcc20c053addb3d0052230930e699929e1dc done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6502891Z #15 extracting sha256:576da2a04b86fc2f576457ce37a90d7a40f7445f94b016890d3ecb0f0d3371fb 1.9s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6504648Z #15 extracting sha256:80c7eb17e88afae2c7051a64cb4f0b234b434d36195aba50b05e7455157ee736 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6506285Z #15 extracting sha256:6801706d64f22e698baf9e7efd382fb8ea2b159491f379ae571fbe6057790ce8 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6507891Z #15 DONE 2.7s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6508395Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6510548Z #20 [worker-a  3/10] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.6512644Z #20 0.470 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [354 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.7691346Z #20 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.7692542Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.7693335Z #21 [gateway web 2/6] WORKDIR /src/apps/web
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.7694251Z #21 DONE 0.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9133901Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9135010Z #22 [gateway web 3/6] COPY apps/web/package*.json ./
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9136411Z #22 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9137041Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9138186Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9139521Z #18 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 0.6s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9140325Z #18 DONE 3.8s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9140549Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:09.9140788Z #23 [gateway web 4/6] RUN npm ci
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0592891Z #23 2.189 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0593705Z #23 2.189 added 23 packages, and audited 24 packages in 2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0594311Z #23 2.189 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0594847Z #23 2.189 6 packages are looking for funding
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0595473Z #23 2.189   run `npm fund` for details
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0595944Z #23 2.191 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0596388Z #23 2.191 found 0 vulnerabilities
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0597096Z #23 2.192 npm notice
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0597834Z #23 2.192 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0598912Z #23 2.192 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0599902Z #23 2.192 npm notice To update run: npm install -g npm@12.2.0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.0600549Z #23 2.192 npm notice
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6923080Z #23 DONE 2.9s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6932821Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6935947Z #20 [worker-a  3/10] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6941284Z #20 1.414 Fetched 9393 kB in 1s (7932 kB/s)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6942285Z #20 1.414 Reading package lists...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6943810Z #20 2.115 Reading package lists...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6945675Z #20 2.825 Building dependency tree...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6947745Z #20 2.980 Reading state information...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6948824Z #20 3.132 The following additional packages will be installed:
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6967798Z #20 3.133   libflac12 libmp3lame0 libmpg123-0 libogg0 libopus0 libvorbis0a libvorbisenc2
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6968973Z #20 3.133 Suggested packages:
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6969749Z #20 3.133   opus-tools
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6970538Z #20 3.223 The following NEW packages will be installed:
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6971172Z #20 3.224   libflac12 libgomp1 libmp3lame0 libmpg123-0 libogg0 libopus0 libsndfile1
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6971675Z #20 3.224   libvorbis0a libvorbisenc2
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6972161Z #20 3.257 0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6972612Z #20 3.257 Need to get 1415 kB of archives.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6973119Z #20 3.257 After this operation, 3734 kB of additional disk space will be used.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6973814Z #20 3.257 Get:1 http://deb.debian.org/debian bookworm/main amd64 libogg0 amd64 1.3.5-3 [23.4 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6974567Z #20 3.264 Get:2 http://deb.debian.org/debian bookworm/main amd64 libflac12 amd64 1.4.2+ds-2 [198 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6975718Z #20 3.306 Get:3 http://deb.debian.org/debian bookworm/main amd64 libgomp1 amd64 12.2.0-14+deb12u1 [116 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6977379Z #20 3.309 Get:4 http://deb.debian.org/debian bookworm/main amd64 libmp3lame0 amd64 3.100-6 [365 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6978866Z #20 3.310 Get:5 http://deb.debian.org/debian bookworm/main amd64 libmpg123-0 amd64 1.31.2-1+deb12u1 [147 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6980268Z #20 3.313 Get:6 http://deb.debian.org/debian bookworm/main amd64 libopus0 amd64 1.3.1-3 [195 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6981965Z #20 3.314 Get:7 http://deb.debian.org/debian bookworm/main amd64 libvorbis0a amd64 1.3.7-1 [93.0 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6983373Z #20 3.314 Get:8 http://deb.debian.org/debian bookworm/main amd64 libvorbisenc2 amd64 1.3.7-1 [80.6 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6984839Z #20 3.314 Get:9 http://deb.debian.org/debian bookworm/main amd64 libsndfile1 amd64 1.2.0-1+deb12u1 [197 kB]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.6986182Z #20 3.472 debconf: delaying package configuration, since apt-utils is not installed
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8243652Z #20 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8243954Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8244277Z #24 [gateway web 5/6] COPY apps/web ./
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8244810Z #24 DONE 0.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8245040Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8249120Z #20 [worker-a  3/10] RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8250346Z #20 3.625 Fetched 1415 kB in 0s (16.6 MB/s)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8251151Z #20 3.654 Selecting previously unselected package libogg0:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8251714Z #20 3.654 (Reading database ... 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8252015Z (Reading database ... 5%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8252289Z (Reading database ... 10%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8252553Z (Reading database ... 15%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8252812Z (Reading database ... 20%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8253059Z (Reading database ... 25%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8253304Z (Reading database ... 30%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8253547Z (Reading database ... 35%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8253797Z (Reading database ... 40%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8254044Z (Reading database ... 45%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8254291Z (Reading database ... 50%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8254537Z (Reading database ... 55%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8254784Z (Reading database ... 60%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8255039Z (Reading database ... 65%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8255291Z (Reading database ... 70%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8255546Z (Reading database ... 75%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8255793Z (Reading database ... 80%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8256052Z (Reading database ... 85%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8256299Z (Reading database ... 90%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8264756Z (Reading database ... 95%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8265340Z (Reading database ... 100%
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8266188Z (Reading database ... 6645 files and directories currently installed.)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8267597Z #20 3.664 Preparing to unpack .../0-libogg0_1.3.5-3_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8268584Z #20 3.668 Unpacking libogg0:amd64 (1.3.5-3) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8269443Z #20 3.693 Selecting previously unselected package libflac12:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8270435Z #20 3.696 Preparing to unpack .../1-libflac12_1.4.2+ds-2_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.8271311Z #20 3.699 Unpacking libflac12:amd64 (1.4.2+ds-2) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9443500Z #20 3.746 Selecting previously unselected package libgomp1:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9444588Z #20 3.749 Preparing to unpack .../2-libgomp1_12.2.0-14+deb12u1_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9445446Z #20 3.751 Unpacking libgomp1:amd64 (12.2.0-14+deb12u1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9446836Z #20 3.782 Selecting previously unselected package libmp3lame0:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9448262Z #20 3.784 Preparing to unpack .../3-libmp3lame0_3.100-6_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9449699Z #20 3.785 Unpacking libmp3lame0:amd64 (3.100-6) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9450859Z #20 3.833 Selecting previously unselected package libmpg123-0:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9452194Z #20 3.835 Preparing to unpack .../4-libmpg123-0_1.31.2-1+deb12u1_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:12.9453445Z #20 3.837 Unpacking libmpg123-0:amd64 (1.31.2-1+deb12u1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0487273Z #20 3.866 Selecting previously unselected package libopus0:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0489023Z #20 3.868 Preparing to unpack .../5-libopus0_1.3.1-3_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0490305Z #20 3.868 Unpacking libopus0:amd64 (1.3.1-3) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0491407Z #20 3.903 Selecting previously unselected package libvorbis0a:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0492650Z #20 3.905 Preparing to unpack .../6-libvorbis0a_1.3.7-1_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0493987Z #20 3.906 Unpacking libvorbis0a:amd64 (1.3.7-1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0494962Z #20 3.935 Selecting previously unselected package libvorbisenc2:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0496027Z #20 3.936 Preparing to unpack .../7-libvorbisenc2_1.3.7-1_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0497412Z #20 3.938 Unpacking libvorbisenc2:amd64 (1.3.7-1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.0498489Z #20 3.970 Selecting previously unselected package libsndfile1:amd64.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2200489Z #20 3.972 Preparing to unpack .../8-libsndfile1_1.2.0-1+deb12u1_amd64.deb ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2203185Z #20 3.973 Unpacking libsndfile1:amd64 (1.2.0-1+deb12u1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2204301Z #20 4.020 Setting up libmpg123-0:amd64 (1.31.2-1+deb12u1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2205660Z #20 4.023 Setting up libogg0:amd64 (1.3.5-3) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2206884Z #20 4.025 Setting up libgomp1:amd64 (12.2.0-14+deb12u1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2207965Z #20 4.027 Setting up libflac12:amd64 (1.4.2+ds-2) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2208989Z #20 4.030 Setting up libopus0:amd64 (1.3.1-3) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2209949Z #20 4.032 Setting up libvorbis0a:amd64 (1.3.7-1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2210941Z #20 4.035 Setting up libmp3lame0:amd64 (3.100-6) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2211932Z #20 4.037 Setting up libvorbisenc2:amd64 (1.3.7-1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2212982Z #20 4.040 Setting up libsndfile1:amd64 (1.2.0-1+deb12u1) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.2214060Z #20 4.043 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4196553Z #20 DONE 4.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4196897Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4197525Z #25 [worker-a  4/10] COPY pyproject.toml ./
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4198096Z #25 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4198320Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4198640Z #26 [worker-a  5/10] COPY worker worker
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4199092Z #26 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4199278Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:13.4200113Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:14.9660954Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:14.9687331Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:14.9692984Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:14.9694778Z #18 extracting sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 2.3s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:14.9696240Z #18 extracting sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 2.7s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:14.9697336Z #18 DONE 8.9s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:15.1174186Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:15.1177010Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:15.1178679Z #18 extracting sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4988015Z #18 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4988321Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4988609Z #28 [gateway web 6/6] RUN npm run build
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4989078Z #28 0.336 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4989563Z #28 0.336 > pulse-console@0.1.0 build
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4990147Z #28 0.336 > tsc --noEmit && vite build
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4990594Z #28 0.336 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4991130Z #28 2.606 vite v6.4.4 building for production...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4991712Z #28 2.711 transforming...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4992507Z #28 3.918 ✓ 28 modules transformed.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4993017Z #28 4.102 rendering chunks...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4993548Z #28 4.111 computing gzip size...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4994380Z #28 4.121 dist/index.html                   0.52 kB │ gzip:  0.35 kB
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4995378Z #28 4.122 dist/assets/index-zFlcuZ_H.css    4.80 kB │ gzip:  1.62 kB
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4996399Z #28 4.122 dist/assets/index-BgQ53yFq.js   203.98 kB │ gzip: 64.31 kB
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4997380Z #28 4.123 ✓ built in 1.48s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.4997780Z #28 DONE 4.8s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6491461Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6493159Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6494798Z #27 2.558 Looking in indexes: https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6495708Z #27 3.083 Collecting torch
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6497121Z #27 3.262   Downloading torch-2.14.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (37 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6498141Z #27 3.303 Collecting filelock (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6499014Z #27 3.424   Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6499947Z #27 3.453 Collecting typing-extensions>=4.10.0 (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6500973Z #27 3.461   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6501906Z #27 3.481 Collecting setuptools>=77.0.3 (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6503241Z #27 3.493   Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6504118Z #27 3.527 Collecting sympy>=1.13.3 (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6504953Z #27 3.536   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6505776Z #27 3.583 Collecting networkx>=2.5.1 (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6507115Z #27 3.592   Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6507868Z #27 3.616 Collecting jinja2 (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6513509Z #27 3.629   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6514323Z #27 3.677 Collecting fsspec>=0.8.5 (from torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6515164Z #27 3.686   Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6516130Z #27 3.753 Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6519951Z #27 3.763   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6520862Z #27 3.791 Collecting MarkupSafe>=2.0 (from jinja2->torch)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6522302Z #27 3.879   Downloading markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:17.6523865Z #27 3.899 Downloading torch-2.14.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl (196.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.0446563Z #27 4.611    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.3/196.3 MB 281.8 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.0447947Z #27 4.618 Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.0448899Z #27 4.652 Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.2119340Z #27 4.776    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 18.9 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.2122268Z #27 4.788 Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.2123888Z #27 4.805    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 81.0 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.2125175Z #27 4.812 Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4159607Z #27 4.943    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 50.1 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4161264Z #27 4.951 Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4162898Z #27 4.959    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 58.3 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4164022Z #27 4.967 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4165037Z #27 4.974 Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4165943Z #27 4.986 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.4167680Z #27 4.997 Downloading markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:18.7807979Z #27 5.512 Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.0589807Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.0590535Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.0592309Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.0594837Z #18 extracting sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 4.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.0596281Z #18 DONE 13.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2238533Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2240340Z #18 [gateway gateway 1/8] FROM docker.io/library/golang:1.27.3-bookworm@sha256:32fa283222e2905d9fee971f60c842e5c815fdc036cf7ea599bf36bd7ca8f67f
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2242146Z #18 extracting sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2243460Z #18 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2243931Z #18 DONE 13.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2244068Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.2244236Z #29 [gateway gateway 2/8] WORKDIR /src
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.6875988Z #29 DONE 0.6s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.6877067Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.6878200Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.8756131Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.8756782Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.8757198Z #30 [gateway gateway 3/8] COPY go.mod go.sum ./
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:19.8757781Z #30 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.0036729Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.0038115Z #31 [gateway gateway 4/8] RUN go mod download
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.0039274Z #31 DONE 0.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.0039963Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.0041557Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2145579Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2146073Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2146480Z #32 [gateway gateway 5/8] COPY cmd cmd
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2147354Z #32 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2147611Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2147964Z #33 [gateway gateway 6/8] COPY internal internal
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2148518Z #33 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2716279Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2717914Z #34 [gateway gateway 7/8] RUN mkdir /data && chown 65532:65532 /data
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2719957Z #34 DONE 0.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2720564Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.2722991Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.8725125Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.8726431Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:20.8727806Z #35 [gateway gateway 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /pulse ./cmd/gateway
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:39.2329404Z #35 DONE 19.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:39.2329731Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:39.2330578Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:39.8250675Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:39.8251308Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:39.8251836Z #36 [gateway stage-2 3/5] COPY --from=gateway /pulse /pulse
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0473433Z #36 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0473868Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0474705Z #37 [gateway stage-2 4/5] COPY --from=gateway --chown=65532:65532 /data /data
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0475469Z #37 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0475680Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0476254Z #38 [gateway stage-2 5/5] COPY --from=web /src/apps/web/dist /app/apps/web/dist
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0477221Z #38 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0477443Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0477752Z #39 [gateway] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.0478269Z #39 exporting layers
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.4039027Z #39 exporting layers 0.5s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.5298843Z #39 exporting manifest sha256:95ca218ea537afefe92a38f297fe75213668179dfe83d196fcdcf683bd23dd63 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.5300827Z #39 exporting config sha256:489945d5b76c81c0b7776735a1570f014f0f12abfee5c308ce2381d20bf3ac49 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.5302996Z #39 exporting attestation manifest sha256:48d71a7a46a2abb01f445f645574b6d0e209d72337930d7ec1809abb0a988a64 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.5305320Z #39 exporting manifest list sha256:a287a8d0fab0171781c6afb038840acb6163c036977b561b1b53b5b1bd94c8f3 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.5306810Z #39 naming to docker.io/library/pulse-clean-gateway:latest done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.5307856Z #39 unpacking to docker.io/library/pulse-clean-gateway:latest 0.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.7183040Z #39 DONE 0.7s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.7183701Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.7184984Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.7357291Z #27 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.7357526Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.7358271Z #40 [gateway] resolving provenance for metadata file
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.9009955Z #40 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.9010180Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:40.9010740Z #27 [worker-a  6/10] RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:44.5780415Z #27 31.16 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:44.5782251Z #27 31.16 Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 setuptools-78.1.0 sympy-1.14.0 torch-2.14.1+cpu typing-extensions-4.16.0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:44.5785178Z #27 31.16 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:44.7565666Z #27 DONE 31.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:44.7565980Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:44.7566385Z #41 [worker-a  7/10] RUN pip install --no-cache-dir .
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:45.3056048Z #41 0.700 Processing ./.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:45.4578370Z #41 0.702   Installing build dependencies: started
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:46.1046099Z #41 1.498   Installing build dependencies: finished with status 'done'
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:46.2548709Z #41 1.498   Getting requirements to build wheel: started
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:46.7421943Z #41 1.985   Getting requirements to build wheel: finished with status 'done'
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:46.7422659Z #41 1.986   Preparing metadata (pyproject.toml): started
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:46.7960900Z #41 2.190   Preparing metadata (pyproject.toml): finished with status 'done'
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:46.9320838Z #41 2.326 Collecting fastapi<1,>=0.115 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.4550803Z #41 2.653   Downloading fastapi-0.156.4-py3-none-any.whl.metadata (26 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.4551746Z #41 2.692 Collecting uvicorn<1,>=0.34 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.4552699Z #41 2.699   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.5265397Z #41 2.921 Collecting numpy<3,>=2 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6689872Z #41 2.928   Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6691220Z #41 2.942 Collecting faster-whisper==1.2.1 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6692313Z #41 2.949   Downloading faster_whisper-1.2.1-py3-none-any.whl.metadata (16 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6693319Z #41 2.967 Collecting piper-tts<2,>=1.3 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6694751Z #41 2.977   Downloading piper_tts-1.8.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6695530Z #41 3.011 Collecting transformers==5.20.2 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6696135Z #41 3.018   Downloading transformers-5.20.2-py3-none-any.whl.metadata (31 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.6697559Z #41 3.063 Requirement already satisfied: torch<3,>=2.6 in /usr/local/lib/python3.13/site-packages (from pulse-workers==0.1.0) (2.14.1+cpu)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.8191239Z #41 3.076 Collecting soundfile<1,>=0.13 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.8192358Z #41 3.083   Downloading soundfile-0.14.0-py2.py3-none-manylinux_2_28_x86_64.whl.metadata (18 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.9850911Z #41 3.213 Collecting scipy<2,>=1.15 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.9852129Z #41 3.222   Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.9853000Z #41 3.255 Collecting httpx<1,>=0.28 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:47.9853734Z #41 3.262   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.1252681Z #41 3.379 Collecting websockets<17,>=15 (from pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.1255106Z #41 3.387   Downloading websockets-16.1.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.1256911Z #41 3.466 Collecting ctranslate2<5,>=4.0 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.1257970Z #41 3.475   Downloading ctranslate2-4.8.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.2769065Z #41 3.520 Collecting huggingface-hub>=0.21 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.2770167Z #41 3.527   Downloading huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.2770951Z #41 3.671 Collecting tokenizers<1,>=0.13 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.4010056Z #41 3.678   Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.4011864Z #41 3.742 Collecting onnxruntime<2,>=1.14 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.4013130Z #41 3.749   Downloading onnxruntime-1.31.0-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.5151356Z #41 3.795 Collecting av>=11 (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.5152329Z #41 3.802   Downloading av-19.0.2-cp312-abi3-manylinux_2_28_x86_64.whl.metadata (5.0 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.5153175Z #41 3.832 Collecting tqdm (from faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.5153864Z #41 3.838   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.5154513Z #41 3.869 Collecting packaging>=20.0 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.5155170Z #41 3.876   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.6743262Z #41 3.909 Collecting pyyaml>=5.1 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.6744327Z #41 3.918   Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:48.9199358Z #41 4.314 Collecting regex>=2025.10.22 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.0688163Z #41 4.321   Downloading regex-2026.9.29-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.0689778Z #41 4.347 Collecting typer (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.0690820Z #41 4.354   Downloading typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.0691683Z #41 4.463 Collecting safetensors>=0.8.0 (from transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.2098887Z #41 4.470   Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.2100455Z #41 4.500 Collecting starlette>=0.46.0 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.2101645Z #41 4.507   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3163211Z #41 4.604 Collecting pydantic>=2.9.0 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3164669Z #41 4.617   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3167549Z #41 4.635 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.13/site-packages (from fastapi<1,>=0.115->pulse-workers==0.1.0) (4.16.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3169311Z #41 4.644 Collecting typing-inspection>=0.4.2 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3170834Z #41 4.651   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3171758Z #41 4.661 Collecting annotated-doc>=0.0.2 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3172461Z #41 4.668   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3173149Z #41 4.685 Collecting opentelemetry-api>=1.44.0 (from fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3174105Z #41 4.692   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.3174699Z #41 4.711 Collecting anyio (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4278288Z #41 4.718   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4279652Z #41 4.735 Collecting certifi (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4280982Z #41 4.744   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4282078Z #41 4.758 Collecting httpcore==1.* (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4282992Z #41 4.765   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4283586Z #41 4.781 Collecting idna (from httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4284407Z #41 4.788   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4285048Z #41 4.799 Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.28->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.4285688Z #41 4.807   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5309722Z #41 4.822 Collecting click<9.0.0,>=8.4.2 (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5311079Z #41 4.829   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5312454Z #41 4.831 Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.13/site-packages (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0) (3.32.3)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5314100Z #41 4.832 Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/site-packages (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0) (2026.7.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5315390Z #41 4.870 Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5316375Z #41 4.878   Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5318118Z #41 4.890 Collecting httpx2<3,>=2.0.0 (from huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5318923Z #41 4.898   Downloading httpx2-2.15.1-py3-none-any.whl.metadata (9.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5319843Z #41 4.918 Collecting httpcore2==2.15.1 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.5320697Z #41 4.925   Downloading httpcore2-2.15.1-py3-none-any.whl.metadata (27 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.7170034Z #41 4.940 Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.7170951Z #41 4.947   Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.7171746Z #41 4.962 Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.7172497Z #41 4.969   Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.8516463Z #41 5.111 Collecting protobuf>=4.25.8 (from onnxruntime<2,>=1.14->faster-whisper==1.2.1->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.8519134Z #41 5.118   Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.8520459Z #41 5.137 Collecting pathvalidate<4,>=3 (from piper-tts<2,>=1.3->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:49.8521189Z #41 5.144   Downloading pathvalidate-3.3.1-py3-none-any.whl.metadata (12 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0763920Z #41 5.246 Collecting cffi>=1.0 (from soundfile<1,>=0.13->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0764808Z #41 5.253   Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0765968Z #41 5.261 Requirement already satisfied: setuptools>=77.0.3 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (78.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0767496Z #41 5.262 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (1.14.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0769072Z #41 5.262 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (3.6.1)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0770216Z #41 5.263 Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/site-packages (from torch<3,>=2.6->pulse-workers==0.1.0) (3.1.6)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0771092Z #41 5.278 Collecting pycparser (from cffi>=1.0->soundfile<1,>=0.13->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0771739Z #41 5.286   Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0772487Z #41 5.313 Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.0773426Z #41 5.320   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6544742Z #41 5.942 Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi<1,>=0.115->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6545780Z #41 5.950   Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6547322Z #41 5.962 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/site-packages (from sympy>=1.13.3->torch<3,>=2.6->pulse-workers==0.1.0) (1.3.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6548607Z #41 5.968 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/site-packages (from jinja2->torch<3,>=2.6->pulse-workers==0.1.0) (3.0.3)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6549548Z #41 5.984 Collecting shellingham>=1.3.0 (from typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6550235Z #41 5.991   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6550933Z #41 6.019 Collecting rich>=13.8.0 (from typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6551531Z #41 6.026   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.6552247Z #41 6.041 Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.7876297Z #41 6.049   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.7878086Z #41 6.068 Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.7879462Z #41 6.076   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.7880779Z #41 6.092 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers==5.20.2->pulse-workers==0.1.0)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.7881549Z #41 6.099   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.7882128Z #41 6.110 Downloading faster_whisper-1.2.1-py3-none-any.whl (1.1 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.9455338Z #41 6.182    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 17.8 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:50.9455971Z #41 6.189 Downloading transformers-5.20.2-py3-none-any.whl (12.8 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.1637913Z #41 6.398    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 64.6 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.1638807Z #41 6.407 Downloading ctranslate2-4.8.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (40.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3742810Z #41 6.650    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.3/40.3 MB 166.1 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3744129Z #41 6.658 Downloading fastapi-0.156.4-py3-none-any.whl (147 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3745238Z #41 6.666 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3746306Z #41 6.673 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3747818Z #41 6.681 Downloading huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3749242Z #41 6.684    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 590.6 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3750137Z #41 6.691 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3751094Z #41 6.698 Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3751875Z #41 6.710    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 432.5 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3752387Z #41 6.717 Downloading httpx2-2.15.1-py3-none-any.whl (96 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3752874Z #41 6.724 Downloading httpcore2-2.15.1-py3-none-any.whl (85 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.3753537Z #41 6.732 Downloading numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.5917407Z #41 6.768    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 480.6 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.5918631Z #41 6.776 Downloading onnxruntime-1.31.0-cp313-cp313-manylinux_2_28_x86_64.whl (23.8 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.5920237Z #41 6.823    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.8/23.8 MB 525.6 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.5921113Z #41 6.835 Downloading piper_tts-1.8.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (34.1 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7946200Z #41 7.082    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.1/34.1 MB 138.2 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7947162Z #41 7.090 Downloading pathvalidate-3.3.1-py3-none-any.whl (24 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7948000Z #41 7.097 Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7948891Z #41 7.100    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.6/801.6 kB 743.6 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7949608Z #41 7.108 Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7950375Z #41 7.181    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 500.0 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.7951032Z #41 7.189 Downloading soundfile-0.14.0-py2.py3-none-manylinux_2_28_x86_64.whl (1.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9175246Z #41 7.193    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 783.6 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9177780Z #41 7.201 Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9179622Z #41 7.209    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 556.0 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9180521Z #41 7.216 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9181913Z #41 7.223 Downloading websockets-16.1.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (187 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9183198Z #41 7.230 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9183716Z #41 7.238 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:51.9184264Z #41 7.245 Downloading av-19.0.2-cp312-abi3-manylinux_2_28_x86_64.whl (35.0 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0223527Z #41 7.311    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 545.3 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0225120Z #41 7.319 Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0227171Z #41 7.327 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0228025Z #41 7.334 Downloading idna-3.20-py3-none-any.whl (69 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0228690Z #41 7.342 Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0229365Z #41 7.349 Downloading packaging-26.3-py3-none-any.whl (129 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0230007Z #41 7.356 Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0230587Z #41 7.364 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0231302Z #41 7.372 Downloading pydantic_core-2.50.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0232133Z #41 7.377    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 624.4 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0232879Z #41 7.384 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0233711Z #41 7.391 Downloading regex-2026.9.29-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0234585Z #41 7.394    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 761.4 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0235316Z #41 7.401 Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.0235973Z #41 7.409 Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2568429Z #41 7.416 Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2569351Z #41 7.424 Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2570211Z #41 7.431 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2571121Z #41 7.439 Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2572047Z #41 7.446 Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2572872Z #41 7.453 Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2573685Z #41 7.460 Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2574599Z #41 7.468 Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2575389Z #41 7.475 Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2576835Z #41 7.479    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 789.9 MB/s  0:00:00
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2577739Z #41 7.486 Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2578556Z #41 7.493 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.2579385Z #41 7.500 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.5861766Z #41 7.829 Building wheels for collected packages: pulse-workers
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.5862430Z #41 7.830   Building wheel for pulse-workers (pyproject.toml): started
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.7985948Z #41 8.046   Building wheel for pulse-workers (pyproject.toml): finished with status 'done'
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.7988283Z #41 8.047   Created wheel for pulse-workers: filename=pulse_workers-0.1.0-py3-none-any.whl size=4944 sha256=f20db13979f68b7e443ba414cb8a959c1f4f8c73aeb164f2f66e84e668360ffa
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.7990548Z #41 8.047   Stored in directory: /tmp/pip-ephem-wheel-cache-kyasrb2r/wheels/19/62/e5/caf0138816cbbc0c92b8fb19626cf9ac282f22194a65231821
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.7991799Z #41 8.049 Successfully built pulse-workers
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:51:52.7995493Z #41 8.193 Installing collected packages: flatbuffers, websockets, typing-inspection, truststore, tqdm, shellingham, safetensors, regex, pyyaml, pygments, pydantic-core, pycparser, protobuf, pathvalidate, packaging, opentelemetry-api, numpy, mdurl, idna, hf-xet, h11, click, certifi, av, annotated-types, annotated-doc, uvicorn, scipy, pydantic, onnxruntime, markdown-it-py, httpcore2, httpcore, ctranslate2, cffi, anyio, starlette, soundfile, rich, piper-tts, httpx2, httpx, typer, huggingface-hub, fastapi, tokenizers, transformers, faster-whisper, pulse-workers
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:11.3175782Z #41 26.71 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:11.4760160Z #41 26.72 Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 av-19.0.2 certifi-2026.10.19 cffi-2.1.1 click-8.5.0 ctranslate2-4.8.3 fastapi-0.156.4 faster-whisper-1.2.1 flatbuffers-25.12.19 h11-0.16.0 hf-xet-1.7.0 httpcore-1.0.9 httpcore2-2.15.1 httpx-0.28.1 httpx2-2.15.1 huggingface-hub-2.2.0 idna-3.20 markdown-it-py-4.2.0 mdurl-0.1.2 numpy-2.5.4 onnxruntime-1.31.0 opentelemetry-api-1.45.1 packaging-26.3 pathvalidate-3.3.1 piper-tts-1.8.0 protobuf-7.36.2 pulse-workers-0.1.0 pycparser-3.11 pydantic-2.14.1 pydantic-core-2.50.1 pygments-2.21.0 pyyaml-6.0.3 regex-2026.9.29 rich-15.0.0 safetensors-0.8.0 scipy-1.18.1 shellingham-1.5.4 soundfile-0.14.0 starlette-1.9.0 tokenizers-0.23.3 tqdm-4.70.1 transformers-5.20.2 truststore-0.10.5 typer-0.27.3 typing-inspection-0.4.4 uvicorn-0.54.0 websockets-16.1.1
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:11.4765871Z #41 26.72 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:11.4768053Z #41 26.72 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:11.4768728Z #41 26.72 [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:11.4769601Z #41 26.72 [notice] To update, run: pip install --upgrade pip
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.2548693Z #41 DONE 28.5s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.2548936Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.2549132Z #42 [init  8/10] COPY scripts scripts
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.3993345Z #42 DONE 0.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.3993701Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.3994069Z #43 [worker-b  9/10] RUN mkdir -p docs/results
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.5510136Z #43 DONE 0.1s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.5510494Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:13.5511412Z #44 [worker-a 10/10] RUN python scripts/fetch_models.py
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:15.6094715Z #44 2.209 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:15.8533987Z Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:15.8535528Z Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  7.28it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:16.0039002Z #44 2.453 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:17.4230082Z Fetching 6 files:  83%|████████▎ | 5/6 [00:00<00:00, 23.19it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:17.4230778Z Fetching 6 files: 100%|██████████| 6/6 [00:01<00:00,  3.61it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:17.6119937Z #44 4.074 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:17.6120710Z Fetching 25 files:   0%|          | 0/25 [00:00<?, ?it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:19.1855311Z Fetching 25 files:   4%|▍         | 1/25 [00:00<00:03,  7.29it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:19.3686121Z Fetching 25 files:  32%|███▏      | 8/25 [00:01<00:03,  5.07it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:20.8021052Z Fetching 25 files:  36%|███▌      | 9/25 [00:01<00:03,  4.58it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:20.9486174Z Fetching 25 files:  40%|████      | 10/25 [00:03<00:06,  2.42it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.0945787Z Fetching 25 files:  44%|████▍     | 11/25 [00:03<00:05,  2.77it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.0947472Z Fetching 25 files:  48%|████▊     | 12/25 [00:03<00:04,  3.23it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.3560916Z Fetching 25 files:  52%|█████▏    | 13/25 [00:03<00:03,  3.71it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.3562934Z Fetching 25 files:  56%|█████▌    | 14/25 [00:03<00:02,  4.28it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.6567465Z Fetching 25 files:  64%|██████▍   | 16/25 [00:03<00:01,  6.18it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.9060578Z Fetching 25 files:  72%|███████▏  | 18/25 [00:04<00:00,  7.75it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:21.9470069Z Fetching 25 files:  80%|████████  | 20/25 [00:04<00:00,  7.84it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:22.7053142Z Fetching 25 files:  84%|████████▍ | 21/25 [00:04<00:00,  7.13it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:22.8490039Z Fetching 25 files:  88%|████████▊ | 22/25 [00:05<00:00,  4.09it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.0021279Z Fetching 25 files:  92%|█████████▏| 23/25 [00:05<00:00,  4.48it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.0022371Z Fetching 25 files:  96%|█████████▌| 24/25 [00:05<00:00,  4.97it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.0023365Z Fetching 25 files: 100%|██████████| 25/25 [00:05<00:00,  4.65it/s]
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.7477513Z #44 DONE 10.2s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.7490014Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.7497107Z #45 [init] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:23.7507144Z #45 exporting layers
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:33.6478093Z #45 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:33.6482580Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:33.6482958Z #46 [worker-b] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:33.7977553Z #46 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:33.7983100Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:52:33.7983579Z #47 [worker-a] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.1040365Z #47 exporting layers 75.5s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3118296Z #47 exporting manifest sha256:d207ed08a2f6b5ba5024b78b660f0619222b0af0bc75764212149680cb936058 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3119930Z #47 exporting config sha256:6e8573811aa3feb27684be77d4faf2370ae78d1388ee8559e7a92f8d3ce06d23 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3126797Z #47 exporting attestation manifest sha256:94afec90a66e4b3be2cf1edbf5fa9a7dbb1d006b2100a48922c23cafbf483145 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3128664Z #47 exporting manifest list sha256:032b42331df494fe98af5ac1c781aa06f4128a6c5d69a9b80d22be54f39c0b21 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3129977Z #47 naming to docker.io/library/pulse-clean-worker-a:latest done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3130996Z #47 unpacking to docker.io/library/pulse-clean-worker-a:latest
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3131664Z #47 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3131869Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3132111Z #45 [init] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3132678Z #45 exporting layers 75.5s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3133766Z #45 exporting manifest sha256:f25b51cd3fbe5d7392a1a6088c5a02026d3609abf8b31d295d7cd07ec414e63b done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3135343Z #45 exporting config sha256:eabb3bd377babb8216b2196a2fe4f2fcaa7c6d8b647d00c5d3136201641ed5a5 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3137282Z #45 exporting attestation manifest sha256:4d31cb61117cb01481dfbd2c4e069b79d2ba5c00630b8063191597f2b1e068db 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3139012Z #45 exporting manifest list sha256:cffcdcb1e5d05e310eb69ba798d52b522ca16f51488701c88fed5081fa8e1f47 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3140243Z #45 naming to docker.io/library/pulse-clean-init:latest done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:39.3141119Z #45 unpacking to docker.io/library/pulse-clean-init:latest
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2118921Z #45 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2119236Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2119540Z #46 [worker-b] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2119932Z #46 exporting layers 75.5s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2120984Z #46 exporting manifest sha256:7bba04d1d62ae751b8e892ec5e9c4d1006563272957440a5a340da31edfac6f0 done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2122208Z #46 exporting config sha256:98a17d1958e8343c6478d7bc8905478970f144bc2b8b57451f3c39ac8c6adebc done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2123644Z #46 exporting attestation manifest sha256:b423398ca0dff80e6b4d18b70f033639f41b353243ad2b956c27fa05e2c4c8ef 0.0s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2124586Z #46 exporting manifest list sha256:f6fcd8cf4131047683bd5a9bd5b8ea6116d5c72667371a51714f0e7bce050b3a done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2125301Z #46 naming to docker.io/library/pulse-clean-worker-b:latest done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:53:49.2125828Z #46 unpacking to docker.io/library/pulse-clean-worker-b:latest
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:15.7385320Z #46 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:15.7385619Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:15.7385850Z #45 [init] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:15.7386868Z #45 unpacking to docker.io/library/pulse-clean-init:latest 36.6s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:16.8911510Z #45 ...
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:16.8912275Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:16.8913150Z #46 [worker-b] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:16.8916072Z #46 unpacking to docker.io/library/pulse-clean-worker-b:latest 37.2s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:16.8919472Z #46 DONE 113.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0425136Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0426140Z #47 [worker-a] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0427231Z #47 unpacking to docker.io/library/pulse-clean-worker-a:latest 37.1s done
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0428608Z #47 DONE 113.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0429011Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0429407Z #45 [init] exporting to image
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.0430106Z #45 DONE 113.3s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.5687264Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.5688424Z #48 [init] resolving provenance for metadata file
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6244104Z #48 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6244790Z  Image pulse-clean-worker-a Built 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6245382Z  Image pulse-clean-worker-b Built 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6245975Z  Image pulse-clean-init Built 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6246836Z  Image pulse-clean-gateway Built 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6247239Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6247671Z #49 [worker-b] resolving provenance for metadata file
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6248061Z #49 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6248186Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6248416Z #50 [worker-a] resolving provenance for metadata file
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6248839Z #50 DONE 0.0s
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6250220Z  Network pulse-clean_default Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6579646Z  Network pulse-clean_default Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6593816Z  Volume pulse-clean_public-sample Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6606168Z  Volume pulse-clean_public-sample Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6610234Z  Volume pulse-clean_history Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6617208Z  Volume pulse-clean_history Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6641413Z  Container pulse-clean-worker-a-1 Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6642187Z  Container pulse-clean-init-1 Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:17.6642843Z  Container pulse-clean-worker-b-1 Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.3461001Z  Container pulse-clean-init-1 Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.3477631Z  Container pulse-clean-worker-b-1 Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.3500100Z  Container pulse-clean-worker-a-1 Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.3501023Z  Container pulse-clean-gateway-1 Creating 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.4038012Z  Container pulse-clean-gateway-1 Created 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.4346738Z  Container pulse-clean-init-1 Starting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.4349810Z  Container pulse-clean-worker-a-1 Starting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.4350480Z  Container pulse-clean-worker-b-1 Starting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.7729080Z  Container pulse-clean-init-1 Started 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.7748135Z  Container pulse-clean-worker-a-1 Started 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.7792418Z  Container pulse-clean-worker-b-1 Started 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.7798378Z  Container pulse-clean-worker-a-1 Waiting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.7799378Z  Container pulse-clean-worker-b-1 Waiting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:19.7800192Z  Container pulse-clean-init-1 Waiting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:21.7812508Z  Container pulse-clean-init-1 Exited 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.2811343Z  Container pulse-clean-worker-b-1 Healthy 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.2812241Z  Container pulse-clean-worker-a-1 Healthy 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.2812882Z  Container pulse-clean-gateway-1 Starting 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5132464Z  Container pulse-clean-gateway-1 Started 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5396390Z {"status":"ok"}
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5466469Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5468347Z                                  Dload  Upload  Total   Spent   Left   Speed
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5468662Z 
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5488461Z {"status":"ok"}
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5497963Z   0      0   0      0   0      0      0      0                              0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5501929Z 100     16 100     16   0      0   6896      0                              0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5502886Z 100     16 100     16   0      0   6714      0                              0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:25.5503631Z 100     16 100     16   0      0   6501      0                              0
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:33.3192116Z cp: cannot create directory '/home/runner/work/pulse/pulse/docs/results/container-ci': No such file or directory
+gates	Fresh clone real-model Compose smoke	2026-10-21T05:54:33.3214675Z ##[error]Process completed with exit code 1.
+gates	Run actions/upload-artifact@v4	﻿2026-10-21T05:54:33.3289388Z ##[group]Run actions/upload-artifact@v4
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3289693Z with:
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3289901Z   name: pulse-ci-evidence
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3290155Z   path: docs/results/container-ci/
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3290415Z   if-no-files-found: warn
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3290639Z   compression-level: 6
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3290852Z   overwrite: false
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3291066Z   include-hidden-files: false
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3291295Z env:
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3291543Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3291997Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3292431Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3292811Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3293194Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3293576Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.3293898Z ##[endgroup]
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.6959666Z (node:13043) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.6960559Z (Use `node --trace-deprecation ...` to show where the warning was created)
+gates	Run actions/upload-artifact@v4	2026-10-21T05:54:33.7000896Z ##[warning]No files were found with the provided path: docs/results/container-ci/. No artifacts will be uploaded.
+gates	Post Run actions/checkout@v4	﻿2026-10-21T05:54:33.7295171Z Post job cleanup.
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8249808Z [command]/usr/bin/git version
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8299449Z git version 2.55.0
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8368454Z Temporarily overriding HOME='/home/runner/work/_temp/cf499163-e759-4046-b2b0-6637a7c7bb25' before making global git config changes
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8370191Z Adding repository directory to the temporary git global config as a safe directory
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8371647Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse/pulse
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8387896Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8427869Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8785357Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8814880Z http.https://github.com/.extraheader
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8827131Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.8870494Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.9187629Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+gates	Post Run actions/checkout@v4	2026-10-21T05:54:33.9235064Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+gates	Complete job	﻿2026-10-21T05:54:33.9755593Z Cleaning up orphan processes
+gates	Complete job	2026-10-21T05:54:34.0258879Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-go@v5, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

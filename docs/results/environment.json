@@ -1,0 +1,25 @@
+{
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.2",
+  "go": "go version go1.27.3 darwin/arm64",
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.20.2",
+    "faster-whisper": "1.2.1",
+    "piper-tts": "1.8.0",
+    "numpy": "2.5.4",
+    "fastapi": "0.156.4"
+  },
+  "source_sha256": {
+    "internal/gateway/router.go": "bfd37442abba598b1054ab6028bcdf9a9093d302776a9a5a7ea8feb77f01e7d0",
+    "internal/gateway/server.go": "27acaa4bb5c1c0ad7ea78324764750708ba006a8af27bd84f70a738ff87ee6b7",
+    "internal/gateway/journal.go": "c4e11820be31ce720dbc229fbc2147d9a1f5daf5a201df6fdb3a1ddffbe5ba7a",
+    "worker/app.py": "559cc990bb6da3543a81168a1d1b8032ade432911d4bdc77293e449258219155"
+  },
+  "source_head": "5f268fefa2ef95cf7a2fdd3019edd22311ea2db6",
+  "limitations": [
+    "no local Docker daemon",
+    "no CUDA GPU",
+    "hosted engine not deployed"
+  ]
+}

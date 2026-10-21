@@ -1,0 +1,75 @@
+test -z "$(/tmp/relay-toolchain/go/bin/go fmt ./...)"
+/tmp/relay-toolchain/go/bin/go vet ./...
+.venv/bin/ruff check worker scripts tests
+All checks passed!
+.venv/bin/ruff format --check worker scripts tests
+11 files already formatted
+cd apps/web && npm run lint
+
+> pulse-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+/tmp/relay-toolchain/go/bin/go test -race -timeout 60s -count=1 -v ./...
+?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+=== RUN   TestBreakerSingleHalfOpenProbe
+--- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+=== RUN   TestCancelledAttemptDoesNotTripBreaker
+--- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+=== RUN   TestFallbackResetsBeforeAudio
+--- PASS: TestFallbackResetsBeforeAudio (0.00s)
+=== RUN   TestNoReplayAfterVisibleAudio
+--- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+=== RUN   TestDeadlineCancelsBackend
+--- PASS: TestDeadlineCancelsBackend (0.04s)
+=== RUN   TestAdmissionBounded
+--- PASS: TestAdmissionBounded (0.00s)
+=== RUN   TestJournalReopenAndCorruption
+--- PASS: TestJournalReopenAndCorruption (0.02s)
+=== RUN   TestConcurrentJournalWrites
+--- PASS: TestConcurrentJournalWrites (0.08s)
+=== RUN   TestClientSendFailureIsNotSuccess
+--- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+=== RUN   TestWebsocketGenerationFencesInterruptedTurn
+2026/10/21 00:48:03 INFO turn_finished turn=df10711712543c3c7acc2ada84d66e69 trace_id=df10711712543c3c7acc2ada84d66e69 outcome=cancelled backend=a first_audio_ms=0 total_ms=1.495
+2026/10/21 00:48:03 INFO turn_finished turn=73d166076afc714589be6e533e9e7e32 trace_id=73d166076afc714589be6e533e9e7e32 outcome=done backend=a first_audio_ms=21.361 total_ms=21.557
+--- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.03s)
+=== RUN   TestAuthAndOriginRejected
+--- PASS: TestAuthAndOriginRejected (0.00s)
+=== RUN   TestStaleBreakerCompletionCannotReleaseProbe
+--- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+PASS
+ok  	github.com/rjrddy/pulse/internal/gateway	1.420s
+.venv/bin/pytest -q
+....                                                                     [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /Users/rajreddy/dev/outreach/flagships/pulse/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 1 warning in 0.33s
+.venv/bin/python scripts/bench.py
+{"concurrency": 1, "samples": 2, "first_audio_p50_ms": 563.7209169799462, "first_audio_p99_ms": 567.5030231568962, "ttft_p50_ms": 175.27783353580162, "ttft_p99_ms": 178.18643287871964}
+{"concurrency": 2, "samples": 4, "first_audio_p50_ms": 853.6649374873377, "first_audio_p99_ms": 1152.2352957364637, "ttft_p50_ms": 453.6607710761018, "ttft_p99_ms": 751.4589095290285}
+Traceback (most recent call last):
+  File "/Users/rajreddy/dev/outreach/flagships/pulse/scripts/bench.py", line 273, in <module>
+    asyncio.run(campaign())
+    ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/rajreddy/dev/outreach/flagships/pulse/scripts/bench.py", line 216, in campaign
+    rows.extend(await asyncio.gather(*(turn() for _ in range(concurrency))))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajreddy/dev/outreach/flagships/pulse/scripts/bench.py", line 124, in turn
+    raise AssertionError(event)
+AssertionError: {'type': 'error', 'generation': 1, 'elapsed_ms': 0, 'error': 'failed', 'client_ms': 4.195166984573007}
+make: *** [bench] Error 1

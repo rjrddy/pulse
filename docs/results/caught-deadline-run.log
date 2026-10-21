@@ -1,0 +1,29 @@
+?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+=== RUN   TestBreakerSingleHalfOpenProbe
+--- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+=== RUN   TestCancelledAttemptDoesNotTripBreaker
+--- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+=== RUN   TestFallbackResetsBeforeAudio
+--- PASS: TestFallbackResetsBeforeAudio (0.00s)
+=== RUN   TestNoReplayAfterVisibleAudio
+--- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+=== RUN   TestDeadlineCancelsBackend
+--- PASS: TestDeadlineCancelsBackend (0.04s)
+=== RUN   TestAdmissionBounded
+--- PASS: TestAdmissionBounded (0.00s)
+=== RUN   TestJournalReopenAndCorruption
+--- PASS: TestJournalReopenAndCorruption (0.01s)
+=== RUN   TestConcurrentJournalWrites
+--- PASS: TestConcurrentJournalWrites (0.07s)
+=== RUN   TestClientSendFailureIsNotSuccess
+--- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+=== RUN   TestWebsocketGenerationFencesInterruptedTurn
+2026/10/21 00:39:32 INFO turn_finished turn=fdaeb5e5e432a769a19f6daca3dce0c8 trace_id=fdaeb5e5e432a769a19f6daca3dce0c8 outcome=cancelled backend=a first_audio_ms=0 total_ms=1.002
+2026/10/21 00:39:32 INFO turn_finished turn=0278326e639d90dadb06fa8cb8f97a3f trace_id=0278326e639d90dadb06fa8cb8f97a3f outcome=failed backend=a first_audio_ms=0 total_ms=102.665
+    gateway_test.go:205: read tcp 127.0.0.1:50059->127.0.0.1:50058: i/o timeout
+--- FAIL: TestWebsocketGenerationFencesInterruptedTurn (2.00s)
+=== RUN   TestAuthAndOriginRejected
+--- PASS: TestAuthAndOriginRejected (0.00s)
+FAIL
+FAIL	github.com/rjrddy/pulse/internal/gateway	2.347s
+FAIL

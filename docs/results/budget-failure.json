@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "max_new_tokens": 32,
+  "concurrency": 4,
+  "budget_ms": 1000.0,
+  "measured_p99_ms": 1464.3516731867567,
+  "samples": 8,
+  "source": "model-bench.json"
+}

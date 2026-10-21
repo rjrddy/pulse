@@ -1,0 +1,48 @@
+test -z "$(/tmp/relay-toolchain/go/bin/go fmt ./...)"
+/tmp/relay-toolchain/go/bin/go vet ./...
+.venv/bin/ruff check worker scripts tests
+All checks passed!
+.venv/bin/ruff format --check worker scripts tests
+14 files already formatted
+cd apps/web && npm run lint
+
+> pulse-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+/tmp/relay-toolchain/go/bin/go test -race -timeout 60s -count=1 -v ./...
+?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+=== RUN   TestBreakerSingleHalfOpenProbe
+--- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+=== RUN   TestCancelledAttemptDoesNotTripBreaker
+--- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+=== RUN   TestFallbackResetsBeforeAudio
+--- PASS: TestFallbackResetsBeforeAudio (0.00s)
+=== RUN   TestNoReplayAfterVisibleAudio
+--- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+=== RUN   TestDeadlineCancelsBackend
+--- PASS: TestDeadlineCancelsBackend (0.04s)
+=== RUN   TestAdmissionBounded
+--- PASS: TestAdmissionBounded (0.00s)
+=== RUN   TestJournalReopenAndCorruption
+--- PASS: TestJournalReopenAndCorruption (0.02s)
+=== RUN   TestConcurrentJournalWrites
+--- PASS: TestConcurrentJournalWrites (0.22s)
+=== RUN   TestClientSendFailureIsNotSuccess
+--- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+=== RUN   TestWebsocketGenerationFencesInterruptedTurn
+2026/10/21 17:19:38 INFO turn_finished turn=ab6822490946b96937298cb56fc8fd01 trace_id=ab6822490946b96937298cb56fc8fd01 outcome=cancelled backend=a first_audio_ms=0 total_ms=1.004
+2026/10/21 17:19:38 INFO turn_finished turn=0840c5f55fe366ef3b4efc316a5794ff trace_id=0840c5f55fe366ef3b4efc316a5794ff outcome=done backend=a first_audio_ms=21.73 total_ms=21.874
+--- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.03s)
+=== RUN   TestAuthAndOriginRejected
+--- PASS: TestAuthAndOriginRejected (0.00s)
+=== RUN   TestStaleBreakerCompletionCannotReleaseProbe
+--- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+=== RUN   TestCapacityResponseDoesNotOpenCircuit
+--- PASS: TestCapacityResponseDoesNotOpenCircuit (0.00s)
+PASS
+ok  	github.com/rjrddy/pulse/internal/gateway	1.705s
+.venv/bin/python -m pytest -q
+....                                                                     [100%]
+4 passed in 0.44s

@@ -1,0 +1,52 @@
+test -z "$(/tmp/relay-toolchain/go/bin/go fmt ./...)"
+/tmp/relay-toolchain/go/bin/go vet ./...
+.venv/bin/ruff check worker scripts tests
+All checks passed!
+.venv/bin/ruff format --check worker scripts tests
+10 files already formatted
+cd apps/web && npm run lint
+
+> pulse-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+/tmp/relay-toolchain/go/bin/go test -race -timeout 60s -count=1 -v ./...
+?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+=== RUN   TestBreakerSingleHalfOpenProbe
+--- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+=== RUN   TestCancelledAttemptDoesNotTripBreaker
+--- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+=== RUN   TestFallbackResetsBeforeAudio
+--- PASS: TestFallbackResetsBeforeAudio (0.01s)
+=== RUN   TestNoReplayAfterVisibleAudio
+--- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+=== RUN   TestDeadlineCancelsBackend
+--- PASS: TestDeadlineCancelsBackend (0.04s)
+=== RUN   TestAdmissionBounded
+--- PASS: TestAdmissionBounded (0.00s)
+=== RUN   TestJournalReopenAndCorruption
+--- PASS: TestJournalReopenAndCorruption (0.01s)
+=== RUN   TestConcurrentJournalWrites
+--- PASS: TestConcurrentJournalWrites (0.09s)
+=== RUN   TestClientSendFailureIsNotSuccess
+--- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+=== RUN   TestWebsocketGenerationFencesInterruptedTurn
+2026/10/21 00:45:29 INFO turn_finished turn=43ba63df735a4adc643435f2b6681f3f trace_id=43ba63df735a4adc643435f2b6681f3f outcome=cancelled backend=a first_audio_ms=0 total_ms=1.051
+2026/10/21 00:45:29 INFO turn_finished turn=a04e883684b05365dc9090dd87d84f72 trace_id=a04e883684b05365dc9090dd87d84f72 outcome=done backend=a first_audio_ms=21.975 total_ms=22.16
+--- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.03s)
+=== RUN   TestAuthAndOriginRejected
+--- PASS: TestAuthAndOriginRejected (0.00s)
+=== RUN   TestStaleBreakerCompletionCannotReleaseProbe
+--- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+PASS
+ok  	github.com/rjrddy/pulse/internal/gateway	1.420s
+.venv/bin/pytest -q
+....                                                                     [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /Users/rajreddy/dev/outreach/flagships/pulse/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 1 warning in 0.26s

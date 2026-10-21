@@ -1,0 +1,12 @@
+{
+  "files": {
+    "jfk.flac": "https://raw.githubusercontent.com/openai/whisper/main/tests/jfk.flac",
+    "en_US-lessac-low.onnx": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/low/en_US-lessac-low.onnx",
+    "en_US-lessac-low.onnx.json": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/low/en_US-lessac-low.onnx.json",
+    "PIPER_MODEL_CARD": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/low/MODEL_CARD"
+  },
+  "asr": "Systran/faster-whisper-tiny",
+  "llm": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "tts": "rhasspy/piper-voices/en_US-lessac-low",
+  "usage": "local CPU measurements; vLLM/GPU not measured"
+}

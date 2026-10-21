@@ -1,0 +1,23 @@
+{
+  "scope": "fresh Python worker processes with warm filesystem/model cache; direct HTTP",
+  "container_start": "not measured",
+  "container_restore": "not measured",
+  "samples": 3,
+  "rows": [
+    {
+      "ready_ms": 342.65004098415375,
+      "process_start_to_first_audio_ms": 5350.45266605448,
+      "first_response_total_ms": 5351.683165994473
+    },
+    {
+      "ready_ms": 269.50933295302093,
+      "process_start_to_first_audio_ms": 4050.321332993917,
+      "first_response_total_ms": 4051.4921660069376
+    },
+    {
+      "ready_ms": 269.1837919410318,
+      "process_start_to_first_audio_ms": 4005.7247919030488,
+      "first_response_total_ms": 4010.3071249322966
+    }
+  ]
+}

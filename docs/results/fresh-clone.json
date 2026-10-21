@@ -1,0 +1,6 @@
+{
+  "command": "git clone --no-local . /tmp/pulse-fresh-clone; make setup build lint test",
+  "exit_code": 0,
+  "verified_head": "cd1eae16b85da99c7ba49153331a904fb0f64d89",
+  "scope": "independent native dependencies and build; real Linux Compose verified separately in CI"
+}

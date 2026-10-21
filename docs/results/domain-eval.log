@@ -1,0 +1,14 @@
+[
+  {
+    "glossary_hints": false,
+    "samples": 3,
+    "term_accuracy": 0.6666666666666666,
+    "word_error_rate": 0.26666666666666666
+  },
+  {
+    "glossary_hints": true,
+    "samples": 3,
+    "term_accuracy": 1.0,
+    "word_error_rate": 0.0
+  }
+]

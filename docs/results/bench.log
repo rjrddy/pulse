@@ -1,0 +1,7 @@
+{"concurrency": 1, "samples": 2, "first_audio_p50_ms": 496.87466653995216, "first_audio_p99_ms": 501.36053467169404, "ttft_p50_ms": 57.04341648379341, "ttft_p99_ms": 59.12481445935555}
+{"concurrency": 2, "samples": 4, "first_audio_p50_ms": 756.4266039989889, "first_audio_p99_ms": 1026.8144868407398, "ttft_p50_ms": 303.34437446435913, "ttft_p99_ms": 571.2808498577215}
+{"concurrency": 4, "samples": 8, "first_audio_p50_ms": 1036.8590835132636, "first_audio_p99_ms": 1447.1824511967134, "ttft_p50_ms": 440.2260415372439, "ttft_p99_ms": 915.4247123957612}
+{"concurrency": 1, "samples": 2, "first_audio_p50_ms": 195.51460444927216, "first_audio_p99_ms": 198.6542593757622, "ttft_p50_ms": 55.65643799491227, "ttft_p99_ms": 56.78174359956756}
+{"concurrency": 2, "samples": 4, "first_audio_p50_ms": 287.3933329829015, "first_audio_p99_ms": 387.28165372041985, "ttft_p50_ms": 151.85666643083096, "ttft_p99_ms": 245.97374746692367}
+{"concurrency": 4, "samples": 8, "first_audio_p50_ms": 471.83666698401794, "first_audio_p99_ms": 671.8028889317065, "ttft_p50_ms": 245.02510449383408, "ttft_p99_ms": 511.33310661884025}
+Saved actual CPU load, public-speech, interruption and backend-kill evidence.

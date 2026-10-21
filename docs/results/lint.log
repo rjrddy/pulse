@@ -1,0 +1,13 @@
+test -z "$(/tmp/relay-toolchain/go/bin/go fmt ./...)"
+/tmp/relay-toolchain/go/bin/go vet ./...
+.venv/bin/ruff check worker scripts tests
+All checks passed!
+.venv/bin/ruff format --check worker scripts tests
+7 files already formatted
+cd apps/web && npm run lint
+
+> pulse-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!

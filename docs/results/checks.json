@@ -1,0 +1,12 @@
+{
+  "command": "make lint test bench",
+  "exit_code": 0,
+  "go_race_tests_passed": 13,
+  "python_tests_passed": 4,
+  "source_head": "5f268fefa2ef95cf7a2fdd3019edd22311ea2db6",
+  "core_sha256": {
+    "internal/gateway/router.go": "bfd37442abba598b1054ab6028bcdf9a9093d302776a9a5a7ea8feb77f01e7d0",
+    "internal/gateway/server.go": "27acaa4bb5c1c0ad7ea78324764750708ba006a8af27bd84f70a738ff87ee6b7",
+    "worker/app.py": "559cc990bb6da3543a81168a1d1b8032ade432911d4bdc77293e449258219155"
+  }
+}

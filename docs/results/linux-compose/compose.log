@@ -1,0 +1,12 @@
+gateway-1   | {"time":"2026-10-21T13:28:28.975414471Z","level":"INFO","msg":"listening","port":"8081"}
+worker-b-1  | INFO:     Started server process [1]
+gateway-1   | {"time":"2026-10-21T13:28:34.254366103Z","level":"INFO","msg":"turn_finished","turn":"4c2d7e40f72bb444f692b830289313be","trace_id":"4c2d7e40f72bb444f692b830289313be","outcome":"done","backend":"worker-1","first_audio_ms":5146.524,"total_ms":5146.88}
+worker-b-1  | INFO:     Waiting for application startup.
+worker-a-1  | INFO:     Started server process [1]
+worker-a-1  | INFO:     Waiting for application startup.
+worker-a-1  | INFO:     Application startup complete.
+worker-a-1  | INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+worker-a-1  | [0;93m2026-10-21 13:28:30.122888487 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+worker-a-1  | Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 5336.46it/s]
+worker-b-1  | INFO:     Application startup complete.
+worker-b-1  | INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
