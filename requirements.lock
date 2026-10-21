@@ -48,7 +48,6 @@ platformdirs==4.13.5
 playwright==1.64.0
 pluggy==1.7.0
 protobuf==7.36.2
--e git+https://github.com/rjrddy/pulse.git@01a07f6fdb2e4f6c487d73ba7b722cc514a0fa0e#egg=pulse_workers
 py-serializable==2.1.0
 pycparser==3.11
 pydantic==2.14.1

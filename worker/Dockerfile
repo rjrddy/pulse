@@ -3,6 +3,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends libsndfile1 libgomp1 && rm -rf /var/lib/apt/lists/*
 COPY pyproject.toml ./
 COPY worker worker
+RUN pip install --no-cache-dir --upgrade pip==26.2.2
 RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir .
 COPY scripts scripts

@@ -13,3 +13,4 @@ __pycache__/
 apps/web/node_modules/
 apps/web/dist/
 deploy/.pulse-token
+docs/results/recordings/

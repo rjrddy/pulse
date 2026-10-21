@@ -34,6 +34,8 @@ jobs:
           curl --fail http://localhost:8081/health
           export PULSE_TOKEN=synthetic-local-token-change-me-at-least-24
           "$GITHUB_WORKSPACE/.venv/bin/python" scripts/smoke.py
+          docker compose exec -T worker-a pip install pip-audit
+          docker compose exec -T worker-a pip-audit --format json > docs/results/python-audit.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
