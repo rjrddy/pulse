@@ -3,8 +3,9 @@
 import asyncio
 import json
 import os
-from pathlib import Path
 import time
+from pathlib import Path
+
 from websockets.asyncio.client import connect
 
 

@@ -32,14 +32,14 @@ func emit(w http.ResponseWriter, e Event) {
 }
 func TestBreakerSingleHalfOpenProbe(t *testing.T) {
 	b := backend("", "").Breaker
-	b.Finish(time.Now().Add(-2*time.Second), true, false)
+	b.Finish(0, time.Now().Add(-2*time.Second), true, false)
 	var accepted atomic.Int64
 	var wg sync.WaitGroup
 	for range 100 {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			if b.Acquire(time.Now()) {
+			if _, ok := b.Acquire(time.Now()); ok {
 				accepted.Add(1)
 			}
 		}()
@@ -48,14 +48,15 @@ func TestBreakerSingleHalfOpenProbe(t *testing.T) {
 	if accepted.Load() != 1 {
 		t.Fatal(accepted.Load())
 	}
-	b.Finish(time.Now(), false, false)
-	if !b.Acquire(time.Now()) || b.State() != "closed" {
+	b.Finish(1, time.Now(), false, false)
+	_, ok := b.Acquire(time.Now())
+	if !ok || b.State() != "closed" {
 		t.Fatal("did not close")
 	}
 }
 func TestCancelledAttemptDoesNotTripBreaker(t *testing.T) {
 	b := backend("", "").Breaker
-	b.Finish(time.Now(), true, true)
+	b.Finish(0, time.Now(), true, true)
 	if b.State() != "closed" {
 		t.Fatal("client cancellation opened breaker")
 	}
@@ -230,5 +231,23 @@ func TestAuthAndOriginRejected(t *testing.T) {
 	}
 	if e == nil || response.StatusCode != 403 {
 		t.Fatal("cross-origin accepted")
+	}
+}
+
+func TestStaleBreakerCompletionCannotReleaseProbe(t *testing.T) {
+	b := backend("", "").Breaker
+	old, _ := b.Acquire(time.Now())
+	b.Finish(old, time.Now().Add(-2*time.Second), true, false)
+	probe, ok := b.Acquire(time.Now())
+	if !ok {
+		t.Fatal("probe not admitted")
+	}
+	b.Finish(old, time.Now(), false, false)
+	if _, ok = b.Acquire(time.Now()); ok {
+		t.Fatal("old completion released current probe")
+	}
+	b.Finish(probe, time.Now(), false, false)
+	if b.State() != "closed" {
+		t.Fatal("probe did not close")
 	}
 }

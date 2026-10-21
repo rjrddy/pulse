@@ -17,25 +17,29 @@ type Breaker struct {
 	failures  int
 	opened    time.Time
 	probe     bool
+	epoch     uint64
 	Threshold int
 	Cooldown  time.Duration
 }
 
-func (b *Breaker) Acquire(now time.Time) bool {
+func (b *Breaker) Acquire(now time.Time) (uint64, bool) {
 	b.mu.Lock()
 	defer b.mu.Unlock()
 	if b.opened.IsZero() {
-		return true
+		return b.epoch, true
 	}
 	if now.Sub(b.opened) < b.Cooldown || b.probe {
-		return false
+		return b.epoch, false
 	}
 	b.probe = true
-	return true
+	return b.epoch, true
 }
-func (b *Breaker) Finish(now time.Time, failed, cancelled bool) {
+func (b *Breaker) Finish(epoch uint64, now time.Time, failed, cancelled bool) {
 	b.mu.Lock()
 	defer b.mu.Unlock()
+	if epoch != b.epoch {
+		return
+	}
 	wasProbe := b.probe
 	b.probe = false
 	if cancelled {
@@ -49,6 +53,7 @@ func (b *Breaker) Finish(now time.Time, failed, cancelled bool) {
 	b.failures++
 	if wasProbe || b.failures >= b.Threshold {
 		b.opened = now
+		b.epoch++
 	}
 }
 func (b *Breaker) State() string {
@@ -114,14 +119,15 @@ func (r *Router) Route(ctx context.Context, input Input, send func(Event) error)
 		if ctx.Err() != nil {
 			return ctx.Err()
 		}
-		if !b.Breaker.Acquire(time.Now()) {
+		ticket, allowed := b.Breaker.Acquire(time.Now())
+		if !allowed {
 			continue
 		}
 		ac, stop := context.WithTimeout(ctx, r.AttemptBudget)
 		req, err := http.NewRequestWithContext(ac, "POST", b.URL+"/stream", strings.NewReader(string(raw)))
 		if err != nil {
 			stop()
-			b.Breaker.Finish(time.Now(), true, false)
+			b.Breaker.Finish(ticket, time.Now(), true, false)
 			return err
 		}
 		req.Header.Set("Content-Type", "application/json")
@@ -168,7 +174,7 @@ func (r *Router) Route(ctx context.Context, input Input, send func(Event) error)
 			response.Body.Close()
 		}
 		cancelled := ctx.Err() != nil || sendFailed
-		b.Breaker.Finish(time.Now(), !done, cancelled)
+		b.Breaker.Finish(ticket, time.Now(), !done, cancelled)
 		stop()
 		if done {
 			return nil
