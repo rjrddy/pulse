@@ -1,0 +1,41 @@
+services:
+  init:
+    build: {context: ., dockerfile: worker/Dockerfile}
+    entrypoint: ["python", "scripts/prepare_sample.py"]
+    volumes: ["public-sample:/public"]
+  worker-a: &worker
+    build: {context: ., dockerfile: worker/Dockerfile}
+    environment:
+      PULSE_TOKEN: ${PULSE_TOKEN:?run configure.py}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://localhost:8090/health')"]
+      interval: 5s
+      timeout: 2s
+      retries: 30
+  worker-b: *worker
+  gateway:
+    build: .
+    ports: ["127.0.0.1:8081:8081"]
+    environment:
+      PULSE_PASSWORD: ${PULSE_PASSWORD:?run configure.py}
+      PULSE_TOKEN: ${PULSE_TOKEN:?run configure.py}
+      PULSE_ORIGIN: ${PULSE_ORIGIN:-http://localhost:8081}
+      PULSE_BUDGET_MS: ${PULSE_BUDGET_MS:-40000}
+      PULSE_BACKENDS: http://worker-a:8090,http://worker-b:8090
+    volumes: ["history:/data", "public-sample:/app/apps/web/dist/sample:ro"]
+    depends_on:
+      init: {condition: service_completed_successfully}
+      worker-a: {condition: service_healthy}
+      worker-b: {condition: service_healthy}
+  prometheus:
+    image: prom/prometheus:v3.10.0
+    volumes: ["./deploy/prometheus.yml:/etc/prometheus/prometheus.yml:ro"]
+    profiles: [observability]
+  grafana:
+    image: grafana/grafana:12.4.2
+    ports: ["127.0.0.1:3001:3000"]
+    profiles: [observability]
+volumes:
+  history:
+  public-sample:
