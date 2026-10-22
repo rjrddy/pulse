@@ -1,6 +1,6 @@
 # Project-specific interface: The listening room
 
-Status: accepted for local implementation; publication pending approval.
+Status: accepted. Publication authorized on 2026-10-22.
 
 ## Context
 
