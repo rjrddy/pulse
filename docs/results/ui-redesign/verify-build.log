@@ -1,0 +1,18 @@
+Project: Pulse
+Command: make build
+mkdir -p bin
+go build -o bin/pulse ./cmd/gateway
+npm --prefix apps/web run build
+
+> pulse-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.52 kB │ gzip:  0.34 kB
+dist/assets/index-B1mHq7Q_.css    8.38 kB │ gzip:  2.63 kB
+dist/assets/index-DHLgNV9N.js   204.77 kB │ gzip: 64.53 kB
+✓ built in 744ms

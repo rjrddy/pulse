@@ -1,0 +1,37 @@
+Project: Pulse
+Command: make test
+go test -race -timeout 60s -count=1 -v ./...
+?   	github.com/rjrddy/pulse/cmd/gateway	[no test files]
+=== RUN   TestBreakerSingleHalfOpenProbe
+--- PASS: TestBreakerSingleHalfOpenProbe (0.00s)
+=== RUN   TestCancelledAttemptDoesNotTripBreaker
+--- PASS: TestCancelledAttemptDoesNotTripBreaker (0.00s)
+=== RUN   TestFallbackResetsBeforeAudio
+--- PASS: TestFallbackResetsBeforeAudio (0.00s)
+=== RUN   TestNoReplayAfterVisibleAudio
+--- PASS: TestNoReplayAfterVisibleAudio (0.00s)
+=== RUN   TestDeadlineCancelsBackend
+--- PASS: TestDeadlineCancelsBackend (0.04s)
+=== RUN   TestAdmissionBounded
+--- PASS: TestAdmissionBounded (0.00s)
+=== RUN   TestJournalReopenAndCorruption
+--- PASS: TestJournalReopenAndCorruption (0.01s)
+=== RUN   TestConcurrentJournalWrites
+--- PASS: TestConcurrentJournalWrites (0.07s)
+=== RUN   TestClientSendFailureIsNotSuccess
+--- PASS: TestClientSendFailureIsNotSuccess (0.00s)
+=== RUN   TestWebsocketGenerationFencesInterruptedTurn
+2026/10/22 01:12:39 INFO turn_finished turn=bc97af3a00904960cc1058dfd1ed1657 trace_id=bc97af3a00904960cc1058dfd1ed1657 outcome=cancelled backend=a first_audio_ms=0 total_ms=0.917
+2026/10/22 01:12:39 INFO turn_finished turn=ecc96d5dfd63152511e771edc19830f8 trace_id=ecc96d5dfd63152511e771edc19830f8 outcome=done backend=a first_audio_ms=22.085 total_ms=22.197
+--- PASS: TestWebsocketGenerationFencesInterruptedTurn (0.03s)
+=== RUN   TestAuthAndOriginRejected
+--- PASS: TestAuthAndOriginRejected (0.00s)
+=== RUN   TestStaleBreakerCompletionCannotReleaseProbe
+--- PASS: TestStaleBreakerCompletionCannotReleaseProbe (0.00s)
+=== RUN   TestCapacityResponseDoesNotOpenCircuit
+--- PASS: TestCapacityResponseDoesNotOpenCircuit (0.00s)
+PASS
+ok  	github.com/rjrddy/pulse/internal/gateway	1.374s
+.venv/bin/python -m pytest -q
+....                                                                     [100%]
+4 passed in 0.34s

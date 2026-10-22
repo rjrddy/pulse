@@ -1,0 +1,4 @@
+{"time":"2026-10-22T01:04:03.131261-05:00","level":"INFO","msg":"listening","port":"8081"}
+{"time":"2026-10-22T01:04:22.12445-05:00","level":"INFO","msg":"turn_finished","turn":"2e0f93903d99facbd59513c771e6deda","trace_id":"2e0f93903d99facbd59513c771e6deda","outcome":"done","backend":"worker-1","first_audio_ms":13358.073,"total_ms":13360.82}
+{"time":"2026-10-22T01:04:26.952918-05:00","level":"INFO","msg":"turn_finished","turn":"1fe0fcfc5d5a65ecfd4da7076ac824c5","trace_id":"1fe0fcfc5d5a65ecfd4da7076ac824c5","outcome":"done","backend":"worker-1","first_audio_ms":1265.999,"total_ms":1266.384}
+{"time":"2026-10-22T01:04:27.791582-05:00","level":"INFO","msg":"turn_finished","turn":"8979d822373e636d0b6ffa3784c1e5f9","trace_id":"8979d822373e636d0b6ffa3784c1e5f9","outcome":"done","backend":"worker-1","first_audio_ms":442.553,"total_ms":444.393}

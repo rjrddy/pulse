@@ -234,15 +234,18 @@ function App() {
     <>
       <header>
         <a className="brand" href="/">
-          ◉ PULSE
+          <span className="pulse-symbol" aria-hidden="true">
+            ◉
+          </span>{" "}
+          pulse
         </a>
-        <span className="headerlabel">VOICE INFERENCE OBSERVATORY</span>
+        <span className="headerlabel">VOICE SYSTEM / SESSION INSTRUMENT</span>
         <a href="https://github.com/rjrddy/pulse">Source ↗</a>
       </header>
       <main>
         <div className="heading">
           <div>
-            <p className="eyebrow">STREAMING SYSTEMS / OPEN MODELS</p>
+            <p className="eyebrow">THE LISTENING ROOM</p>
             <h1>Every stage has a deadline.</h1>
             <p className="intro">
               Follow a voice turn from speech to first audio. Interrupt it.
@@ -293,10 +296,48 @@ function App() {
               ))}
             </div>
             <div className="grid">
-              <section className="panel">
+              <section className="panel session-deck">
                 <div className="sectiontitle">
                   <h2>Voice session</h2>
                   <span className="badge">{state}</span>
+                </div>
+                <div
+                  className={
+                    "instrument-display " + (playing ? "is-playing" : "")
+                  }
+                  role="status"
+                  aria-label="Audio transport status"
+                >
+                  <div className="transport-disc" aria-hidden="true">
+                    <span>p</span>
+                  </div>
+                  <div className="transport-readout">
+                    <span>OUTPUT / PCM</span>
+                    <strong>
+                      {playing ? "PLAYING" : busy ? "PROCESSING" : "STANDBY"}
+                    </strong>
+                    <small>
+                      {first === null
+                        ? "First audio not observed"
+                        : `First audio received in ${first.toFixed(1)} ms`}
+                    </small>
+                  </div>
+                  <div className="transport-lights" aria-hidden="true">
+                    {["vad", "asr", "llm", "tts"].map((s) => (
+                      <i
+                        key={s}
+                        className={
+                          frames.some(
+                            (f) => f.type === "stage" && f.stage === s,
+                          )
+                            ? "lit"
+                            : ""
+                        }
+                      >
+                        {s}
+                      </i>
+                    ))}
+                  </div>
                 </div>
                 <p className="muted">
                   Use the public Whisper speech sample, or a text prompt to

@@ -35,7 +35,9 @@ Caught failures are retained. The same [latency gate](scripts/budget_gate.py) re
 
 The domain experiment uses 3 Piper-generated glossary phrases: term accuracy 66.67% without hints / 100.00% with a fixed glossary; WER 26.67% / 0.00%. [Raw audio, references and transcriptions](docs/results/domain-eval.json) are a tiny development check, not held-out human-speech accuracy. [The cold-start lab](docs/results/cold-start.json) measures fresh worker processes with a warm filesystem/model cache; container start and restore remain **not measured**.
 
-![Actual Pulse console](docs/results/console-desktop.png)
+![Pulse console](docs/results/ui-redesign/console-cover.png)
+
+[Visual design references and UI checks](docs/UI.md) · [Redesigned console recording](docs/results/ui-redesign/demo.webm). Historical benchmark evidence remains separate.
 
 ## Architecture
 

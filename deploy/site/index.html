@@ -1,1 +1,225 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pulse — Every stage has a deadline</title><meta name="description" content="A measured open-model voice system with a Go streaming gateway, fenced interruptions, real backend fallback, and a live operations console recording."><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head><body><header><a class="brand" href="/">◉ PULSE</a><nav><a href="#measurements">Measurements</a><a href="#demo">Demo</a><a href="https://github.com/rjrddy/pulse">Source ↗</a></nav></header><main><section class="hero"><p class="eyebrow">GO GATEWAY / REAL OPEN MODELS / REACT CONSOLE</p><h1>Every stage<br>has a deadline.</h1><p class="lead">A voice inference system that knows when to retry, when to stop speaking, and how to show the difference.</p><div class="actions"><a class="button" href="#demo">Watch the actual console ↓</a><a href="https://github.com/rjrddy/pulse/blob/main/docs/DESIGN.md">Read the design ↗</a></div><div class="notice"><b>Recorded evidence</b><span>This Vercel site presents saved CPU-model runs and the console recording. The interactive model services are not hosted here.</span></div></section><section id="measurements"><div class="sectionhead"><p class="eyebrow">01 / MEASURE THE WHOLE PATH</p><a href="/model-bench.json">Raw event traces ↗</a></div><div class="metrics" id="metrics"></div><p class="muted">Text → LLM → TTS through the Go WebSocket gateway. First audio is measured when the client receives a PCM frame, before device playback. Local CPU results; these are not Vercel capacity measurements.</p><div class="panel"><div class="sectionhead"><h2>Latency under concurrency</h2><label>Output token cap <select id="cap"><option value="8">8 tokens</option><option value="32">32 tokens</option></select></label></div><div class="tablewrap"><table><thead><tr><th>Concurrency</th><th>Samples</th><th>First token p99</th><th>First audio p50</th><th>First audio p99</th></tr></thead><tbody id="loads"></tbody></table></div><p class="muted">Small development samples, with interpolated percentiles. A smaller output cap reduces answer length and model/speech work. It does not establish a speedup at equal answer quality.</p></div><div class="panel"><h2>The failure boundary</h2><div class="details"><article><p class="eyebrow">BEFORE AUDIO</p><h3>Retry with a reset.</h3><p>A real primary-process kill is followed by a completed turn through the secondary. Token previews are explicitly reset before retry.</p></article><article><p class="eyebrow">AFTER AUDIO</p><h3>Fail without repetition.</h3><p>Once speech is visible, retry could repeat it. The gateway ends that turn instead of silently replaying audible content.</p></article><article><p class="eyebrow">ON INTERRUPTION</p><h3>Fence the old generation.</h3><p>A gateway mutex guards generation checks and writes. The browser stops scheduled audio; old worker frames cannot cross the cancellation acknowledgement.</p></article></div></div></section><section id="demo"><p class="eyebrow">02 / FOLLOW THE TURN</p><h2>Speech, tokens, audio. Then interrupt.</h2><p class="muted">The actual authenticated console processes public speech, shows stage timings, stops playback, completes a replacement turn, and reloads persisted timing history.</p><video controls preload="metadata" poster="/console-desktop.png"><source src="/demo.webm" type="video/webm"><a href="/demo.webm">Download the recording.</a></video><p class="muted" id="duration"></p></section><section><p class="eyebrow">03 / THE SYSTEM, WITH ITS LIMITS</p><div class="architecture"><span>Go gateway</span><i>→</i><span>Energy VAD</span><i>→</i><span>Whisper</span><i>→</i><span>SmolLM2</span><i>→</i><span>Piper</span></div><div class="details"><article><h3>Bounded native work</h3><p>Cancellation drops output and cancels transport. An ongoing native operation can still finish; its admission slot remains occupied until it returns.</p></article><article><h3>Durable timing history</h3><p>A flushed, single-process journal records IDs, outcomes and stage-boundary timings. It retains no prompt, transcript or audio.</p></article><article><h3>Actual CPU inference</h3><p>Transformers and open speech models run locally. vLLM/GPU throughput, continuous microphone capture and container restore remain unfinished.</p></article></div><aside><h3>Partial, explicitly.</h3><p>The interactive gateway and model services are not hosted on this site. The local demonstration uses complete utterances and sentence audio chunks. Small-model language quality, capture-to-ear latency, replicated history and broad voice-domain robustness are not established.</p><a href="https://github.com/rjrddy/pulse/blob/main/docs/QUALITY.md">Read the quality checkpoint ↗</a></aside></section><section class="review"><h2>Open the code behind the deadline.</h2><div class="actions"><a class="button" href="https://github.com/rjrddy/pulse">Explore the repository ↗</a><a href="https://github.com/rjrddy/pulse/blob/main/INTERVIEW.md">Architecture walkthrough ↗</a></div></section></main><footer><span>Built by Raj Reddy</span><a href="https://raj-reddy.com">raj-reddy.com ↗</a><span>Public and synthetic data only</span></footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pulse — Every stage has a deadline</title>
+    <meta
+      name="description"
+      content="A measured open-model voice system with a Go streaming gateway, fenced interruptions, real backend fallback, and a live operations console recording."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="pulse-publication">
+    <header>
+      <a class="brand" href="/"
+        ><span class="record-dot" aria-hidden="true">●</span> pulse</a
+      >
+      <nav>
+        <a href="#measurements">Measurements</a><a href="#demo">Demo</a
+        ><a href="https://github.com/rjrddy/pulse">Source ↗</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GO GATEWAY / REAL OPEN MODELS / REACT CONSOLE</p>
+          <h1>Every stage<br />has a deadline.</h1>
+          <p class="lead">
+            A voice inference system that knows when to retry, when to stop
+            speaking, and how to show the difference.
+          </p>
+          <div class="actions">
+            <a class="button" href="#demo">Watch the actual console ↓</a
+            ><a href="https://github.com/rjrddy/pulse/blob/main/docs/DESIGN.md"
+              >Read the design ↗</a
+            >
+          </div>
+          <div class="notice">
+            <b>Recorded evidence</b
+            ><span
+              >This Vercel site presents saved CPU-model runs and the console
+              recording. The interactive model services are not hosted
+              here.</span
+            >
+          </div>
+        </div>
+        <div
+          class="hero-instrument"
+          aria-label="Recorded voice pipeline illustration"
+        >
+          <div class="instrument-label">
+            <span>pulse / voice system</span><span>RECORDED SESSION</span>
+          </div>
+          <div class="instrument-face">
+            <div class="disc"><span>p</span></div>
+            <div class="face-readout">
+              <span>CLIENT FIRST AUDIO / P99</span
+              ><output id="hero-audio">Loading evidence…</output
+              ><small>8-token cap · concurrency 4 · saved CPU run</small>
+            </div>
+          </div>
+          <div class="instrument-keys" aria-label="Pipeline stages">
+            <span>VAD</span><span>ASR</span><span>LLM</span><span>TTS</span>
+          </div>
+          <p>Audio arrival, before speaker playback.</p>
+        </div>
+      </section>
+      <section id="measurements">
+        <div class="sectionhead">
+          <p class="eyebrow">01 / MEASURE THE WHOLE PATH</p>
+          <a href="/model-bench.json">Raw event traces ↗</a>
+        </div>
+        <div class="metrics" id="metrics"></div>
+        <p class="muted">
+          Text → LLM → TTS through the Go WebSocket gateway. First audio is
+          measured when the client receives a PCM frame, before device playback.
+          Local CPU results; these are not Vercel capacity measurements.
+        </p>
+        <div class="panel">
+          <div class="sectionhead">
+            <h2>Latency under concurrency</h2>
+            <label
+              >Output token cap
+              <select id="cap">
+                <option value="8">8 tokens</option>
+                <option value="32">32 tokens</option>
+              </select></label
+            >
+          </div>
+          <div class="tablewrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Concurrency</th>
+                  <th>Samples</th>
+                  <th>First token p99</th>
+                  <th>First audio p50</th>
+                  <th>First audio p99</th>
+                </tr>
+              </thead>
+              <tbody id="loads"></tbody>
+            </table>
+          </div>
+          <p class="muted">
+            Small development samples, with interpolated percentiles. A smaller
+            output cap reduces answer length and model/speech work. It does not
+            establish a speedup at equal answer quality.
+          </p>
+        </div>
+        <div class="panel">
+          <h2>The failure boundary</h2>
+          <div class="details">
+            <article>
+              <p class="eyebrow">BEFORE AUDIO</p>
+              <h3>Retry with a reset.</h3>
+              <p>
+                A real primary-process kill is followed by a completed turn
+                through the secondary. Token previews are explicitly reset
+                before retry.
+              </p>
+            </article>
+            <article>
+              <p class="eyebrow">AFTER AUDIO</p>
+              <h3>Fail without repetition.</h3>
+              <p>
+                Once speech is visible, retry could repeat it. The gateway ends
+                that turn instead of silently replaying audible content.
+              </p>
+            </article>
+            <article>
+              <p class="eyebrow">ON INTERRUPTION</p>
+              <h3>Fence the old generation.</h3>
+              <p>
+                A gateway mutex guards generation checks and writes. The browser
+                stops scheduled audio; old worker frames cannot cross the
+                cancellation acknowledgement.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="demo">
+        <p class="eyebrow">02 / FOLLOW THE TURN</p>
+        <h2>Speech, tokens, audio. Then interrupt.</h2>
+        <p class="muted">
+          The actual authenticated console processes public speech, shows stage
+          timings, stops playback, completes a replacement turn, and reloads
+          persisted timing history.
+        </p>
+        <video
+          aria-label="Actual local console recording"
+          controls
+          preload="metadata"
+          poster="/console-desktop.png"
+        >
+          <source src="/demo.webm" type="video/webm" />
+          <a href="/demo.webm">Download the recording.</a>
+        </video>
+        <p class="muted" id="duration"></p>
+      </section>
+      <section>
+        <p class="eyebrow">03 / THE SYSTEM, WITH ITS LIMITS</p>
+        <div class="architecture">
+          <span>Go gateway</span><i>→</i><span>Energy VAD</span><i>→</i
+          ><span>Whisper</span><i>→</i><span>SmolLM2</span><i>→</i
+          ><span>Piper</span>
+        </div>
+        <div class="details">
+          <article>
+            <h3>Bounded native work</h3>
+            <p>
+              Cancellation drops output and cancels transport. An ongoing native
+              operation can still finish; its admission slot remains occupied
+              until it returns.
+            </p>
+          </article>
+          <article>
+            <h3>Durable timing history</h3>
+            <p>
+              A flushed, single-process journal records IDs, outcomes and
+              stage-boundary timings. It retains no prompt, transcript or audio.
+            </p>
+          </article>
+          <article>
+            <h3>Actual CPU inference</h3>
+            <p>
+              Transformers and open speech models run locally. vLLM/GPU
+              throughput, continuous microphone capture and container restore
+              remain unfinished.
+            </p>
+          </article>
+        </div>
+        <aside>
+          <h3>Partial, explicitly.</h3>
+          <p>
+            The interactive gateway and model services are not hosted on this
+            site. The local demonstration uses complete utterances and sentence
+            audio chunks. Small-model language quality, capture-to-ear latency,
+            replicated history and broad voice-domain robustness are not
+            established.
+          </p>
+          <a href="https://github.com/rjrddy/pulse/blob/main/docs/QUALITY.md"
+            >Read the quality checkpoint ↗</a
+          >
+        </aside>
+      </section>
+      <section class="review">
+        <h2>Open the code behind the deadline.</h2>
+        <div class="actions">
+          <a class="button" href="https://github.com/rjrddy/pulse"
+            >Explore the repository ↗</a
+          ><a href="https://github.com/rjrddy/pulse/blob/main/INTERVIEW.md"
+            >Architecture walkthrough ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Built by Raj Reddy</span
+      ><a href="https://raj-reddy.com">raj-reddy.com ↗</a
+      ><span>Public and synthetic data only</span>
+    </footer>
+  </body>
+</html>
