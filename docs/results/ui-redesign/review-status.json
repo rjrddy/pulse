@@ -5,5 +5,13 @@
   "recording_seconds": 92.16,
   "recording_gate_passed": true,
   "historical_benchmarks_rerun": false,
-  "publication": "pending explicit approval"
+  "publication": "pending explicit approval",
+  "fresh_clone_frontend_check": {
+    "name": "Pulse",
+    "pass": true,
+    "source_commit": "01fba862c3b446535f223c6387f0f24ef5eef6f7",
+    "clone": "/tmp/flagship-ui-clones-q6zy8d1a/pulse",
+    "scope": "Independent frontend dependency install, lint, build; public evidence package where present. No new full backend container claim."
+  },
+  "full_backend_fresh_clone_rerun": false
 }
