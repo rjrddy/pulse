@@ -21,3 +21,7 @@ The authenticated backend was not restarted for this UI-only change. The console
 The existing public evidence page is covered by `showcase-contract.json`, `showcase-built-smoke.json`, and its screenshots. It continues to show saved measurements, not a simulated live backend.
 
 Button feedback begins when click targeting is committed, so the first press does not shrink a hitbox underneath the pointer. Editable/dragging surfaces are excluded. Backend APIs, ranking/math policies, measurements, and document source data were not changed.
+
+## Separate container dependency repair
+
+The native gates and real-model smoke passed, but container audit found filelock 3.32.3 inherited from the PyTorch CPU package index. The worker image now explicitly installs filelock 4.2.4 from the default index alongside the project, matching the existing requirements.lock. This retains the security gate and changes no model, generation policy or benchmark. See `caught-ci-security-failure.log` and `container-audit-failure.json`. Linux CI performs the actual rebuilt-container model/download/inference validation; Docker is not installed on this laptop.

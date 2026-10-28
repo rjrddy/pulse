@@ -5,7 +5,7 @@ COPY pyproject.toml ./
 COPY worker worker
 RUN pip install --no-cache-dir --upgrade pip==26.2.2 setuptools==84.2.1
 RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir . filelock==4.2.4
 COPY scripts scripts
 RUN mkdir -p docs/results
 RUN python scripts/fetch_models.py
