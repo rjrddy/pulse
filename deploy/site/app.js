@@ -120,63 +120,49 @@ function installMotion(profile) {
     start();
 }
 installMotion({
-    "name": "pulse",
-    "press": [
+  "name": "pulse",
+  "press": [
+    {
+      "transform": "translateY(0)"
+    },
+    {
+      "transform": "translateY(1px)",
+      "offset": 0.2
+    },
+    {
+      "transform": "translateY(0)"
+    }
+  ],
+  "neighbors": ".fault-tabs button,.instrument-keys button",
+  "rules": [
+    {
+      "watch": "#loads",
+      "targets": "td:nth-child(4)",
+      "frames": [
         {
-            "transform": "translateY(0)"
+          "transform": "rotate(-18deg)"
         },
         {
-            "transform": "translateY(1px)",
-            "offset": 0.2
-        },
-        {
-            "transform": "translateY(0)"
+          "transform": "rotate(0deg)"
         }
-    ],
-    "neighbors": ".fault-tabs button,.instrument-keys button",
-    "rules": [
+      ],
+      "duration": 180
+    },
+    {
+      "watch": ".face-readout",
+      "targets": ":self",
+      "frames": [
         {
-            "watch": "#loads",
-            "targets": "td:nth-child(4)",
-            "frames": [
-                {
-                    "transform": "rotate(-18deg)"
-                },
-                {
-                    "transform": "rotate(0deg)"
-                }
-            ],
-            "duration": 180
+          "transform": "translateX(4px)"
         },
         {
-            "watch": ".face-readout",
-            "targets": ":self",
-            "frames": [
-                {
-                    "transform": "translateX(4px)"
-                },
-                {
-                    "transform": "translateX(0)"
-                }
-            ],
-            "duration": 180
-        },
-        {
-            "watch": ".details",
-            "targets": "summary",
-            "frames": [
-                {
-                    "transform": "rotate(-18deg)"
-                },
-                {
-                    "transform": "rotate(0deg)"
-                }
-            ],
-            "duration": 180
+          "transform": "translateX(0)"
         }
-    ]
+      ],
+      "duration": 180
+    }
+  ]
 });
-
 })();
 const data = await fetch("/proof.json").then((r) => {
   if (!r.ok) throw Error("Measurement data unavailable");

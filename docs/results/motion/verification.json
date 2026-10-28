@@ -4,7 +4,7 @@
   "source_sha256": {
     "apps/web/src/motion.ts": "ce3df31a05bfce667048446a9050b00d3b7911429b52c62de84e1bf2304f9e30",
     "apps/web/src/style.css": "94d84acff780425c108d16ccd80e10b72ac3937637de256958a113d05c903922",
-    "deploy/site/app.js": "153c244882b99768a7e44783dcc0c48777dc3dcea622f85ce3c8d9afbb2edff0"
+    "deploy/site/app.js": "caf720f8f0557df957d3fe8839ca30f4b94085aabb0867bc78e6a92ea1b46fcf"
   },
   "frontend_build_lint": "passed",
   "motion_contract": "passed",
