@@ -1,0 +1,23 @@
+src/motion.ts 73ms
+src/main.tsx 63ms (unchanged)
+src/style.css 51ms (unchanged)
+
+> pulse-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> pulse-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.52 kB │ gzip:  0.34 kB
+dist/assets/index-CQd70FcU.css    8.41 kB │ gzip:  2.59 kB
+dist/assets/index-k8pp8id7.js   208.43 kB │ gzip: 65.90 kB
+✓ built in 528ms
+Built recorded evidence from actual CPU-model measurements. Live gateway is not hosted.

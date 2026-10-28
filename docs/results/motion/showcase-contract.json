@@ -1,0 +1,102 @@
+{
+  "project": "pulse-showcase",
+  "scope": "Synthetic DOM using actual shipped motion module",
+  "noEntranceAnimation": true,
+  "unchangedNodeReplacementIgnored": true,
+  "observedAnimations": [
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "id": "contract-key",
+      "frames": [
+        {
+          "transform": "translateY(0)"
+        },
+        {
+          "transform": "translateY(1px)",
+          "offset": 0.2
+        },
+        {
+          "transform": "translateY(0)"
+        }
+      ],
+      "options": {
+        "duration": 160,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 110.29999995231628
+    },
+    {
+      "tag": "TD",
+      "cls": "",
+      "id": "",
+      "frames": [
+        {
+          "transform": "rotate(-18deg)"
+        },
+        {
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 180,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 152.09999990463257
+    },
+    {
+      "tag": "DIV",
+      "cls": "face-readout",
+      "id": "",
+      "frames": [
+        {
+          "transform": "translateX(4px)"
+        },
+        {
+          "transform": "translateX(0)"
+        }
+      ],
+      "options": {
+        "duration": 180,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 152.19999992847443
+    },
+    {
+      "tag": "SUMMARY",
+      "cls": "",
+      "id": "",
+      "frames": [
+        {
+          "transform": "rotate(-18deg)"
+        },
+        {
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 180,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 152.19999992847443
+    }
+  ],
+  "transformOpacityOnly": true,
+  "zeroDelay": true,
+  "immediatePointerAndKeyboard": true,
+  "edgeClickTargetStableUntilActivation": true,
+  "disabledAndEditorExcluded": true,
+  "liveReducedMotionCancellation": true,
+  "reEnable": true,
+  "pagehideCleanup": true,
+  "pageErrors": [],
+  "initialReducedMotion": true
+}

@@ -1,0 +1,18 @@
+{
+  "project": "pulse",
+  "motion_profile": "Transport head engagement",
+  "source_sha256": {
+    "apps/web/src/motion.ts": "ce3df31a05bfce667048446a9050b00d3b7911429b52c62de84e1bf2304f9e30",
+    "apps/web/src/style.css": "94d84acff780425c108d16ccd80e10b72ac3937637de256958a113d05c903922",
+    "deploy/site/app.js": "153c244882b99768a7e44783dcc0c48777dc3dcea622f85ce3c8d9afbb2edff0"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "not rerun; actual console entry state and public saved evidence checked",
+  "showcase_contract": "passed",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}

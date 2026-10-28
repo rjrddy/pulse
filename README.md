@@ -66,6 +66,9 @@ Open http://localhost:8081 and sign in using the password in your ignored .env. 
 
 ## Decisions and limits
 
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.
+
+
 - [Design](docs/DESIGN.md), [ADRs](docs/adr), [migration provenance](docs/migration/pulse.md) and [rehearsal drill](docs/DRILL.md) explain code and boundaries.
 - The local path accepts complete utterances and returns token previews and sentence audio chunks. Continuous microphone capture, streaming ASR endpointing and phoneme-level streaming TTS are unfinished.
 - Fallback only precedes visible audio. Mid-speech failure ends the turn; the process-kill experiment tests a following turn, not seamless continuation of audible speech.

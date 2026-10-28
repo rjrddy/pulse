@@ -314,14 +314,6 @@ h3 {
   background: #e5ad55;
   box-shadow: 0 0 6px #e5ad5577;
 }
-.is-playing .transport-disc {
-  animation: spin 7s linear infinite;
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
 label {
   display: block;
   font-size: 11px;
@@ -638,5 +630,16 @@ footer {
     scroll-behavior: auto !important;
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* Motion is event-driven in motion.ts/js; resting content is always visible. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }
