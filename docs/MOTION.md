@@ -25,3 +25,5 @@ Button feedback begins when click targeting is committed, so the first press doe
 ## Separate container dependency repair
 
 The native gates and real-model smoke passed, but container audit found filelock 3.32.3 inherited from the PyTorch CPU package index. The worker image now explicitly installs filelock 4.2.4 from the default index alongside the project, matching the existing requirements.lock. This retains the security gate and changes no model, generation policy or benchmark. See `caught-ci-security-failure.log` and `container-audit-failure.json`. Linux CI performs the actual rebuilt-container model/download/inference validation; Docker is not installed on this laptop.
+
+Connected controls recoil only with their immediate previous/next matching siblings. The left sibling moves left, the right moves right; distant controls do not react. The runtime reads sibling references, not geometry.
